@@ -22,6 +22,45 @@ $(document).ready(function () {
     mouseDrag: true,
   });
 
+  let videoSlider = tns({
+    container: ".video-slider",
+    items: 1,
+    slideBy: "page",
+    autoplay: true,
+    controls: false,
+    nav: false,
+    mouseDrag: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+    },
+  });
+
+  let newsSlider = tns({
+    container: ".news-slider",
+    items: 1,
+    slideBy: "page",
+    autoplay: true,
+    controls: false,
+    nav: false,
+    mouseDrag: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+    },
+  });
+
   $(".card-shadow").hover(
     function () {
       $(this).addClass("shadow-lg").css("cursor", "pointer");

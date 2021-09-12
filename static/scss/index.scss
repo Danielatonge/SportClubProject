@@ -1,0 +1,125 @@
+$dark-blue: #032f5e;
+$light-blue: #1d66c1;
+$shiny-light-blue: #1488cc;
+$shiny-dark-blue: #2b32b2;
+$blue-variant: #4c5cb0;
+$black: #000000;
+$dark-gray: #a0a0a0;
+$bg-color: #f6f6f8;
+$white-variant: #f0f0f0;
+
+.page-content {
+  background-color: $bg-color;
+
+  .videos {
+    background-image: url("../images/Group\ 478.png");
+    padding: 1rem;
+
+    .video-controls {
+      color: white;
+      .title {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      .control {
+        font-size: 0.8rem;
+      }
+    }
+
+    .video-slider {
+      .play-button {
+        color: white;
+        font-size: 1.5rem;
+      }
+      .headline {
+        color: white;
+
+        h1 {
+          font-size: 1rem;
+        }
+        h6 {
+          font-size: 0.8rem;
+          opacity: 0.6;
+        }
+      }
+    }
+
+    .news-slider {
+      .headline {
+        color: white;
+
+        h1 {
+          font-size: 1rem;
+        }
+        h6 {
+          font-size: 0.8rem;
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+
+  .news-articles {
+    .news-controls {
+      .title {
+        font-size: 1rem;
+        font-weight: bold;
+      }
+      .control {
+        font-size: 0.8rem;
+        color: $dark-gray;
+      }
+    }
+    .article {
+      .card {
+        border: none;
+        border-radius: 5px;
+        .picture {
+          padding: 0;
+          img {
+            object-fit: cover;
+          }
+        }
+        .card-text {
+          font-size: 0.8rem;
+          color: $blue-variant;
+        }
+        .card-title {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .btncards {
+    .card {
+      border: none;
+      border-radius: 5px;
+
+      img {
+        object-fit: cover;
+        display: block;
+      }
+
+      .card-img-overlay {
+        z-index: 1;
+        top: unset;
+
+        .card-text {
+          font-size: 0.8rem;
+          color: white;
+        }
+        .card-title {
+          font-size: 1rem;
+          color: white;
+        }
+        .btn {
+          font-size: 0.8rem;
+          color: white;
+          padding: 0.5rem 3rem;
+          background-color: rgba($color: white, $alpha: 0.1);
+        }
+      }
+    }
+  }
+}
