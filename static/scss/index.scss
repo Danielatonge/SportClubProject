@@ -11,6 +11,94 @@ $white-variant: #f0f0f0;
 .page-content {
   background-color: $bg-color;
 
+  // BODY COLOUR SECTION
+
+  .body-colour {
+    .controls {
+      h1 {
+        font-size: 1rem;
+      }
+      h6 {
+        font-size: 0.8rem;
+        color: $dark-gray;
+      }
+    }
+
+    @media (max-width: 768px) {
+      [class^="col-"],
+      [class*=" col-"] {
+        margin: 1rem 0;
+      }
+    }
+
+    .card {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+      height: 100%;
+
+      .card-title,
+      .card-overlay-title {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+    }
+
+    .advert {
+      background-image: url("../images/Group490.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+      position: relative;
+      height: 8rem;
+      margin-top: 5rem;
+
+      .text {
+        margin-left: 18%;
+        p {
+          font-size: 1rem;
+          color: rgba($color: white, $alpha: 0.9);
+        }
+        .btn {
+          font-size: 0.8rem;
+          background-color: rgba($color: white, $alpha: 0.2);
+          color: rgba($color: white, $alpha: 0.9);
+          padding: 0.7rem 1.5rem;
+        }
+      }
+
+      img {
+        position: absolute;
+        object-fit: cover;
+        bottom: 0;
+      }
+
+      #image1 {
+        left: 0;
+        margin-left: 1rem;
+        width: 20%;
+      }
+
+      #image2 {
+        right: 0;
+        margin-right: 2rem;
+        width: 25%;
+      }
+
+      @media (max-width: 576px) {
+        display: none !important;
+      }
+    }
+
+    @media (max-width: 576px) {
+      padding-bottom: 0;
+    }
+  }
+
+  // VIDEO SECTION
+
   .videos {
     background-image: url("../images/Group\ 478.png");
     padding: 1rem;
@@ -26,10 +114,35 @@ $white-variant: #f0f0f0;
       }
     }
 
-    .video-slider {
+    .card {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: unset;
+      border: none;
+    }
+
+    // Video Cards
+
+    .video-cards {
+      :nth-child(1) .card {
+        background-image: url(../images/Group485.png);
+      }
+      :nth-child(2) .card {
+        background-image: url(../images/Group484.png);
+      }
+
       .play-button {
         color: white;
         font-size: 1.5rem;
+        padding: 3rem 0;
+        cursor: pointer;
+
+        span {
+          padding: 0.7rem 1rem;
+          background-color: rgba($color: white, $alpha: 0.2);
+          border-radius: 5px;
+        }
       }
       .headline {
         color: white;
@@ -44,7 +157,25 @@ $white-variant: #f0f0f0;
       }
     }
 
-    .news-slider {
+    //  News Cards
+
+    .news-cards {
+      :nth-child(1) .card {
+        background-image: url(../images/Group486.png);
+      }
+      :nth-child(2) .card {
+        background-image: url(../images/Group488.png);
+      }
+      :nth-child(3) .card {
+        background-image: url(../images/Group489.png);
+      }
+
+      .card {
+        padding-top: 3rem;
+        background-position: center top;
+        box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+      }
+
       .headline {
         color: white;
 
@@ -54,10 +185,21 @@ $white-variant: #f0f0f0;
         h6 {
           font-size: 0.8rem;
           opacity: 0.6;
+        }
+
+        @media (min-width: 576px) and (max-width: 768px) {
+          h1 {
+            font-size: 0.8rem;
+          }
+          h6 {
+            font-size: 0.6rem;
+          }
         }
       }
     }
   }
+
+  // NEWS ARTICLES SECTION
 
   .news-articles {
     .news-controls {
@@ -70,10 +212,13 @@ $white-variant: #f0f0f0;
         color: $dark-gray;
       }
     }
+
+    // Articles
     .article {
       .card {
         border: none;
         border-radius: 5px;
+
         .picture {
           padding: 0;
           img {
@@ -89,35 +234,48 @@ $white-variant: #f0f0f0;
         }
       }
     }
-  }
 
-  .btncards {
-    .card {
-      border: none;
-      border-radius: 5px;
-
-      img {
-        object-fit: cover;
-        display: block;
+    // Cards
+    .btncards {
+      :nth-child(1) .card {
+        background-image: url(../images/Group482.png);
+      }
+      :nth-child(2) .card {
+        background-image: url(../images/Group481.png);
+      }
+      :nth-child(3) .card {
+        background-image: url(../images/Group480.png);
+      }
+      :nth-child(4) .card {
+        background-image: url(../images/Group479.png);
       }
 
-      .card-img-overlay {
-        z-index: 1;
-        top: unset;
+      .card {
+        border: none;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: unset;
 
-        .card-text {
-          font-size: 0.8rem;
-          color: white;
+        @media (min-width: 992px) {
+          padding-top: 4rem;
         }
-        .card-title {
-          font-size: 1rem;
-          color: white;
-        }
-        .btn {
-          font-size: 0.8rem;
-          color: white;
-          padding: 0.5rem 3rem;
-          background-color: rgba($color: white, $alpha: 0.1);
+
+        .card-body {
+          .card-text {
+            font-size: 0.8rem;
+            color: white;
+          }
+          .card-title {
+            font-size: 1rem;
+            color: white;
+          }
+          .btn {
+            font-size: 0.8rem;
+            color: white;
+            padding: 0.5rem 3rem;
+            background-color: rgba($color: white, $alpha: 0.1);
+          }
         }
       }
     }
