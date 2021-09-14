@@ -1,169 +1,176 @@
-<div class="body-colour">
-    <div class="container">
-        <p class="sportsclub-title pt-4"> Поиск игроков </p>
+{% extends "layout.html" %}
 
-        <p class="sportsclub-main-text">
-            Nunc luctus tristique cras sed imperdiet in eget. Lorem amet, risus augue mauris iaculis mi. Aliquet eget
-            leo posuere semper nec at ac, etiam. Orci tristique fusce aenean eget et id pellentesque in. Vivamus nisl
-            bibendum tristique tristique amet, in lectus felis. At eget aenean vitae enim. Et, pellentesque neque
-            commodo cursus <br>
-        </p>
+{% block content %}
+    <div class="body-colour">
+        <div class="container">
+            <p class="sportsclub-title pt-4"> Поиск игроков </p>
 
-        <div class="pb-4">
-            <button type="button" class="btn btn-primary mr-2">Отправить заявку</button>
-            <button type="button" class="btn btn-light ml-2">
-                <img class="img-fluid" src="/static/images/videocam.svg">
-                Видеоинструкция
-            </button>
-        </div>
+            <p class="sportsclub-main-text">
+                Nunc luctus tristique cras sed imperdiet in eget. Lorem amet, risus augue mauris iaculis mi. Aliquet
+                eget
+                leo posuere semper nec at ac, etiam. Orci tristique fusce aenean eget et id pellentesque in. Vivamus
+                nisl
+                bibendum tristique tristique amet, in lectus felis. At eget aenean vitae enim. Et, pellentesque neque
+                commodo cursus <br>
+            </p>
 
-        <div class="input-group mb-4">
-            <input type="text" class="form-control search-game" placeholder="Введите фамилию и имя игрока">
-            <div class="input-group-append">
-                <button type="button" class="btn btn-primary">Найти игрока</button>
-            </div>
-            <div>
-                <button class="btn btn-light btn-onclick" data-toggle="collapse" href="#collapseExample" role="button"
-                        aria-expanded="false" aria-controls="collapseExample">
-                    <img class="img-fluid" src="/static/images/filter.svg">
+            <div class="pb-4">
+                <button type="button" class="btn btn-primary mr-2">Отправить заявку</button>
+                <button type="button" class="btn btn-light ml-2">
+                    <img class="img-fluid" src="/static/images/videocam.svg">
+                    Видеоинструкция
                 </button>
             </div>
 
-        </div>
-
-        <div class="collapse" id="collapseExample">
-            <div class="row mb-4">
-                <div class="col pl-0">
-                    <p class="mb-0">Вид спорта</p>
-                    <select class="form-control">
-                        <option>Выберите вид спорта</option>
-                    </select>
+            <div class="input-group mb-4">
+                <input type="text" class="form-control search-game" placeholder="Введите фамилию и имя игрока">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-primary">Найти игрока</button>
                 </div>
-                <div class="col">
-                    <p class="mb-0">Позиция</p>
-                    <select class="form-control">
-                        <option>Выберите позицию</option>
-                    </select>
-                </div>
-                <div class="col pr-0 text-right" style="position: relative;">
-                    <button type="button" class="btn btn-light trythis">
-                        Применить фильтры
+                <div>
+                    <button class="btn btn-light btn-onclick" data-toggle="collapse" href="#collapseExample"
+                            role="button"
+                            aria-expanded="false" aria-controls="collapseExample">
+                        <img class="img-fluid" src="/static/images/filter.svg">
                     </button>
                 </div>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-6 p-0">
-                <p>Ищут команду: 2 625 игроков</p>
             </div>
-            <div class="col-6 p-0 text-right">
-                <div class="dropdown">
-                    <i class="d-none d-sm-inline">Сортировать </i>
-                    <button class="d-none d-sm-inline btn btn-sort dropdown-toggle" type="button"
-                            id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        по популярности
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">по просмотрам</a>
-                        <a class="dropdown-item" href="#">чем-то другим</a>
+
+            <div class="collapse" id="collapseExample">
+                <div class="row mb-4">
+                    <div class="col pl-0">
+                        <p class="mb-0">Вид спорта</p>
+                        <select class="form-control">
+                            <option>Выберите вид спорта</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <p class="mb-0">Позиция</p>
+                        <select class="form-control">
+                            <option>Выберите позицию</option>
+                        </select>
+                    </div>
+                    <div class="col pr-0 text-right" style="position: relative;">
+                        <button type="button" class="btn btn-light trythis">
+                            Применить фильтры
+                        </button>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card-deck">
-            <div class="card card-shadow">
-                <div class="card-body d-flex flex-column">
-                    <div class="row">
-                        <div class="col-4 col-md-4 col-lg-2 pl-0">
-                            <img class="img-fluid search-game-card-img" src="/static/images/Rectangle 500.png">
+            <div class="row">
+                <div class="col-6 p-0">
+                    <p>Ищут команду: 2 625 игроков</p>
+                </div>
+                <div class="col-6 p-0 text-right">
+                    <div class="dropdown">
+                        <i class="d-none d-sm-inline">Сортировать </i>
+                        <button class="d-none d-sm-inline btn btn-sort dropdown-toggle" type="button"
+                                id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            по популярности
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">по просмотрам</a>
+                            <a class="dropdown-item" href="#">чем-то другим</a>
                         </div>
-                        <div class="col-8 col-md-8 col-lg-10">
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="search-game-card-title">Фамилия Имя</p>
-                                </div>
-                                <div class="col-4">
-                                    <p class="search-game-card-subtext">Вид спорта</p>
-                                    <p class="mb-0">Футбол</p>
-                                </div>
-                                <div class="col-8">
-                                    <p class="search-game-card-subtext">Позиция</p>
-                                    <p class="mb-0">Нападающий / полузащитник</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-deck">
+                <div class="card card-shadow">
+                    <div class="card-body d-flex flex-column">
+                        <div class="row">
+                            <div class="col-4 col-md-4 col-lg-2 pl-0">
+                                <img class="img-fluid search-game-card-img" src="/static/images/Rectangle 500.png">
+                            </div>
+                            <div class="col-8 col-md-8 col-lg-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="search-game-card-title">Фамилия Имя</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="search-game-card-subtext">Вид спорта</p>
+                                        <p class="mb-0">Футбол</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="search-game-card-subtext">Позиция</p>
+                                        <p class="mb-0">Нападающий / полузащитник</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <p class="search-game-card-subtext">Контакты</p>
+                        <p>Поле для контактов</p>
+                        <p class="search-game-card-subtext">О себе</p>
+                        <p>
+                            Текст с информацией о игрокеКоличество символов не ограничено, но лимит на превью карточке
+                            равен
+                            4 строкам.
+                            В других карточках возможные варианты заполнения.
+                        </p>
+                        <p class="card-date mt-auto">16 октября 2021</p>
                     </div>
-                    <p class="search-game-card-subtext">Контакты</p>
-                    <p>Поле для контактов</p>
-                    <p class="search-game-card-subtext">О себе</p>
-                    <p>
-                        Текст с информацией о игрокеКоличество символов не ограничено, но лимит на превью карточке равен
-                        4 строкам.
-                        В других карточках возможные варианты заполнения.
-                    </p>
-                    <p class="card-date mt-auto">16 октября 2021</p>
                 </div>
-            </div>
-            <div class="card card-shadow">
-                <div class="card-body d-flex flex-column">
-                    <div class="row">
-                        <div class="col-4 col-md-4 col-lg-2 pl-0">
-                            <img class="img-fluid search-game-card-img" src="/static/images/Rectangle 500.png">
-                        </div>
-                        <div class="col-8 col-md-8 col-lg-10">
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="search-game-card-title">Фамилия Имя</p>
-                                </div>
-                                <div class="col-4">
-                                    <p class="search-game-card-subtext">Вид спорта</p>
-                                    <p class="mb-0">Футбол</p>
-                                </div>
-                                <div class="col-8">
-                                    <p class="search-game-card-subtext">Позиция</p>
-                                    <p class="mb-0">Нападающий / полузащитник</p>
+                <div class="card card-shadow">
+                    <div class="card-body d-flex flex-column">
+                        <div class="row">
+                            <div class="col-4 col-md-4 col-lg-2 pl-0">
+                                <img class="img-fluid search-game-card-img" src="/static/images/Rectangle 500.png">
+                            </div>
+                            <div class="col-8 col-md-8 col-lg-10">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="search-game-card-title">Фамилия Имя</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="search-game-card-subtext">Вид спорта</p>
+                                        <p class="mb-0">Футбол</p>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="search-game-card-subtext">Позиция</p>
+                                        <p class="mb-0">Нападающий / полузащитник</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <p class="search-game-card-subtext">Контакты</p>
+                        <p>Пишите в ватсап +7 800 555 35-35</p>
+                        <p class="search-game-card-subtext">О себе</p>
+                        <p>
+                            25 лет, ищу команду по уровню развития.
+                            Позиция: голкипер
+                            Умею играть правой рукой и ногой
+                        </p>
+                        <p class="card-date mt-auto">16 октября 2021</p>
                     </div>
-                    <p class="search-game-card-subtext">Контакты</p>
-                    <p>Пишите в ватсап +7 800 555 35-35</p>
-                    <p class="search-game-card-subtext">О себе</p>
-                    <p>
-                        25 лет, ищу команду по уровню развития.
-                        Позиция: голкипер
-                        Умею играть правой рукой и ногой
-                    </p>
-                    <p class="card-date mt-auto">16 октября 2021</p>
                 </div>
             </div>
+
+
+            <!-- Pagination -->
+            <nav aria-label="News navigation">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
-
-        <!-- Pagination -->
-        <nav aria-label="News navigation">
-            <ul class="pagination justify-content-center">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </div>
-</div>
 
-
+{% endblock %}
