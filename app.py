@@ -7,7 +7,7 @@ app.config['DEBUG'] = True
 Scss(app, static_dir='static/css', asset_dir='static/scss')
 
 
-# ------------------------- Главная
+#------------------------- Главная
 @app.route('/Главная/page1')
 def main_page1():
     return render_template('Главная/page1.html', title="Главная")
