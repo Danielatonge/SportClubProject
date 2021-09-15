@@ -12,7 +12,6 @@ def main():
     return redirect(url_for('main_page1'))
 
 
-# ------------------------- Главная
 @app.route('/Главная/page1')
 def main_page1():
     return render_template('Главная/page1.html', title="Главная")
