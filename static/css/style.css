@@ -452,7 +452,7 @@ nav.navbar.horizontal-bar {
   padding-bottom: 0;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 768px) {
   .paint-blue {
     height: 3.75rem;
   }
