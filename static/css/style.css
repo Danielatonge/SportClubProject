@@ -1319,6 +1319,7 @@ nav.navbar.horizontal-bar-2 {
 
 .navbar.horizontal-bar .dropdown:hover > .dropdown-menu {
   display: block;
+  margin-top: -1px;
 }
 
 .navbar.horizontal-bar .dropdown > .dropdown-toggle:active {
@@ -1403,6 +1404,11 @@ nav.navbar.horizontal-bar-2 {
 
   #mobile-nav .navbar-nav > .nav-item.menu-item {
     width: 100% !important;
+    
+  }
+
+  #nav-container {
+    margin-top: '-5px' !important;
   }
 
   .no-margin-top-bottom {
@@ -1439,7 +1445,6 @@ nav.navbar.horizontal-bar-2 {
   }
 
   .navbar.horizontal-bar .dropdown .dropdown-toggle::after {
-    content: '';
     position: absolute;
     right: 1.5rem;
   }
