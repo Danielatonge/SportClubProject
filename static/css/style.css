@@ -30,8 +30,8 @@ header {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 2.5rem;
-  line-height: 2.938rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
   padding-top: 1.25rem;
 
   color: #000000;
@@ -64,7 +64,7 @@ header {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.188rem;
   vertical-align: middle;
   color: #a0a0a0;
@@ -76,7 +76,7 @@ header {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 
   text-align: justify;
@@ -91,8 +91,8 @@ header {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   padding-top: 1.875rem;
 
   color: #000000;
@@ -138,7 +138,7 @@ header {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.75rem;
 
   color: #000000;
@@ -519,36 +519,50 @@ a.header-icons {
 /* Sections Pages */
 .outer-navigation .list-group-item.active {
   background-color: #fff;
-  border-color: rgba(0, 0, 0, 0.125);
-  border-left: 4px solid #1d66c1;
+  border-color: #f0f0f0;
+  border-left: 4px solid #4c5cb0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .text-blue {
-  color: #1d66c1;
+  color: #4c5cb0;
 }
 
+.list-group-item,
 .list-group-item.list-group-item-action {
-  color: #1d66c1;
+  color: #4c5cb0;
+  background-color: white;
+  font-weight: bold;
 }
 
 .outer-navigation .list-group-item.list-group-item-action:hover {
-  color: #1d66c1;
-  border-left: 4px solid #1d66c1;
+  color: #4c5cb0;
+  border-left: 4px solid #4c5cb0;
 }
 
 .inner-navigation.list-group {
   flex-direction: row;
 }
 
-.inner-navigation .list-group-item.active {
-  background-color: #fff;
-  border-color: rgba(0, 0, 0, 0.125);
-  border-bottom: 4px solid #1d66c1;
+.inner-navigation .list-group-item {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
+.inner-navigation .list-group-item:first-child,
+.outer-navigation .list-group-item {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.inner-navigation .list-group-item.active,
 .inner-navigation .list-group-item.list-group-item-action:hover {
-  color: #1d66c1;
-  border-bottom: 4px solid #1d66c1;
+  background-color: #fff;
+  border-color: #f0f0f0;
+  border-bottom: 4px solid #4c5cb0;
+  color: #4c5cb0;
+  font-weight: bold;
 }
 
 .football-img {
@@ -733,7 +747,7 @@ a.header-icons {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: normal;
 
   padding-top: 1.875rem;
@@ -1091,7 +1105,7 @@ nav.navbar.horizontal-bar-2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 2.5rem;
@@ -1362,13 +1376,14 @@ nav.navbar.horizontal-bar-2 {
   border-radius: 0.25rem;
 }
 
-.list-group-item:last-child,
+/* .list-group-item:last-child,
 .list-group-item:first-child {
   border-radius: 0;
-}
+} */
 
 .list-group-item {
   margin-bottom: 0;
+  border-color: #f0f0f0;
 }
 
 .sticky {
@@ -1428,16 +1443,16 @@ nav.navbar.horizontal-bar-2 {
   }
 
   .media-video-title {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     padding-bottom: 0.5rem;
   }
 
   .gallery-video-title {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
   }
 
   .page-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: normal;
   }
 
@@ -2323,7 +2338,7 @@ ol.breadcrumb li {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.375rem;
+  font-size: 1.3rem;
   line-height: 1.625rem;
 
   margin-bottom: 0;
@@ -2337,7 +2352,7 @@ ol.breadcrumb li {
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.438rem;
   text-align: center;
 
@@ -2352,7 +2367,7 @@ ol.breadcrumb li {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   line-height: 1.438rem;
 
   margin-bottom: 0;
@@ -2366,7 +2381,7 @@ ol.breadcrumb li {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.188rem;
 
   margin-bottom: 0;

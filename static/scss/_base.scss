@@ -3,6 +3,11 @@ h3 {
   font-size: 1.5rem;
 }
 
+a,
+a:hover {
+  text-decoration: none;
+}
+
 @media (max-width: 576px) {
   .h3,
   h3 {

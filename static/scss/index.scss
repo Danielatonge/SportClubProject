@@ -1,6 +1,10 @@
 @import "colors";
 @import "base";
 
+/*_____________________________
+ Styles for Главная/page2
+*/
+
 .page-content {
   background-color: $bg-color;
 
@@ -282,11 +286,69 @@
   }
 }
 
-// Styles for Главная/page1
+/*_____________________________
+ Styles for Главная/page1
+*/
+
 .home {
   .main-card {
     .text-muted {
       color: $dark-gray;
+    }
+  }
+}
+
+/*_____________________________
+ Styles for медиа pages
+*/
+
+.albums {
+  @media (max-width: 768px) {
+    .media-sort {
+      display: none;
+    }
+    .sub-title {
+      text-align: center;
+    }
+  }
+
+  .inner-navigation {
+    display: none;
+    .list-group-item:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    .list-group-item:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    a {
+      color: $blue-variant;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .outer-navigation {
+      display: none;
+    }
+    .inner-navigation {
+      display: flex;
+    }
+  }
+
+  .last-gallery-button:last-child {
+    margin: 0 auto;
+    width: 32%;
+
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+    @media (max-width: 576px) {
+      width: 100%;
+      margin: auto 8px;
+      padding: unset;
+      padding-top: 0.8rem;
+      // padding-bottom: 0.8rem;
     }
   }
 }
