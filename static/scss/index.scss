@@ -45,6 +45,12 @@ $white-variant: #f0f0f0;
       }
     }
 
+    @media (max-width: 576px) {
+      .first-card {
+        height: unset;
+      }
+    }
+
     .advert {
       background-image: url("../images/Group490.png");
       background-size: cover;
@@ -215,6 +221,7 @@ $white-variant: #f0f0f0;
 
     // Articles
     .article {
+      width: 100%;
       .card {
         border: none;
         border-radius: 5px;
