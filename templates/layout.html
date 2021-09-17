@@ -5,23 +5,23 @@
     <title>{{ title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
     />
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-    <link rel=stylesheet type=text/css href="/static/css/index.css">
+    <!-- <link rel=stylesheet type=text/css href="/static/css/index.css"> -->
 </head>
 
 <body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-<script src="/static/js/script.js"></script>
+<script src="/static/js/script.js"></script> -->
 
 <!-- Navigation -->
 <header class="header justify-xs">
@@ -30,7 +30,7 @@
             <div class="col-5 col-sm-5 col-md-5 col-lg-5 pl-0 center-xxs">
                 <div class="row pt-2">
                     <div class="col-12 col-sm-7 col-md-4 col-lg-3 pr-0 pl-0 pt-0">
-                        <a class="navbar-brand padding-xs pl-0 pt-sm-0" href="#">
+                        <a class="navbar-brand padding-xs pl-0 pt-sm-0" href="{{ url_for('main') }}">
                             <img src="/static/images/logo-icon.png" class="img-fluid img-fluid-xs"></a>
                     </div>
                     <div class="col-sm-5 col-md-8 col-lg-8 pl-0 block-icon">
@@ -66,7 +66,7 @@
                             </div>
 
                             <button class="navbar-toggler paint-blue button-xs ml-2" style="height: 3rem; width: 3rem;"
-                                    type="button" data-toggle="collapse" data-target="#navbarResponsiveNew">
+                                    type="button" data-toggle="collapse" data-target="#mobile-nav">
                                 <span class="fa fa-bars" style="color: #fff;"></span>
                             </button>
                         </div>
@@ -80,44 +80,50 @@
 
     <!-- Navigation -->
     <nav class="navbar horizontal-bar navbar-expand-md navbar-dark">
-        <div class="container">
-            <div class="collapse navbar-collapse" id="navbarResponsiveNew">
+        <div class="container" id="#nav-container">
+            <div class="collapse navbar-collapse" id="mobile-nav"> <!-- id="navbarResponsiveNew"-->
                 <ul class="navbar-nav nav-fill paint-blue w-100 d-flex align-items-center">
                     <li class="nav-item menu-item">
-                        <a class="nav-link active" href="#">Главная</a>
+                        <a class="nav-link active" href="{{ url_for('main_page2') }}">Главная</a>
                     </li>
                     <li class="nav-item menu-item">
-                        <a class="nav-link " href="#">Новости</a>
+                        <a class="nav-link " href="{{ url_for('news_page1') }}">Новости</a>
                     </li>
                     <li class="nav-item menu-item">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" type="button" id="myDropdown4" href="#"
-                               data-toggle="dropdown" aria-expanded="false">Спортклуб</a>
+                            <a class="nav-link dropdown-toggle" type="button" id="myDropdown4"
+                               href="{{ url_for('sport_club_page5') }}"
+                               data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Спортклуб</a>
+
                             <ul class="dropdown-menu" aria-labelledby="myDropdown4">
-                                <li><a class="dropdown-item" href="#">Наша миссия</a></li>
-                                <li><a class="dropdown-item" href="#">Достижения</a></li>
-                                <li><a class="dropdown-item" href="#">История</a></li>
-                                <li><a class="dropdown-item" href="#">Семья</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('sport_club_page1') }}">Наша миссия</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{{ url_for('sport_club_page2') }}">Достижения</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{{ url_for('sport_club_page3') }}">История</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('sport_club_page4') }}">Семья</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item menu-item">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" type="button" id="myDropdownOne" href="#"
+                            <a class="nav-link dropdown-toggle" type="button" id="myDropdownOne"
+                               href="{{ url_for('play_page1') }}"
                                data-toggle="dropdown" aria-expanded="false">Спорт</a>
                             <ul class="dropdown-menu col-xs-12" aria-labelledby="myDropdownOne">
-                                <li><a class="dropdown-item" href="#">Мероприятия</a></li>
-                                <li><a class="dropdown-item" href="#">Секции</a></li>
-                                <li><a class="dropdown-item" href="#">Поиск игроков</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('event_page1') }}">Мероприятия</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('section_page1') }}">Секции</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('search_player_page1') }}">Поиск
+                                    игроков</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item menu-item">
-                        <a class="nav-link" href="#">Сборные</a>
+                        <a class="nav-link" href="{{ url_for('team_page1') }}">Сборные</a>
                     </li>
                     <li class="nav-item menu-item">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" type="button" id="myDropdown3" href="#"
+                            <a class="nav-link dropdown-toggle" role="button" id="myDropdown3" href="#"
                                data-toggle="dropdown" aria-expanded="false">Маркетинг</a>
                             <ul class="dropdown-menu" aria-labelledby="myDropdown3">
                                 <li><a class="dropdown-item" href="#">Магазин сувениров</a></li>
@@ -129,11 +135,13 @@
                     </li>
                     <li class="nav-item menu-item">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" type="button" id="myDropdownOne" href="#"
+                            <a class="nav-link dropdown-toggle" role="button" id="myDropdownOne"
+                               href="{{ url_for('media_page1') }}"
+
                                data-toggle="dropdown" aria-expanded="false">Медиа</a>
                             <ul class="dropdown-menu" aria-labelledby="myDropdownOne">
-                                <li><a class="dropdown-item" href="#">Фотографии</a></li>
-                                <li><a class="dropdown-item" href="#">Видео</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('media_page2') }}">Фотографии</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('media_page3') }}">Видео</a></li>
                             </ul>
                         </div>
                     </li>
@@ -197,7 +205,12 @@
         </div>
     </div>
 </footer>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/script.js"></script>
 </body>
 
 </html>
