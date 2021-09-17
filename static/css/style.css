@@ -6,10 +6,14 @@ body {
   width: 100%;
   font-family: 'Roboto', sans-serif;
   color: #222222;
+  background: #f6f6f8;
+}
+
+header {
+  background: white;
 }
 
 .body-colour {
-  background: #f6f6f8;
   padding-bottom: 3.125rem;
 }
 
@@ -503,6 +507,7 @@ a.header-icons {
   width: 100%;
   height: 100%;
   transform: scale(1);
+  object-fit: cover;
 }
 
 .zoom-img:hover img {
@@ -1345,11 +1350,11 @@ nav.navbar.horizontal-bar-2 {
   border: 1px #fff solid;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
   .card-deck .card {
     margin: 10px;
   }
-}
+} */
 
 .sport-video .embed-responsive {
   border-radius: 0.25rem;
@@ -2400,6 +2405,7 @@ ol.breadcrumb li {
 
 .my-slider .banner-card .card-header .card-title {
   font-size: 1rem;
+  font-weight: normal;
   color: var(--dark-blue);
   line-height: 1.5rem;
 }
