@@ -348,7 +348,20 @@
       margin: auto 8px;
       padding: unset;
       padding-top: 0.8rem;
-      // padding-bottom: 0.8rem;
+    }
+  }
+}
+
+/*_____________________________
+ Styles for медиа pages
+*/
+.socials-xs {
+  @media (max-width: 576px) {
+    .title {
+      display: none;
+    }
+    .icons {
+      padding-top: 0;
     }
   }
 }

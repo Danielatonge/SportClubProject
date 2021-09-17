@@ -1,123 +1,140 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block content %}
+<!-- Navigation 2-->
+<nav class="navbar horizontal-bar-2 navbar-expand-md navbar-dark">
+  <div class="container">
+    <div class="container">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#myNavbarResponsive2"
+        aria-controls="myNavbarResponsive2"
+        aria-expanded="true"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbarResponsive2">
+        <ul class="navbar-nav nav-fill w-75 m-auto">
+          <li class="nav-item menu-item">
+            <a class="nav-link second-link" href="#">Магазин сувениров</a>
+          </li>
+          <li class="nav-item menu-item">
+            <a class="nav-link second-link" href="#">Скидки</a>
+          </li>
+          <li class="nav-item menu-item">
+            <a class="nav-link second-link" href="#">Партнеры</a>
+          </li>
+          <li class="nav-item menu-item">
+            <a class="nav-link second-link active" href="#">Сотрудничество</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
 
-{% block content %}
-    <!-- Navigation 2-->
-    <nav class="navbar horizontal-bar-2 navbar-expand-md navbar-dark">
-        <div class="container">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarResponsive2"
-                        aria-controls="myNavbarResponsive2" aria-expanded="true" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="myNavbarResponsive2">
-                    <ul class="navbar-nav nav-fill w-75 m-auto">
-                        <li class="nav-item menu-item">
-                            <a class="nav-link second-link" href="#">Магазин сувениров</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link second-link" href="#">Скидки</a>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link second-link" href="#">Партнеры</a>
-                        </li>
-                        </li>
-                        <li class="nav-item menu-item">
-                            <a class="nav-link second-link active" href="#">Сотрудничество</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="body-colour">
-        <div class="container">
-            <p class="marketing-title">Сотрудничество</p>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XHLxp8ZnVy0"
-                        allowfullscreen></iframe>
-            </div>
-
-            <p class="marketing-main-text text-justify">
-                Ut cursus rhoncus viverra aenean euismod integer nunc. Pulvinar convallis gravida nibh nullam. Viverra
-                egestas volutpat, risus, etiam nulla. Faucibus vitae amet, nulla consequat, et pulvinar lectus ultrices.
-                Fusce fringilla nunc lectus interdum. <br>
-                Varius et, tincidunt aliquam sed. Sed et ornare aliquet convallis vulputate morbi nibh. Est lectus
-                tempus,
-                orci enim, proin adipiscing turpis ornare. Ipsum vestibulum, arcu elit amet at in feugiat dignissim. A,
-                sem
-                aliquam in volutpat consectetur erat ac volutpat accumsan. Dictumst nibh et nunc aliquet varius id
-                sagittis.
-                Ipsum sit nisi, mattis odio est. <br>
-                Dignissim luctus libero sed adipiscing. Consectetur ut scelerisque quam mauris blandit aliquam
-                tristique.
-                Pretium sed ut porttitor sed vulputate diam. Commodo sed sociis arcu amet quam sed vel, porta sed.
-                Facilisis
-                quam consequat eleifend risus cursus ipsum sapien rhoncus. Elementum, eget auctor id sit aenean elit
-                vel.
-                Dictum vitae blandit cras egestas ullamcorper vestibulum, libero varius. <br>
-                Diam iaculis neque vulputate ac facilisi vel eget at vestibulum. Laoreet in mi quis vitae diam. Sed
-                viverra
-                sit eu velit suspendisse vulputate est in. Nisi eget aliquet scelerisque ipsum purus curabitur et a.
-                Integer
-                porta quisque quis duis molestie elementum. Sit felis ullamcorper imperdiet sed sit turpis. Malesuada
-                adipiscing dignissim sed faucibus sagittis dolor, integer in ultricies. Euismod neque dui sed non. A ac
-                leo
-                turpis nibh in purus. Ut venenatis semper amet sem blandit ipsum.
-            </p>
-
-            <a class="marketing-title" href="#">Скачать презентацию</a>
-
-            <p class="sport-heading">Контакты</p>
-
-            <div class="row marketing-contacts">
-                <div class="col-4 col-lg-2">
-                    <img class="img-fluid trainer-img" src="/static/images/Rectangle 63.png">
-                </div>
-                <div class="col-6 col-lg-4">
-                    <div class="h4">
-                        Jenny Wilson
-                    </div>
-                    <p class="text-muted">Должность</p>
-                    <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
-                    <p class="no-margin-bottom blue small">adress@mail.com</p>
-                </div>
-                <div class="col-4 col-lg-2">
-                    <img class="img-fluid trainer-img" src="/static/images/Rectangle 63.png">
-                </div>
-                <div class="col-6 col-lg-4">
-                    <div class="h4">
-                        Jenny Wilson
-                    </div>
-                    <p class="text-muted">Должность</p>
-                    <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
-                    <p class="no-margin-bottom blue small">adress@mail.com</p>
-                </div>
-                <div class="col-4 col-lg-2">
-                    <img class="img-fluid trainer-img" src="/static/images/Rectangle 63.png">
-                </div>
-                <div class="col-6 col-lg-4">
-                    <div class="h4">
-                        Jenny Wilson
-                    </div>
-                    <p class="text-muted">Должность</p>
-                    <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
-                    <p class="no-margin-bottom blue small">adress@mail.com</p>
-                </div>
-                <div class="col-4 col-lg-2">
-                    <img class="img-fluid trainer-img" src="/static/images/Rectangle 63.png">
-                </div>
-                <div class="col-6 col-lg-4">
-                    <div class="h4">
-                        Jenny Wilson
-                    </div>
-                    <p class="text-muted">Должность</p>
-                    <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
-                    <p class="no-margin-bottom blue small">adress@mail.com</p>
-                </div>
-            </div>
-
-        </div>
+<div class="body-colour">
+  <div class="container">
+    <p class="marketing-title">Сотрудничество</p>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe
+        class="embed-responsive-item"
+        src="https://www.youtube.com/embed/XHLxp8ZnVy0"
+        allowfullscreen
+      ></iframe>
     </div>
 
+    <p class="marketing-main-text text-justify">
+      Ut cursus rhoncus viverra aenean euismod integer nunc. Pulvinar convallis
+      gravida nibh nullam. Viverra egestas volutpat, risus, etiam nulla.
+      Faucibus vitae amet, nulla consequat, et pulvinar lectus ultrices. Fusce
+      fringilla nunc lectus interdum. <br />
+      Varius et, tincidunt aliquam sed. Sed et ornare aliquet convallis
+      vulputate morbi nibh. Est lectus tempus, orci enim, proin adipiscing
+      turpis ornare. Ipsum vestibulum, arcu elit amet at in feugiat dignissim.
+      A, sem aliquam in volutpat consectetur erat ac volutpat accumsan. Dictumst
+      nibh et nunc aliquet varius id sagittis. Ipsum sit nisi, mattis odio est.
+      <br />
+      Dignissim luctus libero sed adipiscing. Consectetur ut scelerisque quam
+      mauris blandit aliquam tristique. Pretium sed ut porttitor sed vulputate
+      diam. Commodo sed sociis arcu amet quam sed vel, porta sed. Facilisis quam
+      consequat eleifend risus cursus ipsum sapien rhoncus. Elementum, eget
+      auctor id sit aenean elit vel. Dictum vitae blandit cras egestas
+      ullamcorper vestibulum, libero varius. <br />
+      Diam iaculis neque vulputate ac facilisi vel eget at vestibulum. Laoreet
+      in mi quis vitae diam. Sed viverra sit eu velit suspendisse vulputate est
+      in. Nisi eget aliquet scelerisque ipsum purus curabitur et a. Integer
+      porta quisque quis duis molestie elementum. Sit felis ullamcorper
+      imperdiet sed sit turpis. Malesuada adipiscing dignissim sed faucibus
+      sagittis dolor, integer in ultricies. Euismod neque dui sed non. A ac leo
+      turpis nibh in purus. Ut venenatis semper amet sem blandit ipsum.
+    </p>
+
+    <a class="marketing-title" href="#">Скачать презентацию</a>
+
+    <p class="sport-heading">Контакты</p>
+
+    <div class="row marketing-contacts">
+      <div class="col-12 col-sm-6 d-flex">
+        <!-- <div class="col-4 col-lg-2"> -->
+        <img
+          class="img-fluid trainer-img"
+          src="/static/images/Rectangle 63.png"
+        />
+        <!-- </div> -->
+        <div class="">
+          <div class="h3">Jenny Wilson</div>
+          <p class="text-muted">Должность</p>
+          <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
+          <p class="no-margin-bottom blue small">adress@mail.com</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 d-flex">
+        <!-- <div class="col-4 col-lg-2"> -->
+        <img
+          class="img-fluid trainer-img"
+          src="/static/images/Rectangle 63.png"
+        />
+        <!-- </div> -->
+        <div class="">
+          <div class="h3">Jenny Wilson</div>
+          <p class="text-muted">Должность</p>
+          <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
+          <p class="no-margin-bottom blue small">adress@mail.com</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 d-flex">
+        <!-- <div class="col-4 col-lg-2"> -->
+        <img
+          class="img-fluid trainer-img"
+          src="/static/images/Rectangle 63.png"
+        />
+        <!-- </div> -->
+        <div class="">
+          <div class="h3">Jenny Wilson</div>
+          <p class="text-muted">Должность</p>
+          <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
+          <p class="no-margin-bottom blue small">adress@mail.com</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 d-flex">
+        <!-- <div class="col-4 col-lg-2"> -->
+        <img
+          class="img-fluid trainer-img"
+          src="/static/images/Rectangle 63.png"
+        />
+        <!-- </div> -->
+        <div class="">
+          <div class="h3">Jenny Wilson</div>
+          <p class="text-muted">Должность</p>
+          <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
+          <p class="no-margin-bottom blue small">adress@mail.com</p>
+        </div>
+      </div>
+      <!-- </div>
+      </div> -->
+    </div>
+  </div>
+</div>
 {% endblock %}
