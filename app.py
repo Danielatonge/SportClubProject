@@ -190,7 +190,7 @@ def search_player_page1():
     return render_template('поиск игроков/page 1.html', title="поиск игроков")
 
 
-@app.route('/поиск игроков/page2')
+@app.route('/поискигроков/page2')
 def search_player_page2():
     return render_template('поиск игроков/page 2.html', title="поиск игроков")
 
