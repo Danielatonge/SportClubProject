@@ -365,3 +365,22 @@
     }
   }
 }
+
+/*_____________________________
+ Styles for nonck nrpok pages
+*/
+
+.team-cards {
+  .filter-btn {
+    color: white;
+    background-color: $light-blue;
+    border-color: $light-blue;
+  }
+
+  .card.card-shadow:first-child,
+  .card.cardshadow:hover {
+    border-left: 4px solid $light-blue;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
