@@ -5,9 +5,7 @@
     <title>{{ title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
     />
@@ -22,6 +20,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <script src="/static/js/script.js"></script> -->
+
 
 <!-- Navigation -->
 <div class="header justify-xs">
@@ -66,7 +65,7 @@
                             </div>
 
                             <button class="navbar-toggler paint-blue button-xs ml-2" style="height: 3rem; width: 3rem;"
-                                    type="button" data-toggle="collapse" data-target="#mobile-nav">
+                                    type="button" data-toggle="collapse" data-target="#mobile-nav" aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="fa fa-bars" style="color: #fff;"></span>
                             </button>
                         </div>
@@ -89,13 +88,11 @@
                     <li class="nav-item menu-item">
                         <a class="nav-link " href="{{ url_for('news_page1') }}">Новости</a>
                     </li>
-                    <li class="nav-item menu-item">
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" type="button" id="myDropdown4"
-                               href="{{ url_for('sport_club_page5') }}"
+                    <li class="nav-item menu-item dropdown" id="dropDownToggler" onclick="cпортклубFunc()">
+                            <a class="nav-link dropdown-toggle" type="button" id="myDropdownFour"
+                               href="{{ url_for('sport_club_page5') }}" 
                                data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Спортклуб</a>
-
-                            <ul class="dropdown-menu" aria-labelledby="myDropdown4">
+                            <ul class="dropdown-menu" aria-labelledby="myDropdownFour" id="dropDownMenuOne">
                                 <li><a class="dropdown-item" href="{{ url_for('sport_club_page1') }}">Наша миссия</a>
                                 </li>
                                 <li><a class="dropdown-item" href="{{ url_for('sport_club_page2') }}">Достижения</a>
@@ -103,14 +100,13 @@
                                 <li><a class="dropdown-item" href="{{ url_for('sport_club_page3') }}">История</a></li>
                                 <li><a class="dropdown-item" href="{{ url_for('sport_club_page4') }}">Семья</a></li>
                             </ul>
-                        </div>
                     </li>
-                    <li class="nav-item menu-item">
+                    <li class="nav-item menu-item" onclick="cпортFunc()">
                         <div class="dropdown">
                             <a class="nav-link dropdown-toggle" type="button" id="myDropdownOne"
                                href="{{ url_for('play_page1') }}"
                                data-toggle="dropdown" aria-expanded="false">Спорт</a>
-                            <ul class="dropdown-menu col-xs-12" aria-labelledby="myDropdownOne">
+                            <ul class="dropdown-menu col-xs-12" aria-labelledby="myDropdownOne" id="dropDownMenuTwo">
                                 <li><a class="dropdown-item" href="{{ url_for('event_page1') }}">Мероприятия</a></li>
                                 <li><a class="dropdown-item" href="{{ url_for('section_page1') }}">Секции</a></li>
                                 <li><a class="dropdown-item" href="{{ url_for('search_player_page1') }}">Поиск
@@ -121,11 +117,11 @@
                     <li class="nav-item menu-item">
                         <a class="nav-link" href="{{ url_for('team_page1') }}">Сборные</a>
                     </li>
-                    <li class="nav-item menu-item">
+                    <li class="nav-item menu-item" onclick="mаркетингFunc()">
                         <div class="dropdown">
                             <a class="nav-link dropdown-toggle" role="button" id="myDropdown3" href="#"
                                data-toggle="dropdown" aria-expanded="false">Маркетинг</a>
-                            <ul class="dropdown-menu" aria-labelledby="myDropdown3">
+                            <ul class="dropdown-menu" aria-labelledby="myDropdown3" id="dropDownMenuThree">
                                 <li><a class="dropdown-item" href="#">Магазин сувениров</a></li>
                                 <li><a class="dropdown-item" href="#">Скидки</a></li>
                                 <li><a class="dropdown-item" href="#">Партнеры</a></li>
@@ -133,13 +129,12 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item menu-item">
+                    <li class="nav-item menu-item" onclick="mедиаFunc()">
                         <div class="dropdown">
                             <a class="nav-link dropdown-toggle" role="button" id="myDropdownOne"
                                href="{{ url_for('media_page1') }}"
-
                                data-toggle="dropdown" aria-expanded="false">Медиа</a>
-                            <ul class="dropdown-menu" aria-labelledby="myDropdownOne">
+                            <ul class="dropdown-menu" aria-labelledby="myDropdownOne" id="dropDownMenuFour">
                                 <li><a class="dropdown-item" href="{{ url_for('media_page2') }}">Фотографии</a></li>
                                 <li><a class="dropdown-item" href="{{ url_for('media_page3') }}">Видео</a></li>
                             </ul>
@@ -205,12 +200,52 @@
         </div>
     </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <script src="/static/js/owl.carousel.min.js"></script>
 <script src="/static/js/script.js"></script>
+
+<script>
+    function cпортклубFunc(){
+        var  dropdown = document.getElementById('dropDownMenuOne');
+        if(dropdown.style.display == 'block' ){
+            dropdown.style.display = "none";
+        }
+        else {
+            dropdown.style.display = "block";
+        }
+    }
+    function cпортFunc(){
+        var  dropdown = document.getElementById('dropDownMenuTwo');
+        if(dropdown.style.display == 'block' ){
+            dropdown.style.display = "none";
+        }
+        else {
+            dropdown.style.display = "block";
+        }
+    }
+    function mаркетингFunc(){
+        var  dropdown = document.getElementById('dropDownMenuThree');
+        if(dropdown.style.display == 'block' ){
+            dropdown.style.display = "none";
+        }
+        else {
+            dropdown.style.display = "block";
+        }
+    }
+    function mедиаFunc(){
+        var  dropdown = document.getElementById('dropDownMenuFour');
+        if(dropdown.style.display == 'block' ){
+            dropdown.style.display = "none";
+        }
+        else {
+            dropdown.style.display = "block";
+        }
+    }
+</script>
 </body>
 
 </html>

@@ -1404,7 +1404,6 @@ nav.navbar.horizontal-bar-2 {
 
   #mobile-nav .navbar-nav > .nav-item.menu-item {
     width: 100% !important;
-    
   }
 
   #nav-container {
@@ -1447,6 +1446,7 @@ nav.navbar.horizontal-bar-2 {
   .navbar.horizontal-bar .dropdown .dropdown-toggle::after {
     position: absolute;
     right: 1.5rem;
+    content: '';
   }
 
   /* .menu-item a.nav-link{
