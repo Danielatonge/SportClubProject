@@ -1,0 +1,4 @@
+- Slider on 
+	игры/page2
+	новости/max
+- 
