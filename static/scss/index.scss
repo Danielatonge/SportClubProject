@@ -353,9 +353,9 @@
 }
 
 /*_____________________________
- Styles for медиа pages
+ Styles for маркетинг pages
 */
-.socials-xs {
+.socials {
   @media (max-width: 576px) {
     .title {
       display: none;
@@ -382,5 +382,69 @@
     border-left: 4px solid $light-blue;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+  }
+}
+
+/*_____________________________
+ Styles for игры pages
+*/
+.team-info {
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .time {
+    p {
+      color: $light-blue;
+    }
+    h4 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .col-4 {
+      flex-direction: column;
+    }
+
+    .first-team-name {
+      flex-direction: column-reverse;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+    .time {
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    word-wrap: break-word;
+    img {
+      width: 50%;
+    }
+    h4,
+    .time h4 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 80%;
+    }
+  }
+}
+
+.team-controls {
+  h1 {
+    color: $light-blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  h6 {
+    font-size: 1rem;
+    color: $dark-gray;
   }
 }

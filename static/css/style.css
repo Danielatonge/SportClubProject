@@ -1418,15 +1418,6 @@ nav.navbar.horizontal-bar-2 {
     max-width: 100% !important;
   }
 
-  /* .dropdown {
-        position: static !important;
-    }
-
-    .dropdown-menu {
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15)!important;
-        margin-top: 0px !important;
-        width: 100% !important;
-    }  */
   .nav-item.menu-item ul.dropdown-menu {
     text-align: center;
   }
@@ -1540,7 +1531,7 @@ img.eye-icon {
 .timer {
   font-weight: 900;
   font-size: 2rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
 }
 
 .start {
@@ -1572,7 +1563,7 @@ img.eye-icon {
     font-size: 1.5rem;
   }
   .timer {
-    line-height: 1rem;
+    line-height: 1.3rem;
   }
 }
 
@@ -2467,7 +2458,8 @@ ol.breadcrumb li {
   color: var(--black);
 }
 
-.my-slider .banner-card .card-body .team-data img {
+.my-slider .banner-card .card-body .team-data img,
+.team-info img {
   width: 64px;
   height: 64px;
 }
