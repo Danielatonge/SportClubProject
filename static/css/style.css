@@ -1970,8 +1970,8 @@ table.table {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.25rem;
-  line-height: 1.438rem;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
   text-align: justify;
 
   color: #1d66c1;
@@ -1983,11 +1983,9 @@ table.table {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 2.5rem;
-  line-height: 2.938rem;
-
+  font-size: 2rem;
+  line-height: 2rem;
   text-align: justify;
-
   color: #1d66c1;
 }
 

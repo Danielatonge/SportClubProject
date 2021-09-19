@@ -483,3 +483,21 @@
     padding: 1rem 2rem;
   }
 }
+
+/*_____________________________
+ Styles for турниры pages
+*/
+.tournir-header-background {
+  p {
+    color: $dark-gray;
+    margin-bottom: 2px !important;
+  }
+  h4 {
+    font-weight: 400;
+  }
+  @media (max-width: 768px) {
+    .header-info {
+      display: block !important;
+    }
+  }
+}
