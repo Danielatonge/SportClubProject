@@ -449,3 +449,37 @@
     color: $dark-gray;
   }
 }
+
+/*_____________________________
+ Styles for киберзона pages
+*/
+.kiberzone-form {
+  @media (max-width: 768px) {
+    input {
+      width: 100% !important;
+    }
+  }
+}
+
+.kiberzone-btns {
+  div {
+    button {
+      padding: 1rem 2rem;
+    }
+    @media (max-width: 768px) {
+      text-align: left !important;
+      padding: unset;
+      button {
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+}
+
+.kiberzone-btn {
+  padding: 1rem 5rem;
+
+  @media (max-width: 400px) {
+    padding: 1rem 2rem;
+  }
+}

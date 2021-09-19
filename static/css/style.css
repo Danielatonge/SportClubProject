@@ -2100,6 +2100,15 @@ table.table {
   font-weight: 900;
 }
 
+@media (max-width: 768px) {
+  .kiber-text {
+    font-size: 1rem;
+  }
+  .kiber-header {
+    font-size: 2.5rem;
+  }
+}
+
 .calendar-heading > .form-group {
   margin-bottom: 0px;
 }
@@ -2266,14 +2275,15 @@ table.table {
 }
 
 ol.breadcrumb li {
-  white-space: nowrap;
   display: inline;
 }
 
+ol.breadcrumb li .svg-inline--fa {
+  font-size: 0.7rem;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
-  content: "→";
-  padding-left: 2rem;
-  padding-right: 2rem;
+  content: none;
 }
 
 .kiberzone-heading {
@@ -2282,11 +2292,8 @@ ol.breadcrumb li {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.5rem;
-
-  text-align: justify;
-
   color: #1d66c1;
 }
 
@@ -2296,10 +2303,8 @@ ol.breadcrumb li {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.438rem;
-  text-align: justify;
-
   color: #1d66c1;
 }
 
@@ -2311,9 +2316,6 @@ ol.breadcrumb li {
   font-weight: normal;
   font-size: 1rem;
   line-height: 1.188rem;
-
-  text-align: justify;
-
   color: #1d66c1;
 }
 
@@ -2323,9 +2325,8 @@ ol.breadcrumb li {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5rem;
-  text-align: justify;
 
   color: #000000;
 }
