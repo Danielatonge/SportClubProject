@@ -501,3 +501,49 @@
     }
   }
 }
+
+/*_____________________________
+ Styles for спортклуб pages
+*/
+
+.bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  h6 {
+    color: $dark-gray;
+  }
+}
+
+.bg1 {
+  background-image: url(../images/Group451.png);
+}
+
+.bg2 {
+  background-image: url(../images/Group453.png);
+}
+
+.page-navigation {
+  padding: 0 10% !important;
+  background-color: white;
+
+  a {
+    border: none;
+    color: $blue-variant;
+
+    & .active,
+    &:hover {
+      border-bottom: 4px solid $dark-blue;
+      color: $dark-blue;
+      font-weight: bolder !important;
+    }
+  }
+}
+
+.inner-navigation.list-group {
+  flex-direction: row !important;
+  @media (max-width: 432px) {
+    flex-direction: column !important;
+  }
+}

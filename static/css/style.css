@@ -1226,8 +1226,8 @@ nav.navbar.horizontal-bar-2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 
   color: #1d66c1;
 }
@@ -1238,10 +1238,8 @@ nav.navbar.horizontal-bar-2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5rem;
-
-  text-align: justify;
 
   color: #000000;
 }
@@ -1292,7 +1290,7 @@ nav.navbar.horizontal-bar-2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1.5rem;
 
   text-align: justify;
@@ -1306,8 +1304,8 @@ nav.navbar.horizontal-bar-2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 2.5rem;
-  line-height: 2.938rem;
+  font-size: 2rem;
+  line-height: 2rem;
 
   color: #000;
 }
@@ -1318,11 +1316,8 @@ nav.navbar.horizontal-bar-2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5rem;
-
-  text-align: justify;
-
   color: #1d66c1;
 }
 

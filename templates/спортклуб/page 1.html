@@ -1,60 +1,102 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block content %}
+<main class="page-content">
+  <div
+    class="
+      page-navigation
+      inner-navigation
+      list-group
+      text-center text-blue
+      mb-4
+      justify-content-center
+    "
+  >
+    <a
+      href="#"
+      class="
+        list-group-item list-group-item-action
+        d-flex
+        justify-content-center
+        active
+      "
+    >
+      <div class="align-self-center">Наша миссия</div>
+    </a>
+    <a
+      href="#"
+      class="
+        list-group-item list-group-item-action
+        d-flex
+        justify-content-center
+      "
+    >
+      <div class="align-self-center">Достижения</div>
+    </a>
+    <a
+      href="#"
+      class="
+        list-group-item list-group-item-action
+        d-flex
+        justify-content-center
+      "
+    >
+      <div class="align-self-center">История</div>
+    </a>
+    <a
+      href="#"
+      class="
+        list-group-item list-group-item-action
+        d-flex
+        justify-content-center
+      "
+    >
+      <div class="align-self-center">Семья</div>
+    </a>
+  </div>
+  <div class="body-colour">
+    <div class="container">
+      <img
+        class="img-fluid pb-5"
+        src="/static/images/youtube.png"
+        alt="video"
+      />
 
-{% block content %}
-    <div class="body-colour">
-        <div class="container">
-            <img class="img-fluid pb-5" src="/static/images/youtube.png" alt="video">
-
-            <p class="sportsclub-title"> Наша миссия </p>
-            <p class="sportsclub-main-text">
-                Ut cursus rhoncus viverra aenean euismod integer nunc. Pulvinar convallis gravida nibh nullam. Viverra
-                egestas volutpat, risus, etiam nulla. Faucibus vitae amet, nulla consequat, et pulvinar lectus ultrices.
-                Fusce fringilla nunc lectus interdum. <br>
-                Varius et, tincidunt aliquam sed. Sed et ornare aliquet convallis vulputate morbi nibh. Est lectus
-                tempus,
-                orci enim, proin adipiscing turpis ornare. Ipsum vestibulum, arcu elit amet at in feugiat dignissim. A,
-                sem
-                aliquam in volutpat consectetur erat ac volutpat accumsan. Dictumst nibh et nunc aliquet varius id
-                sagittis.
-                Ipsum sit nisi, mattis odio est. <br>
-                Dignissim luctus libero sed adipiscing. Consectetur ut scelerisque quam mauris blandit aliquam
-                tristique.
-                Pretium sed ut porttitor sed vulputate diam. Commodo sed sociis arcu amet quam sed vel, porta sed.
-                Facilisis
-                quam consequat eleifend risus cursus ipsum sapien rhoncus. Elementum, eget auctor id sit aenean elit
-                vel.
-                Dictum vitae blandit cras egestas ullamcorper vestibulum, libero varius. <br>
-                Diam iaculis neque vulputate ac facilisi vel eget at vestibulum. Laoreet in mi quis vitae diam. Sed
-                viverra
-                sit eu velit suspendisse vulputate est in. Nisi eget aliquet scelerisque ipsum purus curabitur et a.
-                Integer
-                porta quisque quis duis molestie elementum. Sit felis ullamcorper imperdiet sed sit turpis. Malesuada
-                adipiscing dignissim sed faucibus sagittis dolor, integer in ultricies. Euismod neque dui sed non. A ac
-                leo
-                turpis nibh in purus. Ut venenatis semper amet sem blandit ipsum. <br>
-            </p>
-            <!-- <div class="cover-sportclub">
-                <div class="sportsclub-box">
-                    <div class="row">
-                        <div class="col-3">
-                            <img class="img-fluid" src="/static/images/22 1.png" style="width: 100%;">
-                        </div>
-                        <div class="col-5 m-auto">
-                            <p class="sportsclub-button-text">Ещё не с нами? Присоединяйся</p>
-                            <button type="button" class="btn btn-outline-light">Вступить в спортклуб</button>
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid" src="/static/images/23 1.png">
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <a href="">
-                <img class="img-fluid" src="/static/images/Group 184.png">
-            </a>
-
-
+      <p class="sportsclub-title">Наша миссия</p>
+      <p class="sportsclub-main-text pb-5">
+        Ut cursus rhoncus viverra aenean euismod integer nunc. Pulvinar
+        convallis gravida nibh nullam. Viverra egestas volutpat, risus, etiam
+        nulla. Faucibus vitae amet, nulla consequat, et pulvinar lectus
+        ultrices. Fusce fringilla nunc lectus interdum. <br />
+        Varius et, tincidunt aliquam sed. Sed et ornare aliquet convallis
+        vulputate morbi nibh. Est lectus tempus, orci enim, proin adipiscing
+        turpis ornare. Ipsum vestibulum, arcu elit amet at in feugiat dignissim.
+        A, sem aliquam in volutpat consectetur erat ac volutpat accumsan.
+        Dictumst nibh et nunc aliquet varius id sagittis. Ipsum sit nisi, mattis
+        odio est.
+        <br />
+        Dignissim luctus libero sed adipiscing. Consectetur ut scelerisque quam
+        mauris blandit aliquam tristique. Pretium sed ut porttitor sed vulputate
+        diam. Commodo sed sociis arcu amet quam sed vel, porta sed. Facilisis
+        quam consequat eleifend risus cursus ipsum sapien rhoncus. Elementum,
+        eget auctor id sit aenean elit vel. Dictum vitae blandit cras egestas
+        ullamcorper vestibulum, libero varius. <br />
+        Diam iaculis neque vulputate ac facilisi vel eget at vestibulum. Laoreet
+        in mi quis vitae diam. Sed viverra sit eu velit suspendisse vulputate
+        est in. Nisi eget aliquet scelerisque ipsum purus curabitur et a.
+        Integer porta quisque quis duis molestie elementum. Sit felis
+        ullamcorper imperdiet sed sit turpis. Malesuada adipiscing dignissim sed
+        faucibus sagittis dolor, integer in ultricies. Euismod neque dui sed
+        non. A ac leo turpis nibh in purus. Ut venenatis semper amet sem blandit
+        ipsum. <br />
+      </p>
+      <div class="row advert d-flex justify-content-between align-items-center">
+        <img id="image1" src="../../static/images/22 1.png" alt="woman" />
+        <div class="text">
+          <p>Ещё не с нами? Присоединяйся</p>
+          <button class="btn">Вступить в спортклуб</button>
         </div>
+        <img id="image2" src="../../static/images/23 1.png" alt="man & woman" />
+      </div>
     </div>
-
+  </div>
+</main>
 {% endblock %}
