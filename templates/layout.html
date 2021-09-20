@@ -212,6 +212,78 @@
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <script src="/static/js/owl.carousel.min.js"></script>
 <script src="/static/js/script.js"></script> -->
+
+<script>
+    sliderOneAction();
+    function sliderOneAction(){
+      setInterval(timer, 5000)
+        function timer(){
+            var banner = document.getElementById('bannerTitle');
+            var slider = document.getElementById('sliderOne').innerHTML;
+            var timeTwo = document.getElementById('timeTwo');
+            timeTwo.style.width = '0px';
+             var timeThree = document.getElementById('timeThree');
+            timeThree.style.width = '0px';
+            var timeFour = document.getElementById('timeFour');
+            timeFour.style.width = '0px';
+            var timeOne = document.getElementById('timeOne');
+            banner.innerHTML = slider;
+            timeOne.style.width = '240px';
+        }
+    }
+    sliderTwoAction();
+    function sliderTwoAction(){
+      setInterval(timer, 10000)
+        function timer(){
+            var banner = document.getElementById('bannerTitle');
+            var slider = document.getElementById('sliderTwo').innerHTML;
+            var timeTwo = document.getElementById('timeTwo');
+            banner.innerHTML = slider;
+            timeTwo.style.width = '240px';
+             var timeThree = document.getElementById('timeThree');
+            timeThree.style.width = '0px';
+            var timeFour = document.getElementById('timeFour');
+            timeFour.style.width = '0px';
+            var timeOne = document.getElementById('timeOne');
+            timeOne.style.width = '0px';
+        }
+    }
+    sliderThreeAction();
+    function sliderThreeAction(){
+      setInterval(timer, 15000)
+        function timer(){
+            var banner = document.getElementById('bannerTitle');
+            var slider = document.getElementById('sliderThree').innerHTML;
+            var timeTwo = document.getElementById('timeTwo');
+            timeTwo.style.width = '0px';
+             var timeFour = document.getElementById('timeFour');
+            timeFour.style.width = '0px';
+            var timeOne = document.getElementById('timeOne');
+            timeOne.style.width = '0px';
+            var timeThree = document.getElementById('timeThree');
+            banner.innerHTML = slider;
+            timeThree.style.width = '240px';
+        }
+    }
+    sliderFourAction();
+    function sliderFourAction(){
+       var interval = setInterval(timer, 20000)
+        function timer(){
+            var banner = document.getElementById('bannerTitle');
+            var slider = document.getElementById('sliderFour').innerHTML;
+            var timeTwo = document.getElementById('timeTwo');
+            timeTwo.style.width = '0px';
+            var timeThree = document.getElementById('timeThree');
+            timeThree.style.width = '0px';
+            var timeOne = document.getElementById('timeOne');
+            timeOne.style.width = '0px';
+            var timeFour = document.getElementById('timeFour');
+            banner.innerHTML = slider;
+            timeFour.style.width = '240px';
+        }
+    }
+    
+</script>
 </body>
 
 </html>

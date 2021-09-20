@@ -5,14 +5,13 @@
   <section class="banner">
     <div class="main-header1-background">
       <div class="container">
-        <div class="h-100">
-          <div>
-            <button class="btn btn-transparent">
-              <i class="fas fa-arrow-right"></i>
-            </button>
-          </div>
+        <div class="row h10">
+          <div class="col-2 col-lg-1 my-auto"></div>
           <div class="banner-title">
-            <div class="h2">
+            <!-- <button class="btn btn-transparent" style="padding: 0.5rem 0.69rem">
+              <i class="fas fa-arrow-right"></i>
+            </button> -->
+            <div class="h2" id="bannerTitle">
               Девушки из сборной по волейболу совсем скоро начнут свои первые
               матчи в МССИ
             </div>
@@ -20,21 +19,35 @@
         </div>
         <div class="row">
           <div class="col-3">
-            <div class="main-header-item">
+            <div class="main-header-item" id="sliderOne">
               Волонтёры РТУ МИРЭА приняли активное участие в «Кубке Первог...
             </div>
-          </div>
-          <div class="col-3">
-            <div class="main-header-item">
-              Девушки из сборной по волейболу совсем скоро начнут свои первые...
+            <div class="time-slider">
+              <div class="time-slider-color" id="timeOne"></div>
             </div>
           </div>
           <div class="col-3">
-            <div class="main-header-item">ДИАЛОГ АЛЬЯНСА | вопрос-ответ</div>
+            <div class="main-header-item" id="sliderTwo">
+              Девушки из сборной по волейболу совсем скоро начнут свои первые...
+            </div>
+            <div class="time-slider">
+              <div class="time-slider-color" id="timeTwo"></div>
+            </div>
           </div>
           <div class="col-3">
-            <div class="main-header-item">
+            <div class="main-header-item" id="sliderThree">
+              ДИАЛОГ АЛЬЯНСА | вопрос-ответ
+            </div>
+            <div class="time-slider">
+              <div class="time-slider-color" id="timeThree"></div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="main-header-item" id="sliderFour">
               Футбольный клуб МИРЭА на АССК. фест 2020!
+            </div>
+            <div class="time-slider">
+              <div class="time-slider-color" id="timeFour"></div>
             </div>
           </div>
         </div>
@@ -265,15 +278,7 @@
         <div class="row">
           <div
             id="controls"
-            class="
-              d-flex
-              w-100
-              justify-content-between
-              align-items-center
-              mb-5
-              mx-2
-              carousel-controls
-            "
+            class="d-flex w-100 justify-content-between align-items-center mb-5 mx-2 carousel-controls"
           >
             <div class="carousel-btns d-flex">
               <a class="previous">
@@ -300,14 +305,7 @@
     <div class="container">
       <!-- Main News -->
       <div
-        class="
-          row
-          controls
-          py-4
-          d-flex
-          justify-content-between
-          align-items-center
-        "
+        class="row controls py-4 d-flex justify-content-between align-items-center"
       >
         <h1>Последние новости</h1>
         <h6>Посмотреть все новости</h6>
@@ -333,13 +331,7 @@
                     >#ssc_alliance #асск #студенческийспорт</i
                   >
                   <div
-                    class="
-                      row
-                      mt-auto
-                      d-flex
-                      justify-content-between
-                      align-items-center
-                    "
+                    class="row mt-auto d-flex justify-content-between align-items-center"
                   >
                     <div>
                       <i class="card-date">15 окт</i>
@@ -514,14 +506,7 @@
   <section class="videos">
     <div class="container">
       <div
-        class="
-          row
-          video-controls
-          justify-content-between
-          align-items-center
-          py-4
-          px-2
-        "
+        class="row video-controls justify-content-between align-items-center py-4 px-2"
       >
         <h1 class="title">Медиа</h1>
         <h6 class="control">Посмотреть все</h6>
@@ -600,13 +585,7 @@
   <section class="news-articles">
     <div class="container">
       <div
-        class="
-          row
-          news-controls
-          justify-content-between
-          align-items-center
-          py-4
-        "
+        class="row news-controls justify-content-between align-items-center py-4"
       >
         <h1 class="title">Мероприятия</h1>
         <h6 class="control">Посмотреть все мероприятия</h6>
