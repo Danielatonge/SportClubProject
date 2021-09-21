@@ -1,12 +1,9 @@
-$dark-blue: #032f5e;
-$light-blue: #1d66c1;
-$shiny-light-blue: #1488cc;
-$shiny-dark-blue: #2b32b2;
-$blue-variant: #4c5cb0;
-$black: #000000;
-$dark-gray: #a0a0a0;
-$bg-color: #f6f6f8;
-$white-variant: #f0f0f0;
+@import "colors";
+@import "base";
+
+/*_____________________________
+ Styles for Главная/page2
+*/
 
 .page-content {
   background-color: $bg-color;
@@ -42,6 +39,12 @@ $white-variant: #f0f0f0;
       .card-overlay-title {
         font-size: 1rem;
         line-height: 1.5;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .first-card {
+        height: unset;
       }
     }
 
@@ -215,6 +218,7 @@ $white-variant: #f0f0f0;
 
     // Articles
     .article {
+      width: 100%;
       .card {
         border: none;
         border-radius: 5px;
@@ -279,5 +283,267 @@ $white-variant: #f0f0f0;
         }
       }
     }
+  }
+}
+
+/*_____________________________
+ Styles for Главная/page1
+*/
+
+.home {
+  .main-card {
+    .text-muted {
+      color: $dark-gray;
+    }
+  }
+}
+
+/*_____________________________
+ Styles for медиа pages
+*/
+
+.albums {
+  @media (max-width: 768px) {
+    .media-sort {
+      display: none;
+    }
+    .sub-title {
+      text-align: center;
+    }
+  }
+
+  .inner-navigation {
+    display: none;
+    .list-group-item:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    .list-group-item:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    a {
+      color: $blue-variant;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .outer-navigation {
+      display: none;
+    }
+    .inner-navigation {
+      display: flex;
+    }
+  }
+
+  .last-gallery-button:last-child {
+    margin: 0 auto;
+    width: 32%;
+
+    @media (max-width: 768px) {
+      width: 50%;
+    }
+    @media (max-width: 576px) {
+      width: 100%;
+      margin: auto 8px;
+      padding: unset;
+      padding-top: 0.8rem;
+    }
+  }
+}
+
+/*_____________________________
+ Styles for маркетинг pages
+*/
+.socials {
+  @media (max-width: 576px) {
+    .title {
+      display: none;
+    }
+    .icons {
+      padding-top: 0;
+    }
+  }
+}
+
+/*_____________________________
+ Styles for nonck nrpok pages
+*/
+
+.team-cards {
+  .filter-btn {
+    color: white;
+    background-color: $light-blue;
+    border-color: $light-blue;
+  }
+
+  .card.card-shadow:first-child,
+  .card.cardshadow:hover {
+    border-left: 4px solid $light-blue;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+
+/*_____________________________
+ Styles for игры pages
+*/
+.team-info {
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .time {
+    p {
+      color: $light-blue;
+    }
+    h4 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .col-4 {
+      flex-direction: column;
+    }
+
+    .first-team-name {
+      flex-direction: column-reverse;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+    .time {
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    word-wrap: break-word;
+    img {
+      width: 50%;
+    }
+    h4,
+    .time h4 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 80%;
+    }
+  }
+}
+
+.team-controls {
+  h1 {
+    color: $light-blue;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $dark-gray;
+  }
+}
+
+/*_____________________________
+ Styles for киберзона pages
+*/
+.kiberzone-form {
+  @media (max-width: 768px) {
+    input {
+      width: 100% !important;
+    }
+  }
+}
+
+.kiberzone-btns {
+  div {
+    button {
+      padding: 1rem 2rem;
+    }
+    @media (max-width: 768px) {
+      text-align: left !important;
+      padding: unset;
+      button {
+        padding: 0.5rem 2rem;
+      }
+    }
+  }
+}
+
+.kiberzone-btn {
+  padding: 1rem 5rem;
+
+  @media (max-width: 400px) {
+    padding: 1rem 2rem;
+  }
+}
+
+/*_____________________________
+ Styles for турниры pages
+*/
+.tournir-header-background {
+  p {
+    color: $dark-gray;
+    margin-bottom: 2px !important;
+  }
+  h4 {
+    font-weight: 400;
+  }
+  @media (max-width: 768px) {
+    .header-info {
+      display: block !important;
+    }
+  }
+}
+
+/*_____________________________
+ Styles for спортклуб pages
+*/
+
+.bg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  h6 {
+    color: $dark-gray;
+  }
+}
+
+.bg1 {
+  background-image: url(../images/Group451.png);
+}
+
+.bg2 {
+  background-image: url(../images/Group453.png);
+}
+
+.page-navigation {
+  padding: 0 10% !important;
+  background-color: white;
+
+  a {
+    border: none;
+    color: $blue-variant;
+
+    & .active,
+    &:hover {
+      border-bottom: 4px solid $dark-blue;
+      color: $dark-blue;
+      font-weight: bolder !important;
+    }
+  }
+}
+
+.inner-navigation.list-group {
+  flex-direction: row !important;
+  @media (max-width: 432px) {
+    flex-direction: column !important;
   }
 }

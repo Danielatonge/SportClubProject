@@ -1,49 +1,59 @@
-{% extends "layout.html" %}
-
-{% block content %}
-    <div class="kiberzone-header-background">
+{% extends "layout.html" %} {% block content %}
+<div class="kiberzone-header-background">
+  <div class="container">
+    <div class="row pt-4 pb-5">
+      <div class="col-12">
         <div class="container">
-            <div class="row pt-4 pb-5">
-                <div class="col-12">
-                    <div class="container">
-                        <div class="row text-center">
-                            <div class="col-12 pb-4">
-                                <div class="kiber-header">Киберзона</div>
-                            </div>
-                            <div class="kiber-text font-weight-light">На этой странице вы можете забронировать игровое
-                                место
-                                в Киберзоне Российского технологического университета.
-                                Для продолжения бронирования необходимо авторизоваться в личном кабинете студента.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="row text-center">
+            <div class="col-12 pb-4">
+              <div class="kiber-header">Киберзона</div>
             </div>
-        </div>
-    </div>
-
-    <div class="body-colour">
-        <div class="container pt-4">
-            <nav aria-label="breadcrumb bg-white">
-                <ol class="breadcrumb justify-content-center">
-                    <li class="breadcrumb-item" aria-current="page">1. Авторизация</li>
-                    <li class="breadcrumb-item active">2. Бронирование игрового устройства</li>
-                    <li class="breadcrumb-item active">3. Подтверждение</li>
-                    <li class="breadcrumb-item active">4. Готово!</li>
-                </ol>
-            </nav>
-
-            <p class="kiberzone-heading pt-4">Авторизация</p>
-
-            <p class="text-muted">Для продолжения бронирования войдите в свой личный кабинет студента.</p>
-            <div class="pb-4">
-                <button type="button" class="btn btn-primary mr-2">Войти в личный кабинет</button>
-                <button type="button" class="btn btn-light ml-2">
-                    <img class="img-fluid" src="/static/images/videocam.svg">
-                    Видеоинструкция
-                </button>
+            <div class="kiber-text font-weight-light">
+              На этой странице вы можете забронировать игровое место в Киберзоне
+              Российского технологического университета. Для продолжения
+              бронирования необходимо авторизоваться в личном кабинете студента.
             </div>
-
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+</div>
+
+<div class="body-colour">
+  <div class="container pt-4">
+    <nav aria-label="breadcrumb bg-white">
+      <ol class="breadcrumb justify-content-center">
+        <li class="breadcrumb-item mr-2" aria-current="page">
+          1. Авторизация
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </li>
+        <li class="breadcrumb-item mr-2 active">
+          2. Бронирование игрового устройства
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </li>
+        <li class="breadcrumb-item mr-2 active">
+          3. Подтверждение
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </li>
+        <li class="breadcrumb-item active">4. Готово!</li>
+      </ol>
+    </nav>
+
+    <p class="kiberzone-heading pt-4">Авторизация</p>
+
+    <p class="text-muted">
+      Для продолжения бронирования войдите в свой личный кабинет студента.
+    </p>
+    <div class="pb-4">
+      <button type="button" class="btn btn-primary mr-3 mb-3">
+        Войти в личный кабинет
+      </button>
+      <button type="button" class="btn btn-light mb-3">
+        <img class="img-fluid" src="/static/images/videocam.svg" />
+        Видеоинструкция
+      </button>
+    </div>
+  </div>
+</div>
 {% endblock %}

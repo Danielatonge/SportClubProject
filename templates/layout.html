@@ -5,21 +5,26 @@
     <title>{{ title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    <link
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
     />
     <link rel="stylesheet" type="text/css" href="/static/css/style.css">
-    <!-- <link rel=stylesheet type=text/css href="/static/css/index.css"> -->
+    <link rel=stylesheet type=text/css href="/static/css/index.css">
 </head>
 
 <body>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-<script src="/static/js/script.js"></script> -->
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/script.js"></script>
 
 
 <!-- Navigation -->
@@ -65,7 +70,8 @@
                             </div>
 
                             <button class="navbar-toggler paint-blue button-xs ml-2" style="height: 3rem; width: 3rem;"
-                                    type="button" data-toggle="collapse" data-target="#mobile-nav" aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
+                                    type="button" data-toggle="collapse" data-target="#mobile-nav"
+                                    aria-controls="mobile-nav" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="fa fa-bars" style="color: #fff;"></span>
                             </button>
                         </div>
@@ -89,17 +95,17 @@
                         <a class="nav-link " href="{{ url_for('news_page1') }}">Новости</a>
                     </li>
                     <li class="nav-item menu-item dropdown" id="dropDownToggler" onclick="cпортклубFunc()">
-                            <a class="nav-link dropdown-toggle" type="button" id="myDropdownFour"
-                               href="{{ url_for('sport_club_page5') }}" 
-                               data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Спортклуб</a>
-                            <ul class="dropdown-menu" aria-labelledby="myDropdownFour" id="dropDownMenuOne">
-                                <li><a class="dropdown-item" href="{{ url_for('sport_club_page1') }}">Наша миссия</a>
-                                </li>
-                                <li><a class="dropdown-item" href="{{ url_for('sport_club_page2') }}">Достижения</a>
-                                </li>
-                                <li><a class="dropdown-item" href="{{ url_for('sport_club_page3') }}">История</a></li>
-                                <li><a class="dropdown-item" href="{{ url_for('sport_club_page4') }}">Семья</a></li>
-                            </ul>
+                        <a class="nav-link dropdown-toggle" type="button" id="myDropdownFour"
+                           href="{{ url_for('sport_club_page5') }}"
+                           data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Спортклуб</a>
+                        <ul class="dropdown-menu" aria-labelledby="myDropdownFour" id="dropDownMenuOne">
+                            <li><a class="dropdown-item" href="{{ url_for('sport_club_page1') }}">Наша миссия</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ url_for('sport_club_page2') }}">Достижения</a>
+                            </li>
+                            <li><a class="dropdown-item" href="{{ url_for('sport_club_page3') }}">История</a></li>
+                            <li><a class="dropdown-item" href="{{ url_for('sport_club_page4') }}">Семья</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item menu-item" onclick="cпортFunc()">
                         <div class="dropdown">
@@ -201,47 +207,51 @@
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 <script src="/static/js/owl.carousel.min.js"></script>
 <script src="/static/js/script.js"></script>
 
 <script>
-    function cпортклубFunc(){
-        var  dropdown = document.getElementById('dropDownMenuOne');
-        if(dropdown.style.display == 'block' ){
+    function cпортклубFunc() {
+        var dropdown = document.getElementById('dropDownMenuOne');
+        if (dropdown.style.display == 'block') {
             dropdown.style.display = "none";
-        }
-        else {
+        } else {
             dropdown.style.display = "block";
         }
     }
-    function cпортFunc(){
-        var  dropdown = document.getElementById('dropDownMenuTwo');
-        if(dropdown.style.display == 'block' ){
+
+    function cпортFunc() {
+        var dropdown = document.getElementById('dropDownMenuTwo');
+        if (dropdown.style.display == 'block') {
             dropdown.style.display = "none";
-        }
-        else {
+        } else {
             dropdown.style.display = "block";
         }
     }
-    function mаркетингFunc(){
-        var  dropdown = document.getElementById('dropDownMenuThree');
-        if(dropdown.style.display == 'block' ){
+
+    function mаркетингFunc() {
+        var dropdown = document.getElementById('dropDownMenuThree');
+        if (dropdown.style.display == 'block') {
             dropdown.style.display = "none";
-        }
-        else {
+        } else {
             dropdown.style.display = "block";
         }
     }
-    function mедиаFunc(){
-        var  dropdown = document.getElementById('dropDownMenuFour');
-        if(dropdown.style.display == 'block' ){
+
+    function mедиаFunc() {
+        var dropdown = document.getElementById('dropDownMenuFour');
+        if (dropdown.style.display == 'block') {
             dropdown.style.display = "none";
-        }
-        else {
+        } else {
             dropdown.style.display = "block";
         }
     }

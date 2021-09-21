@@ -1,8 +1,8 @@
 $(document).ready(function () {
   let slider = tns({
-    container: '.my-slider',
+    container: ".my-slider",
     items: 1,
-    slideBy: 'page',
+    slideBy: "page",
     autoplay: true,
     responsive: {
       0: {
@@ -15,19 +15,19 @@ $(document).ready(function () {
         items: 3,
       },
     },
-    controlsContainer: '#controls',
-    prevButton: '.previous',
-    nextButton: '.next',
-    navPosition: 'bottom',
+    controlsContainer: "#controls",
+    prevButton: ".previous",
+    nextButton: ".next",
+    navPosition: "bottom",
     mouseDrag: true,
   });
 
-  $('.card-shadow').hover(
+  $(".card-shadow").hover(
     function () {
-      $(this).addClass('shadow-lg').css('cursor', 'pointer');
+      $(this).addClass("shadow-lg").css("cursor", "pointer");
     },
     function () {
-      $(this).removeClass('shadow-lg');
+      $(this).removeClass("shadow-lg");
     }
   );
 
@@ -38,31 +38,31 @@ $(document).ready(function () {
   /*-------------------------------------
     OwlCarousel
     -------------------------------------*/
-  $('.rs-carousel').each(function () {
+  $(".rs-carousel").each(function () {
     var owlCarousel = $(this),
-      loop = owlCarousel.data('loop'),
-      items = owlCarousel.data('items'),
-      margin = owlCarousel.data('margin'),
-      stagePadding = owlCarousel.data('stage-padding'),
-      autoplay = owlCarousel.data('autoplay'),
-      autoplayTimeout = owlCarousel.data('autoplay-timeout'),
-      smartSpeed = owlCarousel.data('smart-speed'),
-      dots = owlCarousel.data('dots'),
-      nav = owlCarousel.data('nav'),
-      navSpeed = owlCarousel.data('nav-speed'),
-      xsDevice = owlCarousel.data('mobile-device'),
-      xsDeviceNav = owlCarousel.data('mobile-device-nav'),
-      xsDeviceDots = owlCarousel.data('mobile-device-dots'),
-      smDevice = owlCarousel.data('ipad-device'),
-      smDeviceNav = owlCarousel.data('ipad-device-nav'),
-      smDeviceDots = owlCarousel.data('ipad-device-dots'),
-      smDevice2 = owlCarousel.data('ipad-device2'),
-      smDeviceNav2 = owlCarousel.data('ipad-device-nav2'),
-      smDeviceDots2 = owlCarousel.data('ipad-device-dots2'),
-      mdDevice = owlCarousel.data('md-device'),
-      centerMode = owlCarousel.data('center-mode'),
-      mdDeviceNav = owlCarousel.data('md-device-nav'),
-      mdDeviceDots = owlCarousel.data('md-device-dots');
+      loop = owlCarousel.data("loop"),
+      items = owlCarousel.data("items"),
+      margin = owlCarousel.data("margin"),
+      stagePadding = owlCarousel.data("stage-padding"),
+      autoplay = owlCarousel.data("autoplay"),
+      autoplayTimeout = owlCarousel.data("autoplay-timeout"),
+      smartSpeed = owlCarousel.data("smart-speed"),
+      dots = owlCarousel.data("dots"),
+      nav = owlCarousel.data("nav"),
+      navSpeed = owlCarousel.data("nav-speed"),
+      xsDevice = owlCarousel.data("mobile-device"),
+      xsDeviceNav = owlCarousel.data("mobile-device-nav"),
+      xsDeviceDots = owlCarousel.data("mobile-device-dots"),
+      smDevice = owlCarousel.data("ipad-device"),
+      smDeviceNav = owlCarousel.data("ipad-device-nav"),
+      smDeviceDots = owlCarousel.data("ipad-device-dots"),
+      smDevice2 = owlCarousel.data("ipad-device2"),
+      smDeviceNav2 = owlCarousel.data("ipad-device-nav2"),
+      smDeviceDots2 = owlCarousel.data("ipad-device-dots2"),
+      mdDevice = owlCarousel.data("md-device"),
+      centerMode = owlCarousel.data("center-mode"),
+      mdDeviceNav = owlCarousel.data("md-device-nav"),
+      mdDeviceDots = owlCarousel.data("md-device-dots");
     owlCarousel.owlCarousel({
       loop: loop ? true : false,
       items: items ? items : 3,
