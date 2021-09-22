@@ -12,14 +12,14 @@ def main():
     return redirect(url_for('main_page1'))
 
 
-@app.route('/Главная/page1')
+@app.route('/search')
+def search():
+    return render_template('search.html', title="Search")
+
+
+@app.route('/Главная/main')
 def main_page1():
-    return render_template('Главная/page1.html', title="Главная")
-
-
-@app.route('/Главная/page2')
-def main_page2():
-    return render_template('Главная/page2.html', title="Главная")
+    return render_template('Главная/main.html', title="Главная")
 
 
 # ------------------------- Киберзона
@@ -128,9 +128,14 @@ def media_page5():
 
 
 # ------------------------- Мероприятия
-@app.route('/Мероприятия/page1')
-def event_page1():
-    return render_template('Мероприятия/page1.html', title="Мероприятия")
+@app.route('/Мероприятия/event_actual')
+def event_actual():
+    return render_template('Мероприятия/event_actual.html', title="Мероприятия")
+
+
+@app.route('/Мероприятия/archive')
+def event_archive():
+    return render_template('Мероприятия/archive.html', title="Мероприятия")
 
 
 @app.route('/Мероприятия/page2')
@@ -163,9 +168,9 @@ def event_page7():
     return render_template('Мероприятия/page7.html', title="Мероприятия")
 
 
-@app.route('/Мероприятия/page8')
-def event_page8():
-    return render_template('Мероприятия/page8.html', title="Мероприятия")
+@app.route('/Мероприятия/register')
+def event_register():
+    return render_template('Мероприятия/register.html', title="Мероприятия")
 
 
 # ------------------------- новости
@@ -252,9 +257,9 @@ def section_page3():
     return render_template('секция/page3.html', title="секция")
 
 
-@app.route('/секция/page4')
-def section_page4():
-    return render_template('секция/page4.html', title="секция")
+@app.route('/секция/main')
+def section_main():
+    return render_template('секция/main.html', title="секция")
 
 
 # ------------------------- спортклуб

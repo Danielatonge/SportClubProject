@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <!-- Albums -->
+    <div class="body-colour mb-3">
+        <div class="container">
+            <div class="row mr-0 ml-0">
+                <div class="col-6">
+                    <p class="sub-title">Мероприятия</p>
+                </div>
+            </div>
+            <div class="row mr-0 ml-0">
+                <div class="col-12 col-md-3 pr-md-5">
+                    <div class="outer-navigation list-group text-center text-blue">
+                        <a href="{{ url_for('event_actual') }}" class="list-group-item list-group-item-action">Актуальные
+                            мероприятия</a>
+                        <a href="{{ url_for('event_archive') }}" class="list-group-item list-group-item-action active"
+                           aria-current="true">Архив</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9 p-0">
+                    <div class="row">
+                        <div class="col-12 pl-0">
+                            <p class="event-month"> Октябрь </p>
+                        </div>
+                        <div class="card-deck">
+                            <div class="card mbottom zoom-img">
+                                <div class="card-group joined-cards card-shadow">
+                                    <a href="{{ url_for('event_page2') }}">
+                                        <div class="row">
+                                            <div class="card col-12 col-md-4 p-0">
+                                                <img class="card-img" src="/static/images/event-sample.png" alt="img1">
+                                            </div>
+                                            <div class="col-12 col-md-8 p-0">
+                                                <div class="card">
+                                                    <div class="card-body souvernir-card d-flex flex-column">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                15 октября
+                                                            </div>
+                                                            <div class="col-12 title-text">
+                                                                Волонтёры РТУ МИРЭА приняли активное участие в «Кубке
+                                                                Первого Президента России»
+                                                            </div>
+                                                            <div class="col-12 card-hashtag">
+                                                                #ssc_alliance #асск #студенческийспорт
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-100 d-none d-sm-block d-md-block d-lg-block d-xl-block"></div>
+                            <div class="card mbottom zoom-img">
+                                <div class="card-group joined-cards card-shadow">
+                                    <a href="{{ url_for('event_page2') }}">
+                                        <div class="row">
+                                            <div class="card col-4 p-0">
+                                                <img class="card-img" src="/static/images/event-sample.png" alt="img1">
+                                            </div>
+                                            <div class="col-8 p-0">
+                                                <div class="card">
+                                                    <div class="card-body souvernir-card d-flex flex-column">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                15 октября
+                                                            </div>
+                                                            <div class="col-12 title-text">
+                                                                Волонтёры РТУ МИРЭА приняли активное участие в «Кубке
+                                                                Первого Президента России»
+                                                            </div>
+                                                            <div class="col-12 card-hashtag">
+                                                                #ssc_alliance #асск #студенческийспорт
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="w-100 d-none d-sm-block d-md-block d-lg-block d-xl-block"></div>
+                            <div class="card mbottom zoom-img">
+                                <div class="card-group joined-cards card-shadow">
+                                    <a href="{{ url_for('event_page2') }}">
+                                        <div class="row">
+                                            <div class="card col-4 p-0">
+                                                <img class="card-img" src="/static/images/event-sample.png" alt="img1">
+                                            </div>
+                                            <div class="col-8 p-0">
+                                                <div class="card">
+                                                    <div class="card-body souvernir-card d-flex flex-column">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                15 октября
+                                                            </div>
+                                                            <div class="col-12 title-text">
+                                                                Волонтёры РТУ МИРЭА приняли активное участие в «Кубке
+                                                                Первого Президента России»
+                                                            </div>
+                                                            <div class="col-12 card-hashtag">
+                                                                #ssc_alliance #асск #студенческийспорт
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
