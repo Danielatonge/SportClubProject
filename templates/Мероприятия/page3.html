@@ -1,5 +1,14 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block content %}
+<main class="page-content">
+  <div class="body-colour pb-0">
+    <div class="container">
+      <img
+        class="img-fluid"
+        src="/static/images/Rectangle 36.png"
+        alt="sport"
+      />
 
+<<<<<<< HEAD
 {% block content %}
     <div class="body-colour pb-0">
         <div class="container">
@@ -25,19 +34,38 @@
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="col-4 col-md-6 text-right pr-0">
-                        <div class="position-bottom">
-                            <img class="eye-icon" src="/static/images/eye.svg">
-                            <i class="date ">999,999</i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+=======
+      <div class="body-width">
+        <div class="page-title">
+          Девушки из сборной по волейболу совсем скоро начнут свои первые матчи
+          в МССИ
         </div>
+>>>>>>> 58e66e826b5bff64579728d8edb104edcf2c02bf
+
+        <div class="row date-margin">
+          <div class="col-12 col-sm-6">
+            <button class="btn btn-primary pt-3 pb-3 w-100">Участвовать</button>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div>
+              <i class="hashtag">#preview #omg #test</i>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mt-4">
+              <i class="card-date">15 окт</i>
+              <div class="d-flex">
+                <img class="eye-icon mr-1" src="/static/images/eye.svg" />
+                <i class="card-date" style="color: #1d66c1">999,999</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="bg-white">
     <div class="container pb-5">
+<<<<<<< HEAD
         <div class="row">
             <div class="inner-navigation w-100 list-group text-center text-blue">
                 <a href="{{ url_for('event_page2') }}"
@@ -65,209 +93,307 @@
                     </div>
                 </a>
             </div>
+=======
+      <div class="row">
+        <div class="inner-navigation w-100 list-group text-center text-blue">
+          <a
+            href="#"
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-center
+            "
+          >
+            <div class="align-self-center">Общая информация</div>
+          </a>
+          <a
+            href="#"
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-center
+              active
+            "
+          >
+            <div class="align-self-center">Организаторы</div>
+          </a>
+          <a
+            href="#"
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-center
+            "
+          >
+            <div class="align-self-center">Медиа</div>
+          </a>
+          <a
+            href="#"
+            class="
+              list-group-item list-group-item-action
+              d-flex
+              justify-content-center
+            "
+          >
+            <div class="align-self-center">Статистика</div>
+          </a>
+>>>>>>> 58e66e826b5bff64579728d8edb104edcf2c02bf
         </div>
+      </div>
 
-        <div class="body-width">
-            <div class="container">
-                <p class="sport-heading">Организаторы</p>
+      <div class="body-width">
+        <div class="container">
+          <p class="sport-heading">Организаторы</p>
 
-                <div class="row marketing-contacts">
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid trainer-img" src="/static/images/Rectangle 63.png">
-                    </div>
-                    <div class="col-6 col-lg-4">
-                        <div class="h4">
-                            Jenny Wilson
-                        </div>
-                        <p class="text-muted">Должность</p>
-                        <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
-                        <p class="no-margin-bottom blue small">adress@mail.com</p>
-                    </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid trainer-img" src="/static/images/Rectangle 63.png">
-                    </div>
-                    <div class="col-6 col-lg-4">
-                        <div class="h4">
-                            Jenny Wilson
-                        </div>
-                        <p class="text-muted">Должность</p>
-                        <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
-                        <p class="no-margin-bottom blue small">adress@mail.com</p>
-                    </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid trainer-img" src="/static/images/Rectangle 63.png">
-                    </div>
-                    <div class="col-6 col-lg-4">
-                        <div class="h4">
-                            Jenny Wilson
-                        </div>
-                        <p class="text-muted">Должность</p>
-                        <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
-                        <p class="no-margin-bottom blue small">adress@mail.com</p>
-                    </div>
-                    <div class="col-4 col-lg-2">
-                        <img class="img-fluid trainer-img" src="/static/images/Rectangle 63.png">
-                    </div>
-                    <div class="col-6 col-lg-4">
-                        <div class="h4">
-                            Jenny Wilson
-                        </div>
-                        <p class="text-muted">Должность</p>
-                        <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
-                        <p class="no-margin-bottom blue small">adress@mail.com</p>
-                    </div>
-                </div>
-                <p class="sport-heading">Спонсоры</p>
-                <div class="row fix-left-right">
-                    <div class="col-lg-3 col-md-4 col-6 ">
-                        <a href="">
-                            <div class="img-gradient">
-                                <img class="card-img-top" src="/static/images/image-box.png">
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 ">
-                        <a href="">
-                            <div class="img-gradient">
-                                <img class="card-img-top" src="/static/images/image-box.png">
-                            </div>
-                            <div class="card-img-overlay d-flex flex-column">
-                                <h5 class="media-card-overlay-title mt-auto"></h5>
-                                <i class="card-overlay-hashtag"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 ">
-                        <a href="">
-                            <div class="img-gradient">
-                                <img class="card-img-top" src="/static/images/image-box.png">
-                            </div>
-                            <div class="card-img-overlay d-flex flex-column">
-                                <h5 class="media-card-overlay-title mt-auto"></h5>
-                                <i class="card-overlay-hashtag"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-md-4 col-6 ">
-                        <a href="">
-                            <div class="img-gradient">
-                                <img class="card-img-top" src="/static/images/image-box.png">
-                            </div>
-                            <div class="card-img-overlay d-flex flex-column">
-                                <h5 class="media-card-overlay-title mt-auto"></h5>
-                                <i class="card-overlay-hashtag"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
+          <div class="row marketing-contacts">
+            <div class="col-4 col-lg-2">
+              <img
+                class="img-fluid trainer-img"
+                src="/static/images/Rectangle 63.png"
+              />
             </div>
-        </div>
-    </div>
-
-    <div class="body-colour pb-0">
-        <div class="container pt-5 pb-5">
-            <div class="body-width mt-0">
-                <div class="socials mt-0">
-                    <div class="row socials-xs">
-                        <div class="col-12 col-sm-6">
-                            <p class="pt-1">Поделиться</p>
-                        </div>
-                        <div class="col-12 col-sm-6 icons">
-                            <a href="#"><i class="fab fa-vk"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                            <a href="#"><i class="fab fa-whatsapp"></i></a>
-                            <a href="#"><i class="fab fa-facebook-square"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-6 col-lg-4">
+              <div class="h4">Jenny Wilson</div>
+              <p class="text-muted">Должность</p>
+              <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
+              <p class="no-margin-bottom blue small">adress@mail.com</p>
             </div>
-        </div>
-    </div>
-
-
-    <div class="features">
-        <div class="container pb-4">
-            <p class="feature-title">Вам может быть интересно</p>
-            <div class="card-deck">
-                <div class="card card-shadow zoom-img">
-                    <div class="">
-                        <img class="card-img-top" src="/static/images/Rectangle 38.png" alt="img3">
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Мужская сборная по волейболу выиграла в любительской волейбольной лиге
-                        </h5>
-                        <i class="card-hashtag">#ssc_alliance #асск #студенческийспорт</i>
-                        <div class="row mt-auto">
-                            <div class="col p-0">
-                                <i class="card-date">15 окт</i>
-                            </div>
-                            <div class="col text-right p-0">
-                                <img class="eye-icon" src="/static/images/eye.svg">
-                                <i class="card-date">999,999</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card zoom-img card-shadow">
-                    <div class="img-gradient">
-                        <img class="card-img-top" src="/static/images/Rectangle 17.png" alt="img4">
-                    </div>
-                    <div class="card-img-overlay d-flex flex-column">
-                        <h5 class="card-overlay-title mt-auto">Футбольный клуб МИРЭА на АССК.фест 2020!</h5>
-                        <i class="card-overlay-hashtag">#ssc_alliance #асск #студенческийспорт</i>
-                        <div class="row ">
-                            <div class="col p-0">
-                                <i class="card-overlay-date">15 окт</i>
-                            </div>
-                            <div class="col text-right p-0">
-                                <img class="eye-icon" src="/static/images/eye.svg">
-                                <i class="card-overlay-date">999,999</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-100 d-none d-sm-block d-md-block d-lg-block d-xl-none"></div>
-                <div class="card card-shadow zoom-img">
-                    <div class="">
-                        <img class="card-img-top" src="/static/images/Rectangle 34.png" alt="img5">
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">ДИАЛОГ АЛЬЯНСА | вопрос-ответ 💭</h5>
-                        <i class="card-hashtag">#ssc_alliance #асск #студенческийспорт</i>
-                        <div class="row mt-auto">
-                            <div class="col p-0">
-                                <i class="card-date">15 окт</i>
-                            </div>
-                            <div class="col text-right p-0">
-                                <img class="eye-icon" src="/static/images/eye.svg">
-                                <i class="card-date">999,999</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card zoom-img card-shadow">
-                    <div class="img-gradient">
-                        <img class="card-img-top" src="/static/images/Rectangle 44.png" alt="img6">
-                    </div>
-                    <div class="card-img-overlay d-flex flex-column">
-                        <h5 class="card-overlay-title mt-auto">Наши девочки из сборной по черлидингу «Alliance
-                            teamcheer»</h5>
-                        <i class="card-overlay-hashtag">#ssc_alliance #асск #студенческийспорт</i>
-                        <div class="row">
-                            <div class="col p-0">
-                                <i class="card-overlay-date">15 окт</i>
-                            </div>
-                            <div class="col text-right p-0">
-                                <img class="eye-icon" src="/static/images/eye.svg">
-                                <i class="card-overlay-date">999,999</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-4 col-lg-2">
+              <img
+                class="img-fluid trainer-img"
+                src="/static/images/Rectangle 63.png"
+              />
             </div>
+            <div class="col-6 col-lg-4">
+              <div class="h4">Jenny Wilson</div>
+              <p class="text-muted">Должность</p>
+              <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
+              <p class="no-margin-bottom blue small">adress@mail.com</p>
+            </div>
+            <div class="col-4 col-lg-2">
+              <img
+                class="img-fluid trainer-img"
+                src="/static/images/Rectangle 63.png"
+              />
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="h4">Jenny Wilson</div>
+              <p class="text-muted">Должность</p>
+              <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
+              <p class="no-margin-bottom blue small">adress@mail.com</p>
+            </div>
+            <div class="col-4 col-lg-2">
+              <img
+                class="img-fluid trainer-img"
+                src="/static/images/Rectangle 63.png"
+              />
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="h4">Jenny Wilson</div>
+              <p class="text-muted">Должность</p>
+              <p class="no-margin-bottom blue small">+7 777 777-77-77</p>
+              <p class="no-margin-bottom blue small">adress@mail.com</p>
+            </div>
+          </div>
+          <p class="sport-heading">Спонсоры</p>
+          <div class="row fix-left-right">
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="">
+                <div class="img-gradient">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/image-box.png"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="">
+                <div class="img-gradient">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/image-box.png"
+                  />
+                </div>
+                <div class="card-img-overlay d-flex flex-column">
+                  <h5 class="media-card-overlay-title mt-auto"></h5>
+                  <i class="card-overlay-hashtag"></i>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="">
+                <div class="img-gradient">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/image-box.png"
+                  />
+                </div>
+                <div class="card-img-overlay d-flex flex-column">
+                  <h5 class="media-card-overlay-title mt-auto"></h5>
+                  <i class="card-overlay-hashtag"></i>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6">
+              <a href="">
+                <div class="img-gradient">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/image-box.png"
+                  />
+                </div>
+                <div class="card-img-overlay d-flex flex-column">
+                  <h5 class="media-card-overlay-title mt-auto"></h5>
+                  <i class="card-overlay-hashtag"></i>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 
+  <div class="container pt-5 pb-5">
+    <div class="socials">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <p class="pt-1 title">Поделиться</p>
+        </div>
+        <div class="col-12 col-sm-6 icons">
+          <a href="#"><i class="fab fa-vk"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-telegram-plane"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="body-colour bg-white">
+    <div class="container pb-4">
+      <h5 class="feature-title pt-3">Вам может быть интересно</h5>
+      <div class="card-deck mb-3">
+        <div class="col-md-6 col-lg-3 p-0 mb-3">
+          <div
+            class="card card-shadow zoom-img"
+            style="border: 1px solid rgba(0, 0, 0, 0.125)"
+          >
+            <div class="">
+              <img
+                class="card-img-top zoom-img"
+                src="/static/images/Rectangle 38.png"
+                alt="img3"
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">
+                Мужская сборная по волейболу выиграла в любительской
+                волейбольной лиге
+              </h5>
+              <i class="card-hashtag">#ssc_alliance #асск #студенческийспорт</i>
+              <div class="row mt-auto">
+                <div class="col p-0">
+                  <i class="card-date">15 окт</i>
+                </div>
+                <div class="col text-right p-0">
+                  <img class="eye-icon" src="/static/images/eye.svg" />
+                  <i class="card-date">999,999</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 p-0 mb-3">
+          <div class="card zoom-img card-shadow">
+            <div class="img-gradient">
+              <img
+                class="card-img-top"
+                src="/static/images/Rectangle 17.png"
+                alt="img4"
+              />
+            </div>
+            <div class="card-img-overlay d-flex flex-column">
+              <h5 class="card-overlay-title mt-auto">
+                Футбольный клуб МИРЭА на АССК.фест 2020!
+              </h5>
+              <i class="card-overlay-hashtag"
+                >#ssc_alliance #асск #студенческийспорт</i
+              >
+              <div class="row">
+                <div class="col p-0">
+                  <i class="card-overlay-date">15 окт</i>
+                </div>
+                <div class="col text-right p-0">
+                  <img class="eye-icon" src="/static/images/eye.svg" />
+                  <i class="card-overlay-date">999,999</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 p-0 mb-3">
+          <div
+            class="card card-shadow zoom-img"
+            style="border: 1px solid rgba(0, 0, 0, 0.125)"
+          >
+            <div class="">
+              <img
+                class="card-img-top"
+                src="/static/images/Rectangle 34.png"
+                alt="img5"
+              />
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">ДИАЛОГ АЛЬЯНСА | вопрос-ответ 💭</h5>
+              <i class="card-hashtag">#ssc_alliance #асск #студенческийспорт</i>
+              <div class="row mt-auto">
+                <div class="col p-0">
+                  <i class="card-date">15 окт</i>
+                </div>
+                <div class="col text-right p-0">
+                  <img class="eye-icon" src="/static/images/eye.svg" />
+                  <i class="card-date">999,999</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3 p-0 mb-3">
+          <div class="card zoom-img card-shadow">
+            <div class="img-gradient">
+              <img
+                class="card-img-top"
+                src="/static/images/Group488.png"
+                alt="img6"
+              />
+            </div>
+            <div class="card-img-overlay d-flex flex-column">
+              <h5 class="card-overlay-title mt-auto">
+                Наши девочки из сборной по черлидингу «Alliance teamcheer»
+              </h5>
+              <i class="card-overlay-hashtag"
+                >#ssc_alliance #асск #студенческийспорт</i
+              >
+              <div class="row">
+                <div class="col p-0">
+                  <i class="card-overlay-date">15 окт</i>
+                </div>
+                <div class="col text-right p-0">
+                  <img class="eye-icon" src="/static/images/eye.svg" />
+                  <i class="card-overlay-date">999,999</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 {% endblock %}

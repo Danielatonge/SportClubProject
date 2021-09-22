@@ -1,8 +1,8 @@
 - Slider on 
 	игры/page2
 	новости/max
+	Мероприятия/page4[multiple sliders]
 - Клубы - Joachim
 - сборные - Joachim
 - секция - Joachim
 - Мероприятия - Karl
-- спортклуб - Karl
