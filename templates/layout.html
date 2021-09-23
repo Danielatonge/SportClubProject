@@ -88,7 +88,7 @@
                     <li class="nav-item menu-item">
                         <div class="dropdown">
                             <a class="nav-link dropdown-toggle" type="button" id="myDropdown4"
-                               href="{{ url_for('sport_club_page5') }}"
+                               href="#"
                                data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Спортклуб</a>
 
                             <ul class="dropdown-menu" aria-labelledby="myDropdown4">
@@ -122,10 +122,13 @@
                             <a class="nav-link dropdown-toggle" role="button" id="myDropdown3" href="#"
                                data-toggle="dropdown" aria-expanded="false">Маркетинг</a>
                             <ul class="dropdown-menu" aria-labelledby="myDropdown3">
-                                <li><a class="dropdown-item" href="#">Магазин сувениров</a></li>
-                                <li><a class="dropdown-item" href="#">Скидки</a></li>
-                                <li><a class="dropdown-item" href="#">Партнеры</a></li>
-                                <li><a class="dropdown-item" href="#">Сотрудничество</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('marketing_page1') }}">Магазин
+                                    сувениров</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{{ url_for('marketing_page2') }}">Скидки</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('marketing_page4') }}">Партнеры</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('marketing_page5') }}">Сотрудничество</a>
+                                </li>
                             </ul>
                         </div>
                     </li>

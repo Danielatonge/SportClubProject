@@ -211,6 +211,11 @@ def team_page2():
     return render_template('сборные/page 2.html', title="сборные")
 
 
+@app.route('/сборные/page2_1')
+def team_page2_1():
+    return render_template('сборные/page 2_1.html', title="сборные")
+
+
 @app.route('/сборные/page3')
 def team_page3():
     return render_template('сборные/page 3.html', title="сборные")
