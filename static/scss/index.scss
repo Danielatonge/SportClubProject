@@ -606,6 +606,60 @@
   }
 }
 
+/*_____________________________
+ Styles for секция pages
+*/
+
+.section-main {
+  width: 100%;
+
+  .col-12.col-sm-6 .sport-data {
+    background-image: url(../images/Group458.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    padding: 1rem 0 1rem 1rem;
+    height: 100%;
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+    h4 {
+      padding-top: 0.8rem;
+      color: white;
+      width: 50%;
+    }
+
+    @media (max-width: 768px) {
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+      h4 {
+        font-size: 1.1rem;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+
+  .col-12.col-sm-6:nth-child(1) .sport-data {
+    background-image: url(../images/Group459.png);
+  }
+
+  .col-12.col-sm-6:nth-child(2) .sport-data {
+    background-image: url(../images/Group457.png);
+  }
+}
+
+.section-main 
+
+.section-main 
+
+
+
+
+
 // General Style for Inner Navigations
 
 .inner-navigation.list-group {

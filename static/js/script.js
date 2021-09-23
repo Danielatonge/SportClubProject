@@ -1,27 +1,4 @@
 $(document).ready(function () {
-  let slider = tns({
-    container: ".my-slider",
-    items: 1,
-    slideBy: "page",
-    autoplay: true,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      576: {
-        items: 2,
-      },
-      768: {
-        items: 3,
-      },
-    },
-    controlsContainer: "#controls",
-    prevButton: ".previous",
-    nextButton: ".next",
-    navPosition: "bottom",
-    mouseDrag: true,
-  });
-
   $(".card-shadow").hover(
     function () {
       $(this).addClass("shadow-lg").css("cursor", "pointer");

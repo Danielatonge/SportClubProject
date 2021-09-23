@@ -1,34 +1,50 @@
-{% extends "layout.html" %}
-
-{% block content %}
-    <div class="body-colour">
-        <div class="container mb-5">
-            <div class="row">
-                <div class="col-12 pl-0 pr-0">
-                    <div class="sport-heading-two">Секции</div>
-                    <!-- Main Section -->
-                    <div class="row section-main">
-                        <div class="col-12 col-md-6 pl-0 pr-0 pr-md-2">
-                            <a href="#"><img class="img-fluid" src="/static/images/Group 186.svg"></a>
-                        </div>
-                        <div class="col-12 col-md-6 pl-0 pl-md-2 pr-0">
-                            <a href="#"><img class="img-fluid" src="/static/images/Group 166.svg"></a>
-                        </div>
-                        <div class="col-12 col-md-6 pl-0 pr-0 pr-md-2">
-                            <a href="#"><img class="img-fluid" src="/static/images/Group 167.svg"></a>
-                        </div>
-                        <div class="col-12 col-md-6 pl-0 pl-md-2 pr-0">
-                            <a href="#"><img class="img-fluid" src="/static/images/Group 165.svg"></a>
-                        </div>
-                        <div class="col-12 col-md-6 pl-0 pr-0 pr-md-2">
-                            <a href="#"><img class="img-fluid" src="/static/images/Group 164.svg"></a>
-                        </div>
-                        <div class="col-12 col-md-6 pl-0 pl-md-2 pr-0">
-                            <a href="#"><img class="img-fluid" src="/static/images/Group 163.svg"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{% extends "layout.html" %} {% block content %}
+<div class="body-colour">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sport-heading-two">Секции</div>
+      </div>
+      <!-- Main Section -->
+      <div class="row section-main">
+        <div class="col-12 col-sm-6">
+          <div class="sport-data">
+            <img src="/static/images/football.png" alt="football" />
+            <h4>Футбол</h4>
+          </div>
         </div>
+        <div class="col-12 col-sm-6">
+          <div class="sport-data">
+            <img src="/static/images/volleyball.png" alt="volleyball" />
+            <h4>Волейбол</h4>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="sport-data">
+            <img src="/static/images/ping-pong.png" alt="ping-pong" />
+            <h4>Настольный теннис</h4>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="sport-data">
+            <img src="/static/images/basketball.png" alt="basketball" />
+            <h4>Баскетбол</h4>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="sport-data">
+            <img src="/static/images/badminton.png" alt="badminton" />
+            <h4>Бадминтон</h4>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="sport-data">
+            <img src="/static/images/checkmate.png" alt="checkmate" />
+            <h4>Шахматы</h4>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
 {% endblock %}
