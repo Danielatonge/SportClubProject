@@ -408,10 +408,6 @@
       flex-direction: column;
     }
 
-    .first-team-name {
-      flex-direction: column-reverse;
-    }
-
     h4 {
       font-size: 1.2rem;
     }
@@ -422,8 +418,17 @@
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 576px) {
     word-wrap: break-word;
+
+    .first-team-name {
+      flex-direction: column-reverse;
+    }
+
+    .second-team-name {
+      flex-direction: column;
+    }
+
     img {
       width: 50%;
     }
@@ -585,10 +590,6 @@
     .col-4 {
       flex-direction: column;
     }
-
-    .first-team-name {
-      flex-direction: column-reverse;
-    }
   }
 
   @media (max-width: 400px) {
@@ -652,13 +653,86 @@
   }
 }
 
-.section-main 
+/*_____________________________
+ Styles for сборные pages
+*/
 
-.section-main 
+.mirea {
+  @media (max-width: 576px) {
+    word-wrap: unset;
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    .start {
+      font-size: 1rem;
+    }
+  }
+}
 
+.new-albums {
+  @media (max-width: 768px) {
+    .inner-navigation {
+      display: none;
+    }
+    .outer-navigation {
+      display: block;
+    }
+  }
 
+  @media (min-width: 512px) {
+    .outer-navigation {
+      display: none;
+    }
+    .inner-navigation {
+      display: flex;
+    }
+  }
+}
 
-
+.match-details {
+  h4 {
+    font-weight: bolder;
+  }
+  .mirea .text-center h4 {
+    background-image: linear-gradient(
+      to right,
+      $shiny-light-blue,
+      $shiny-dark-blue
+    );
+    background-clip: text;
+    fill: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  }
+  .match-time {
+    p:nth-child(1) {
+      font-weight: bold;
+      background-image: linear-gradient(
+        to right,
+        $shiny-light-blue,
+        $shiny-dark-blue
+      );
+      background-clip: text;
+      fill: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
+  }
+  @media (max-width: 576px) {
+    .match-time {
+      justify-content: center;
+      text-align: center;
+      img {
+        display: none;
+      }
+    }
+  }
+}
 
 // General Style for Inner Navigations
 

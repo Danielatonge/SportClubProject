@@ -2,12 +2,10 @@
 	Мероприятия/page4[multiple sliders]
 - Клубы - [Ask about sync with the design and code]
 - сборные - Karl
-- секция - Karl
 
 
 Main page, fixed heights for all cards
 
 Align all headings and cards at the same position in the row/container
 
-Make the card image height to be the same as the card text height:
-секция/page3
+Make the card image height to be the same as the card text height: секция/page3
