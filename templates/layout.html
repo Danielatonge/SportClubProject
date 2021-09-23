@@ -80,14 +80,17 @@
             <div class="collapse navbar-collapse" id="mobile-nav"> <!-- id="navbarResponsiveNew"-->
                 <ul class="navbar-nav nav-fill paint-blue w-100 d-flex align-items-center">
                     <li class="nav-item menu-item">
-                        <a class="nav-link active" href="{{ url_for('main_page1') }}">Главная</a>
+                        <a class="nav-link {{ 'active' if active_page == 'main' else '' }}"
+                           href="{{ url_for('main_page1') }}">Главная</a>
                     </li>
                     <li class="nav-item menu-item">
-                        <a class="nav-link " href="{{ url_for('news_page1') }}">Новости</a>
+                        <a class="nav-link {{ 'active' if active_page == 'news' else '' }}"
+                           href="{{ url_for('news_page1') }}">Новости</a>
                     </li>
                     <li class="nav-item menu-item">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" type="button" id="myDropdown4"
+                            <a class="nav-link dropdown-toggle {{ 'active' if active_page == 'sportclub' else '' }}"
+                               type="button" id="myDropdown4"
                                href="#"
                                data-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Спортклуб</a>
 
@@ -103,7 +106,8 @@
                     </li>
                     <li class="nav-item menu-item">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" type="button" id="myDropdownOne"
+                            <a class="nav-link dropdown-toggle {{ 'active' if active_page == 'sport' else '' }}"
+                               type="button" id="myDropdownOne"
                                href="{{ url_for('play_page1') }}"
                                data-toggle="dropdown" aria-expanded="false">Спорт</a>
                             <ul class="dropdown-menu col-xs-12" aria-labelledby="myDropdownOne">
@@ -115,11 +119,13 @@
                         </div>
                     </li>
                     <li class="nav-item menu-item">
-                        <a class="nav-link" href="{{ url_for('team_page1') }}">Сборные</a>
+                        <a class="nav-link {{ 'active' if active_page == 'team' else '' }}"
+                           href="{{ url_for('team_page1') }}">Сборные</a>
                     </li>
                     <li class="nav-item menu-item">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" id="myDropdown3" href="#"
+                            <a class="nav-link dropdown-toggle {{ 'active' if active_page == 'market' else '' }}"
+                               role="button" id="myDropdown3" href="#"
                                data-toggle="dropdown" aria-expanded="false">Маркетинг</a>
                             <ul class="dropdown-menu" aria-labelledby="myDropdown3">
                                 <li><a class="dropdown-item" href="{{ url_for('marketing_page1') }}">Магазин
@@ -134,7 +140,8 @@
                     </li>
                     <li class="nav-item menu-item">
                         <div class="dropdown">
-                            <a class="nav-link dropdown-toggle" role="button" id="myDropdownOne"
+                            <a class="nav-link dropdown-toggle {{ 'active' if active_page == 'media' else '' }}"
+                               role="button" id="myDropdownOne"
                                href="{{ url_for('media_page1') }}"
 
                                data-toggle="dropdown" aria-expanded="false">Медиа</a>

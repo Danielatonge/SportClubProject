@@ -1,58 +1,58 @@
-{% extends "layout.html" %} {% block content %}
-<div class="kiberzone-header-background">
-  <div class="container">
-    <div class="row pt-4 pb-5">
-      <div class="col-12">
+{% extends "layout.html" %} {% set active_page = "team" %} {% block content %}
+    <div class="kiberzone-header-background">
         <div class="container">
-          <div class="row text-center">
-            <div class="col-12 pb-4">
-              <div class="kiber-header">Киберзона</div>
+            <div class="row pt-4 pb-5">
+                <div class="col-12">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-12 pb-4">
+                                <div class="kiber-header">Киберзона</div>
+                            </div>
+                            <div class="kiber-text font-weight-light">
+                                На этой странице вы можете забронировать игровое место в Киберзоне
+                                Российского технологического университета. Для продолжения
+                                бронирования необходимо авторизоваться в личном кабинете студента.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="kiber-text font-weight-light">
-              На этой странице вы можете забронировать игровое место в Киберзоне
-              Российского технологического университета. Для продолжения
-              бронирования необходимо авторизоваться в личном кабинете студента.
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
 
-<div class="body-colour">
-  <div class="container pt-4">
-    <nav aria-label="breadcrumb bg-white">
-      <ol class="breadcrumb justify-content-center">
-        <li class="breadcrumb-item active mr-2" aria-current="page">
-          1. Авторизация
-          <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        </li>
-        <li class="breadcrumb-item active mr-2">
-          2. Бронирование игрового устройства
-          <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        </li>
-        <li class="breadcrumb-item active mr-2">
-          3. Подтверждение
-          <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        </li>
-        <li class="breadcrumb-item">4. Готово!</li>
-      </ol>
-    </nav>
+    <div class="body-colour">
+        <div class="container pt-4">
+            <nav aria-label="breadcrumb bg-white">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item active mr-2" aria-current="page">
+                        1. Авторизация
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </li>
+                    <li class="breadcrumb-item active mr-2">
+                        2. Бронирование игрового устройства
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </li>
+                    <li class="breadcrumb-item active mr-2">
+                        3. Подтверждение
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                    </li>
+                    <li class="breadcrumb-item">4. Готово!</li>
+                </ol>
+            </nav>
 
-    <p class="kiberzone-heading pt-4 mb-4">Готово!</p>
+            <p class="kiberzone-heading pt-4 mb-4">Готово!</p>
 
-    <p class="kiberzone-text">
-      Вы забронировали устройство, ожидайте ответа оператора.
-    </p>
+            <p class="kiberzone-text">
+                Вы забронировали устройство, ожидайте ответа оператора.
+            </p>
 
-    <p class="kiberzone-blue-subheading">
-      13 февраля, 12:30, продолжительность 75 минут, устройство PC-07
-    </p>
+            <p class="kiberzone-blue-subheading">
+                13 февраля, 12:30, продолжительность 75 минут, устройство PC-07
+            </p>
 
-    <button type="button" class="mt-4 kiberzone-btn btn btn-light">
-      Остались вопросы?
-    </button>
-  </div>
-</div>
+            <button type="button" class="mt-4 kiberzone-btn btn btn-light">
+                Остались вопросы?
+            </button>
+        </div>
+    </div>
 {% endblock %}
