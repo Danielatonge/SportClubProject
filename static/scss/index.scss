@@ -691,6 +691,20 @@
 }
 
 .match-details {
+  .card {
+    border: none;
+    margin-bottom: 1rem;
+  }
+  .card2 {
+    border-left: 4px solid transparent;
+    border-image: linear-gradient(
+      to bottom,
+      $shiny-light-blue,
+      $shiny-dark-blue
+    );
+    border-image-slice: 1;
+  }
+
   h4 {
     font-weight: bolder;
   }
@@ -734,11 +748,84 @@
   }
 }
 
-// General Style for Inner Navigations
+.picture-card {
+  .card {
+    border: none;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+    padding: 1rem;
+  }
+  &:nth-child(1) .card {
+    background-image: url(/static/images/Rectangle464.png),
+      url(/static/images/sbor1.png);
+  }
+  &:nth-child(2) .card {
+    background-image: url(/static/images/Rectangle464.png),
+      url(/static/images/sbor2.png);
+  }
+  &:nth-child(3) .card {
+    background-image: url(/static/images/Rectangle464.png),
+      url(/static/images/sbor3.png);
+  }
+  &:nth-child(4) .card {
+    background-image: url(/static/images/Rectangle464.png),
+      url(/static/images/sbor4.png);
+  }
+  &:nth-child(5) .card {
+    background-image: url(/static/images/Rectangle464.png),
+      url(/static/images/sbor5.png);
+  }
+  &:nth-child(6) .card {
+    background-image: url(/static/images/Rectangle464.png),
+      url(/static/images/sbor6.png);
+  }
+  &:nth-child(7) .card {
+    background-image: url(/static/images/Rectangle464.png),
+      url(/static/images/sbor7.png);
+  }
+  &:nth-child(8) .card {
+    background-image: url(/static/images/Rectangle464.png),
+      url(/static/images/sbor8.png);
+  }
+  &:nth-child(9) .card {
+    background-image: url(/static/images/Rectangle464.png),
+      url(/static/images/sbor9.png);
+  }
+  &:nth-child(10) .card {
+    background-image: url(/static/images/Rectangle464.png),
+      url(/static/images/sbor10.png);
+  }
+}
+
+#new-card {
+  .card.card-shadow {
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+// General Styles
 
 .inner-navigation.list-group {
   flex-direction: row !important;
   @media (max-width: 432px) {
     flex-direction: column !important;
+  }
+}
+
+// Fixed Heights for cards
+
+.card.card-shadow {
+  @media (max-width: 768px) {
+    height: 320px;
+  }
+  @media (max-width: 576px) {
+    height: 435px;
+  }
+  @media (max-width: 450px) {
+    height: 365px;
   }
 }

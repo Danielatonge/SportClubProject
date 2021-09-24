@@ -1,8 +1,7 @@
 - Slider on 
 	Мероприятия/page4[multiple sliders]
+	сборные/page6[multiple sliders]
 - Клубы - [Ask about sync with the design and code]
-- сборные - Karl
-
 
 Main page, fixed heights for all cards
 
