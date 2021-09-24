@@ -411,9 +411,9 @@ nav ul.pagination {
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
 
   color: #000000;
 }

@@ -75,6 +75,26 @@ def club_page4():
     return render_template('Клубы/page 4.html', title="Клубы")
 
 
+@app.route('/Клубы/page5')
+def club_page5():
+    return render_template('Клубы/page 5.html', title="Клубы")
+
+
+@app.route('/Клубы/page6')
+def club_page6():
+    return render_template('Клубы/page 6.html', title="Клубы")
+
+
+@app.route('/Клубы/page7')
+def club_page7():
+    return render_template('Клубы/page 7.html', title="Клубы")
+
+
+@app.route('/Клубы/page8')
+def club_page8():
+    return render_template('Клубы/page 8.html', title="Клубы")
+
+
 # ------------------------- маркетинг
 @app.route('/маркетинг/page1')
 def marketing_page1():

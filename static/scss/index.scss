@@ -21,12 +21,12 @@
       }
     }
 
-    @media (max-width: 768px) {
-      [class^="col-"],
-      [class*=" col-"] {
-        margin: 1rem 0;
-      }
-    }
+    // @media (max-width: 768px) {
+    //   [class^="col-"],
+    //   [class*=" col-"] {
+    //     margin: 1rem 0;
+    //   }
+    // }
 
     .card {
       background-size: cover;
@@ -807,6 +807,55 @@
   }
 }
 
+/*_____________________________
+ Styles for Клубы pages
+*/
+
+.name-card .card {
+  border: none;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 320px;
+  padding: 1rem;
+  background-image: url(/static/images/Rectangle464.png),
+    url(/static/images/Rectangle463.png);
+}
+
+.new-match {
+  .match-details {
+    p:nth-child(1) {
+      font-weight: unset;
+      background-image: none;
+      background-clip: unset;
+      fill: unset;
+      -webkit-background-clip: unset;
+      -webkit-text-fill-color: unset;
+      -moz-background-clip: unset;
+      -moz-text-fill-color: unset;
+    }
+    .match-time {
+      .match-name {
+        font-weight: 500 !important;
+      }
+      .league-name {
+        color: $dark-gray;
+      }
+      .blue {
+        color: $blue-variant;
+        font-size: 1.2rem;
+      }
+      @media (max-width: 576px) {
+        justify-content: left;
+        text-align: left;
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+}
 // General Styles
 
 .inner-navigation.list-group {
@@ -818,7 +867,11 @@
 
 // Fixed Heights for cards
 
-.card.card-shadow {
+.card.card-shadow,
+.joined-cards {
+  @media (min-width: 768px) {
+    height: 320px;
+  }
   @media (max-width: 768px) {
     height: 320px;
   }
@@ -828,4 +881,9 @@
   @media (max-width: 450px) {
     height: 365px;
   }
+}
+
+.profile-picture img {
+  min-height: 250px;
+  object-fit: cover;
 }
