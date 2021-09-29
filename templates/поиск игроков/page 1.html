@@ -3,7 +3,7 @@
   <div class="container team-cards">
     <p class="sportsclub-title pt-4">Поиск игроков</p>
 
-    <p class="sportsclub-main-text">
+    <p class="sportsclub-main-text text-justify">
       Nunc luctus tristique cras sed imperdiet in eget. Lorem amet, risus augue
       mauris iaculis mi. Aliquet eget leo posuere semper nec at ac, etiam. Orci
       tristique fusce aenean eget et id pellentesque in. Vivamus nisl bibendum
@@ -11,7 +11,7 @@
       pellentesque neque commodo cursus <br />
     </p>
 
-    <div class="pb-4">
+    <div class="pb-4 btns">
       <button type="button" class="btn btn-primary mr-3 mb-3">
         Отправить заявку
       </button>
@@ -28,8 +28,24 @@
           class="form-control search-game h-100"
           placeholder="Введите фамилию и имя игрока"
         />
-        <div class="input-group-append">
-          <button type="button" class="btn btn-primary">Найти игрока</button>
+        <div class="input-group-append search">
+          <button type="button" class="btn btn-primary search-btn">
+            Найти игрока
+          </button>
+          <button
+            type="button"
+            class="
+              btn btn-primary
+              filter-btn
+              py-2
+              px-3
+              h-100
+              d-none
+              search-button
+            "
+          >
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
         </div>
       </div>
       <div class="pl-2">
@@ -41,42 +57,44 @@
           aria-expanded="false"
           aria-controls="collapseExample"
         >
-          <img class="img-fluid" src="/static/images/filter.svg" />
+          <i class="fas fa-filter"></i>
         </button>
       </div>
     </div>
 
     <div class="collapse" id="collapseExample">
       <div class="row mb-4">
-        <div class="col pl-0">
-          <p class="mb-0">Вид спорта</p>
+        <div class="col-12 col-sm-4">
+          <p class="mb-2">Вид спорта</p>
           <select class="form-control">
             <option>Выберите вид спорта</option>
           </select>
         </div>
-        <div class="col">
-          <p class="mb-0">Позиция</p>
+        <div class="col-12 col-sm-4">
+          <p class="mb-2">Позиция</p>
           <select class="form-control">
             <option>Выберите позицию</option>
           </select>
         </div>
-        <div class="col pr-0 text-right" style="position: relative">
-          <button type="button" class="btn btn-light trythis">
+        <div class="col-12 col-sm-4 pr-0 pt-2 text-right">
+          <button type="button" class="btn py-2 btn-light trythis w-100">
             Применить фильтры
           </button>
         </div>
       </div>
     </div>
 
-    <div class="row mb-4">
-      <div class="col-6 p-0">
+    <div
+      class="row dropdown-area mb-4 justify-content-between align-items-center"
+    >
+      <div class="pt-3" style="max-width: 50%">
         <p>Ищут команду: 2 625 игроков</p>
       </div>
-      <div class="col-6 p-0 text-right">
+      <div class="text-right" style="max-width: 50%">
         <div class="dropdown">
-          <i class="d-none d-sm-inline">Сортировать </i>
+          <i class="d-sm-inline">Сортировать </i>
           <button
-            class="d-none d-sm-inline btn btn-sort dropdown-toggle"
+            class="d-sm-inline btn btn-sort dropdown-toggle"
             type="button"
             id="dropdownMenuButton"
             data-toggle="dropdown"

@@ -194,11 +194,6 @@ def news_page1():
     return render_template('новости/main.html', title="новости")
 
 
-@app.route('/новости/min')
-def news_page2():
-    return render_template('новости/min.html', title="новости")
-
-
 @app.route('/новости/max')
 def news_page3():
     return render_template('новости/max.html', title="новости")
