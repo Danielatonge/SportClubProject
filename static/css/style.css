@@ -2174,38 +2174,29 @@ table.table {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5rem;
-
-  text-align: justify;
-
   color: #000000;
 }
 
 .sbornyie-black-heading {
   position: relative;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 1.5rem;
-
-  text-align: justify;
-
   color: #000000;
+  padding-top: 0.5rem;
 }
 
 .sbornyie-large-heading {
   position: relative;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 2.5rem;
   line-height: 2.938rem;
-  /* identical to box height */
-
   color: #000000;
 }
 

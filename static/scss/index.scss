@@ -887,3 +887,55 @@
   min-height: 250px;
   object-fit: cover;
 }
+
+.owl-nav {
+  button {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: white !important;
+    border-radius: 5px;
+    color: $blue-variant !important;
+  }
+}
+
+.rs-team {
+  .owl-next {
+    right: 1%;
+    top: 40% !important;
+  }
+  .owl-prev {
+    left: 1%;
+    top: 40% !important;
+  }
+}
+
+.rs-video,
+.rs-image {
+  position: relative;
+  button {
+    position: absolute;
+
+    &.owl-next {
+      right: 0;
+      top: 30% !important;
+      margin-right: -4rem !important;
+    }
+    &.owl-prev {
+      left: 0;
+      top: 30% !important;
+      margin-left: -4rem !important;
+    }
+  }
+}
+
+// .rs-image {
+//   .owl-next {
+//     right: 1%;
+//     top: 30% !important;
+//   }
+//   .owl-prev {
+//     left: 1%;
+//     top: 30% !important;
+//   }
+// }
