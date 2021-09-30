@@ -1,5 +1,1 @@
-- Responsiveness of table data on Мероприятия/page7
-
-Main page, fixed heights for all cards
-
-Align all headings and cards at the same position in the row/container
+Responsiveness of Slider on banner Главная/page2
