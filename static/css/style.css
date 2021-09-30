@@ -1448,6 +1448,7 @@ nav.navbar.horizontal-bar-2 {
   }
 
   .navbar.horizontal-bar .dropdown .dropdown-toggle::after {
+    content: "";
     position: absolute;
     right: 1.5rem;
   }
