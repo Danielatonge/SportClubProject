@@ -351,19 +351,6 @@ footer li {
   margin-right: -8px;
 }
 
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
-
 nav ul.pagination {
   margin: 0;
 }
@@ -945,10 +932,6 @@ nav.navbar.horizontal-bar-2 {
 }
 
 @media (max-width: 576px) {
-  /* .timer {
-      width: 100%;
-      margin: 0 auto;
-    } */
   .block-icon {
     display: none;
   }
@@ -1341,13 +1324,7 @@ nav.navbar.horizontal-bar-2 {
 }
 
 .navbar.horizontal-bar .dropdown:hover > .dropdown-menu {
-  display: block;
   margin-top: -1px;
-}
-
-.navbar.horizontal-bar .dropdown > .dropdown-toggle:active {
-  /*Without this, clicking will make it sticky*/
-  pointer-events: none;
 }
 
 .fa-eye {
