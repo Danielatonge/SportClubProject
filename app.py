@@ -22,6 +22,11 @@ def main_page2():
     return render_template('Главная/page2.html', title="Главная")
 
 
+@app.route('/Главная/test')
+def main_page3():
+    return render_template('Главная/test.html', title="Главная")
+
+
 # ------------------------- Киберзона
 @app.route('/киберзона/page1')
 def kiberzone_page1():

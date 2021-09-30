@@ -1490,14 +1490,6 @@ img.eye-icon {
   color: #fff;
 }
 
-.main-header1-background {
-  background-image: url("/static/images/header1.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #fff;
-}
-
 .main-header2-background {
   background-image: url("/static/images/header2.png");
   background-position: center;
@@ -2371,7 +2363,9 @@ ol.breadcrumb li .svg-inline--fa {
   color: #ffffff;
   opacity: 0.5;
   padding-bottom: 20px;
-  border-bottom: 4px solid #a0a0a0;
+  height: 50px;
+  width: 240px;
+  text-align: left;
 }
 
 /* New Styles */
@@ -2394,6 +2388,7 @@ ol.breadcrumb li .svg-inline--fa {
 
 .banner-title {
   margin-top: 25%;
+  margin-bottom: 50px;
 }
 
 .my-slider .banner-card {
@@ -2553,4 +2548,25 @@ ol.breadcrumb li .svg-inline--fa {
   .carousel-controls .clickable-btn .btn {
     display: none;
   }
+}
+
+.time-slider {
+  position: absolute;
+  width: 240px;
+  height: 4px;
+  background: #6a6b6d;
+  opacity: 0.4;
+}
+
+.time-slider-color {
+  background: #ffffff;
+  width: 1px;
+  height: 4px;
+  transition: width 5s;
+}
+
+.time-slider-color:hover {
+  width: 240px;
+  height: 3px;
+  cursor: pointer;
 }
