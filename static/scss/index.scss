@@ -49,7 +49,7 @@
       border-radius: 5px;
       position: relative;
       height: 8rem;
-      margin-top: 4rem;
+      margin-top: 6rem;
 
       .text {
         margin-left: 18%;
@@ -90,6 +90,7 @@
 
     @media (max-width: 576px) {
       padding-bottom: 0;
+      margin-top: 4rem;
     }
   }
 
@@ -116,6 +117,7 @@
       background-repeat: no-repeat;
       background-color: unset;
       border: none;
+      height: 220px;
     }
 
     // Video Cards
@@ -174,6 +176,7 @@
 
       .headline {
         color: white;
+        padding-top: 5rem;
 
         h1 {
           font-size: 1rem;
@@ -256,6 +259,7 @@
 
         @media (min-width: 992px) {
           padding-top: 4rem;
+          height: 220px;
         }
 
         .card-body {
