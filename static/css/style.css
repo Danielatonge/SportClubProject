@@ -2343,6 +2343,7 @@ ol.breadcrumb li .svg-inline--fa {
   height: 50px;
   width: 240px;
   text-align: left;
+  cursor: pointer;
 }
 
 /* New Styles */
