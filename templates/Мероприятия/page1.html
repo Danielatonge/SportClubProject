@@ -1,203 +1,247 @@
 {% extends "layout.html" %} {% block content %}
-<!-- Albums -->
-<div class="body-colour mb-3">
-  <div class="container">
-    <div class="row mr-0 ml-0">
-      <div class="col-6">
-        <p class="sub-title">Мероприятия</p>
-      </div>
-    </div>
-    <div class="row mr-0 ml-0">
-      <div class="col-12 col-md-3 pr-md-5 albums">
-        <div class="outer-navigation list-group text-center text-blue">
-          <a
-            href="#"
-            class="list-group-item list-group-item-action active"
-            aria-current="true"
-            >Актуальные мероприятия</a
-          >
-          <a href="#" class="list-group-item list-group-item-action">Архив</a>
-        </div>
-        <div class="inner-navigation list-group text-center text-blue">
-          <a
-            href="#"
-            class="list-group-item list-group-item-action active"
-            aria-current="true"
-            >Актуальные мероприятия</a
-          >
-          <a href="#" class="list-group-item list-group-item-action">Архив</a>
+<main class="page-content">
+  <!-- Albums -->
+  <div class="body-colour mb-3">
+    <div class="container">
+      <div class="row mx-0 px-0">
+        <div class="col-6 margin-class">
+          <h4 class="title pt-4 pb-2">Мероприятия</h4>
         </div>
       </div>
-      <div class="col-12 col-md-9 p-0">
-        <div class="row">
-          <div class="col-12 pl-0">
-            <p class="event-month">Октябрь</p>
+      <div class="row mx-0 px-0 news-articles">
+        <div class="col-12 col-md-3 pt-0 pr-md-4 albums margin-class">
+          <div class="outer-navigation list-group text-center text-blue">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+              >Актуальные мероприятия</a
+            >
+            <a href="#" class="list-group-item list-group-item-action">Архив</a>
           </div>
-          <div class="card-deck">
-            <div class="card mbottom zoom-img">
-              <div class="card-group joined-cards card-shadow">
-                <div class="row">
-                  <div class="card first-card">
-                    <div
-                      class="card-group h-100 joined-cards card-shadow zoom-img"
-                    >
-                      <div class="card ctop col-sm-4 p-0">
-                        <img
-                          class="card-img"
-                          src="/static/images/card 1.png"
-                          alt="img1"
-                        />
-                      </div>
-                      <div class="card cbottom col-sm-8">
-                        <div class="card-body d-flex flex-column">
-                          <p class="card-hashtag">15 октября</p>
-                          <h5 class="card-title">
-                            Волонтёры РТУ МИРЭА приняли активное участие в
-                            «Кубке Первого Президента России»
-                          </h5>
-                          <i class="card-hashtag"
-                            >#ssc_alliance #асск #студенческийспорт</i
-                          >
-                          <div
-                            class="
-                              row
-                              mt-auto
-                              d-flex
-                              justify-content-between
-                              align-items-center
-                            "
-                          >
-                            <div>
-                              <i class="card-date">15 окт</i>
-                            </div>
-                            <div>
-                              <img
-                                class="eye-icon"
-                                src="/static/images/eye.svg"
-                              />
-                              <i class="card-date">999,999</i>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+          <div class="inner-navigation list-group text-center text-blue">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+              >Актуальные мероприятия</a
+            >
+            <a href="#" class="list-group-item list-group-item-action">Архив</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-9 p-0">
+          <div class="row articles">
+            <div class="title"><h3>Октябрь</h3></div>
+            <article class="article pb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-sm-4 picture">
+                    <img
+                      src="../../static/images/card 1.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body">
+                      <h5 class="card-text">15 октября</h5>
+                      <p class="card-title">
+                        Волонтёры РТУ МИРЭА приняли активное участие в «Кубке
+                        Первого Президента
+                      </p>
+                      <p class="card-text hastags">
+                        #ssc_alliance #волейбол #кубок_ректора
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="w-100 d-none d-sm-block d-md-block d-lg-block d-xl-block"
-            ></div>
-            <div class="card mbottom zoom-img">
-              <div class="card-group joined-cards card-shadow">
-                <div class="row">
-                  <div class="card first-card">
-                    <div
-                      class="card-group h-100 joined-cards card-shadow zoom-img"
-                    >
-                      <div class="card ctop col-sm-4 p-0">
-                        <img
-                          class="card-img"
-                          src="/static/images/card 1.png"
-                          alt="img1"
-                        />
-                      </div>
-                      <div class="card cbottom col-sm-8">
-                        <div class="card-body d-flex flex-column">
-                          <p class="card-hashtag">15 октября</p>
-                          <h5 class="card-title">
-                            Волонтёры РТУ МИРЭА приняли активное участие в
-                            «Кубке Первого Президента России»
-                          </h5>
-                          <i class="card-hashtag"
-                            >#ssc_alliance #асск #студенческийспорт</i
-                          >
-                          <div
-                            class="
-                              row
-                              mt-auto
-                              d-flex
-                              justify-content-between
-                              align-items-center
-                            "
-                          >
-                            <div>
-                              <i class="card-date">15 окт</i>
-                            </div>
-                            <div>
-                              <img
-                                class="eye-icon"
-                                src="/static/images/eye.svg"
-                              />
-                              <i class="card-date">999,999</i>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            </article>
+            <article class="article pb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-sm-4 picture">
+                    <img
+                      src="../../static/images/card 2.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body">
+                      <h5 class="card-text">18 октября</h5>
+                      <p class="card-title">
+                        В университете пройдет 28 турнир по шахматам,
+                        организованный Всероссийским гроссмейстерским
+                        сообществом
+                      </p>
+                      <p class="card-text hastags">
+                        #ssc_alliance #волейбол #кубок_ректора
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="w-100 d-none d-sm-block d-md-block d-lg-block d-xl-block"
-            ></div>
-            <div class="card mbottom zoom-img">
-              <div class="card-group joined-cards card-shadow">
-                <div class="row">
-                  <div class="card first-card">
-                    <div
-                      class="card-group h-100 joined-cards card-shadow zoom-img"
-                    >
-                      <div class="card ctop col-sm-4 p-0">
-                        <img
-                          class="card-img"
-                          src="/static/images/card 1.png"
-                          alt="img1"
-                        />
-                      </div>
-                      <div class="card cbottom col-sm-8">
-                        <div class="card-body d-flex flex-column">
-                          <p class="card-hashtag">15 октября</p>
-                          <h5 class="card-title">
-                            Волонтёры РТУ МИРЭА приняли активное участие в
-                            «Кубке Первого Президента России»
-                          </h5>
-                          <i class="card-hashtag"
-                            >#ssc_alliance #асск #студенческийспорт</i
-                          >
-                          <div
-                            class="
-                              row
-                              mt-auto
-                              d-flex
-                              justify-content-between
-                              align-items-center
-                            "
-                          >
-                            <div>
-                              <i class="card-date">15 окт</i>
-                            </div>
-                            <div>
-                              <img
-                                class="eye-icon"
-                                src="/static/images/eye.svg"
-                              />
-                              <i class="card-date">999,999</i>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+            </article>
+            <article class="article pb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-sm-4 picture">
+                    <img
+                      src="../../static/images/card 3.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body">
+                      <h5 class="card-text">27 октября</h5>
+                      <p class="card-title">
+                        Девушки из сборной по волейболу совсем скоро начнут свои
+                        первые матчи в МССИ
+                      </p>
+                      <p class="card-text hastags">
+                        #ssc_alliance #волейбол #кубок_ректора
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
+            <article class="article pb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-sm-4 picture">
+                    <img
+                      src="../../static/images/card 4.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body">
+                      <h5 class="card-text">3 ноября</h5>
+                      <p class="card-title">
+                        Кубок ректора 2020 по футболу! Участие в турнире примут
+                        более 15 вузовских команд
+                      </p>
+                      <p class="card-text hastags">
+                        #ssc_alliance #волейбол #кубок_ректора
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="row articles">
+            <div class="title"><h3>Ноябрь</h3></div>
+            <article class="article pb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-sm-4 picture">
+                    <img
+                      src="../../static/images/card 1.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body">
+                      <h5 class="card-text">15 октября</h5>
+                      <p class="card-title">
+                        Волонтёры РТУ МИРЭА приняли активное участие в «Кубке
+                        Первого Президента
+                      </p>
+                      <p class="card-text hastags">
+                        #ssc_alliance #волейбол #кубок_ректора
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="article pb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-sm-4 picture">
+                    <img
+                      src="../../static/images/card 2.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body">
+                      <h5 class="card-text">18 октября</h5>
+                      <p class="card-title">
+                        В университете пройдет 28 турнир по шахматам,
+                        организованный Всероссийским гроссмейстерским
+                        сообществом
+                      </p>
+                      <p class="card-text hastags">
+                        #ssc_alliance #волейбол #кубок_ректора
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="article pb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-sm-4 picture">
+                    <img
+                      src="../../static/images/card 3.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body">
+                      <h5 class="card-text">27 октября</h5>
+                      <p class="card-title">
+                        Девушки из сборной по волейболу совсем скоро начнут свои
+                        первые матчи в МССИ
+                      </p>
+                      <p class="card-text hastags">
+                        #ssc_alliance #волейбол #кубок_ректора
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="article pb-4">
+              <div class="card">
+                <div class="row no-gutters">
+                  <div class="col-sm-4 picture">
+                    <img
+                      src="../../static/images/card 4.png"
+                      class="card-img-top h-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="card-body">
+                      <h5 class="card-text">3 ноября</h5>
+                      <p class="card-title">
+                        Кубок ректора 2020 по футболу! Участие в турнире примут
+                        более 15 вузовских команд
+                      </p>
+                      <p class="card-text hastags">
+                        #ssc_alliance #волейбол #кубок_ректора
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
+</main>
 {% endblock %}
