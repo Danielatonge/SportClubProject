@@ -5,6 +5,10 @@
  Styles for Главная/page2
 */
 
+.margin-class {
+  margin: 0 -7px 0 -5px;
+}
+
 .carousel-control-next {
   opacity: 1;
   top: 10%;
@@ -223,7 +227,7 @@
 
   .videos {
     background-image: url("../images/Group\ 478.png");
-    padding: 1rem;
+    padding-bottom: 1rem;
 
     .video-controls {
       color: white;
