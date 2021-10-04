@@ -504,9 +504,17 @@ a.header-icons {
 .outer-navigation .list-group-item.active {
   background-color: #fff;
   border-color: #f0f0f0;
-  border-left: 4px solid #4c5cb0;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  color: #1d66c1;
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(180deg, #1488cc 0%, #2b32b2 100%);
+  border-image-slice: 1;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+.outer-navigation .list-group-item {
+  color: #1d66c1;
 }
 
 .text-blue {
@@ -515,37 +523,27 @@ a.header-icons {
 
 .list-group-item,
 .list-group-item.list-group-item-action {
-  color: #4c5cb0;
   background-color: white;
-  font-weight: bold;
 }
 
 .outer-navigation .list-group-item.list-group-item-action:hover {
-  color: #4c5cb0;
-  border-left: 4px solid #4c5cb0;
+  color: #1d66c1;
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(180deg, #1488cc 0%, #2b32b2 100%);
+  border-image-slice: 1;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
 }
 
 .inner-navigation.list-group {
   flex-direction: row;
 }
 
-.inner-navigation .list-group-item {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.inner-navigation .list-group-item:first-child,
-.outer-navigation .list-group-item {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
 .inner-navigation .list-group-item.active,
 .inner-navigation .list-group-item.list-group-item-action:hover {
   background-color: #fff;
   border-color: #f0f0f0;
-  border-bottom: 4px solid #4c5cb0;
-  color: #4c5cb0;
   font-weight: bold;
 }
 
@@ -1270,7 +1268,7 @@ nav.navbar.horizontal-bar-2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.5rem;
 
   text-align: justify;

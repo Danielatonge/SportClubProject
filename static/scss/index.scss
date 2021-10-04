@@ -438,8 +438,33 @@
     }
   }
 
+  .outer-navigation {
+    a {
+      font-weight: bold !important;
+    }
+  }
+
   .inner-navigation {
     display: none;
+
+    a {
+      font-weight: bold !important;
+      color: $light-blue !important;
+      &:hover,
+      &.active {
+        border-bottom: 4px solid transparent;
+        border-image: linear-gradient(
+          90deg,
+          $shiny-light-blue 0%,
+          $shiny-dark-blue 100%
+        );
+        border-image-slice: 1;
+        border-right: none;
+        border-top: none;
+        border-left: none;
+      }
+    }
+
     .list-group-item:first-child {
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
@@ -447,9 +472,6 @@
     .list-group-item:last-child {
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
-    }
-    a {
-      color: $blue-variant;
     }
   }
 
@@ -1040,8 +1062,39 @@
 .inner-navigation.list-group {
   flex-direction: row !important;
   @media (max-width: 432px) {
-    flex-direction: column !important;
+    overflow-x: scroll;
   }
+}
+
+.inner-navigation.bordered {
+  .list-group-item:last-child {
+    border-radius: 0 !important;
+  }
+
+  a {
+    color: $dark-blue;
+    font-weight: 400;
+
+    &:hover,
+    &.active {
+      font-weight: bold;
+      position: relative;
+      border-bottom: none;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 50%;
+        border-bottom: 4px solid $dark-blue;
+      }
+    }
+  }
+}
+
+.list-group-item + .list-group-item.active {
+  margin-top: 0 !important;
+  border-top-width: 0 !important;
 }
 
 // Fixed Heights for cards
