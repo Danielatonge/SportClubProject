@@ -694,8 +694,9 @@
 }
 
 .kib-btns {
-  @media (max-width: 576px) {
-    button {
+  button {
+    padding: 0.8rem 1.5rem;
+    @media (max-width: 576px) {
       width: 100%;
     }
   }
