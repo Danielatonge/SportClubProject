@@ -1,50 +1,57 @@
 {% extends "layout.html" %} {% block content %}
 <!-- Navigation 2-->
-<nav class="navbar horizontal-bar-2 navbar-expand-md navbar-dark">
-  <div class="container">
-    <div class="container">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#myNavbarResponsive2"
-        aria-controls="myNavbarResponsive2"
-        aria-expanded="true"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="navbar-collapse" id="myNavbarResponsive2">
-        <ul class="navbar-nav nav-fill w-75 m-auto">
-          <li class="nav-item menu-item">
-            <a class="nav-link second-link" href="#">Магазин сувениров</a>
-          </li>
-          <li class="nav-item menu-item">
-            <a class="nav-link second-link" href="#">Скидки</a>
-          </li>
-          <li class="nav-item menu-item">
-            <a class="nav-link second-link" href="#">Партнеры</a>
-          </li>
-          <li class="nav-item menu-item">
-            <a class="nav-link second-link active" href="#">Сотрудничество</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</nav>
+<div
+  class="
+    page-navigation
+    inner-navigation
+    bordered
+    list-group
+    text-center text-blue
+    mb-4
+    justify-content-center
+  "
+>
+  <a
+    href="#"
+    class="list-group-item list-group-item-action d-flex justify-content-center"
+  >
+    Магазин сувениров</a
+  >
+  <a
+    href="#"
+    class="list-group-item list-group-item-action d-flex justify-content-center"
+  >
+    Скидки
+  </a>
+  <a
+    href="#"
+    class="list-group-item list-group-item-action d-flex justify-content-center"
+  >
+    Партнеры
+  </a>
+  <a
+    href="#"
+    class="
+      list-group-item list-group-item-action
+      d-flex
+      justify-content-center
+      active
+    "
+  >
+    Сотрудничество
+  </a>
+</div>
 
 <div class="body-colour">
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe
+      class="embed-responsive-item"
+      src="https://www.youtube.com/embed/XHLxp8ZnVy0"
+      allowfullscreen
+    ></iframe>
+  </div>
   <div class="container">
     <p class="marketing-title">Сотрудничество</p>
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe
-        class="embed-responsive-item"
-        src="https://www.youtube.com/embed/XHLxp8ZnVy0"
-        allowfullscreen
-      ></iframe>
-    </div>
-
     <p class="marketing-main-text text-justify">
       Ut cursus rhoncus viverra aenean euismod integer nunc. Pulvinar convallis
       gravida nibh nullam. Viverra egestas volutpat, risus, etiam nulla.

@@ -815,11 +815,11 @@ nav.navbar.horizontal-bar-2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.5rem;
 
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
   margin: 0;
   text-align: justify;
   color: #1d66c1;
@@ -844,11 +844,10 @@ nav.navbar.horizontal-bar-2 {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 
   text-align: justify;
-  padding-top: 2rem;
   padding-bottom: 2rem;
 
   color: #000000;

@@ -1073,19 +1073,22 @@
 
   a {
     color: $dark-blue;
+    opacity: 0.6;
     font-weight: 400;
+    font-size: 1rem;
 
     &:hover,
     &.active {
       font-weight: bold;
       position: relative;
       border-bottom: none;
+      opacity: 1;
 
       &:before {
         content: "";
         position: absolute;
         bottom: 0;
-        width: 50%;
+        width: 60%;
         border-bottom: 4px solid $dark-blue;
       }
     }
