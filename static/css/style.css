@@ -1862,8 +1862,12 @@ table.table {
   font-weight: normal;
 }
 
-.calendar-item small {
+.calendar-item p {
   color: #1d66c1;
+}
+
+.calendar-item h6 {
+  font-weight: 500 !important;
 }
 
 .calendar-item,

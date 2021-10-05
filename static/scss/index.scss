@@ -586,14 +586,6 @@
     }
   }
 
-  @media (min-width: 992px) {
-    margin-right: 8%;
-  }
-
-  @media (max-width: 992px) {
-    margin-right: 10%;
-  }
-
   @media (max-width: 768px) {
     .col-4 {
       flex-direction: column;
@@ -612,7 +604,6 @@
 
   @media (max-width: 576px) {
     word-wrap: break-word;
-    margin-right: 0;
 
     .first-team-name {
       flex-direction: column-reverse;
@@ -717,6 +708,12 @@
 /*_____________________________
  Styles for спортклуб pages
 */
+
+@media (max-width: 576px) {
+  .new-margin {
+    margin-right: 10%;
+  }
+}
 
 .bg {
   background-size: cover;
@@ -912,10 +909,9 @@
     border-image-slice: 1;
   }
 
-  h4 {
+  .mirea .text-center h5 {
     font-weight: bolder;
-  }
-  .mirea .text-center h4 {
+    font-size: 1.5rem;
     background-image: linear-gradient(
       to right,
       $shiny-light-blue,
