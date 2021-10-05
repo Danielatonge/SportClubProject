@@ -1,9 +1,30 @@
 {% extends "layout.html" %} {% block content %}
 <div class="body-colour">
   <div class="container">
-    <div class="row pt-4 pb-5">
-      <div class="col-12 col-md-3 pr-3">
+    <div class="row pt-4">
+      <div class="col-12 col-md-3 pr-md-3 albums">
         <div class="outer-navigation list-group text-center text-blue">
+          <a
+            href="#"
+            class="list-group-item list-group-item-action active"
+            aria-current="true"
+            >Футбол</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Велейбол</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Настольный теннис</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Баскетбол</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            >Бадминтон</a
+          >
+          <a href="#" class="list-group-item list-group-item-action">Шахматы</a>
+        </div>
+        <div class="inner-navigation list-group text-center text-blue">
           <a
             href="#"
             class="list-group-item list-group-item-action active"
@@ -125,8 +146,16 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="inner-navigation w-100 list-group text-center text-blue">
+        <div class="row albums">
+          <div
+            class="
+              inner-navigation
+              d-flex
+              w-100
+              list-group
+              text-center text-blue
+            "
+          >
             <a
               href="#"
               class="

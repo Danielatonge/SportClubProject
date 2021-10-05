@@ -539,6 +539,12 @@
     border-bottom-left-radius: 5px;
   }
 
+  .btns {
+    button {
+      padding: 0.8rem 1.5rem;
+    }
+  }
+
   @media (max-width: 400px) {
     .search-btn {
       display: none !important;
@@ -1061,9 +1067,7 @@
 
 .inner-navigation.list-group {
   flex-direction: row !important;
-  @media (max-width: 432px) {
-    overflow-x: scroll;
-  }
+  overflow-x: scroll;
 }
 
 .inner-navigation.bordered {
@@ -1196,4 +1200,15 @@
 
 .list-group-item + .list-group-item {
   border-top-width: 1px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
