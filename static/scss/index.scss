@@ -430,10 +430,10 @@
 
 .albums {
   @media (max-width: 768px) {
-    .media-sort {
+    .media-sort-first {
       display: none;
     }
-    .sub-title {
+    .heading-class {
       text-align: center;
     }
   }
