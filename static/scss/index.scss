@@ -639,6 +639,20 @@
   }
 }
 
+.team-margin {
+  @media (min-width: 992px) {
+    margin-right: 8%;
+  }
+
+  @media (max-width: 992px) {
+    margin-right: 10%;
+  }
+
+  @media (max-width: 576px) {
+    margin-right: 0;
+  }
+}
+
 /*_____________________________
  Styles for киберзона pages
 */
