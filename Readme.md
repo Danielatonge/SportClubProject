@@ -70,6 +70,8 @@ $ python app.py
 
 In flask, Default port is `5000`
 
+open http://127.0.0.1:5000/
+
 ## Reference
 
 Offical Website
@@ -83,3 +85,19 @@ Tutorial
 - [In Flask we trust](http://igordavydenko.com/talks/ua-pycon-2012.pdf)
 
 [Wiki Page](https://github.com/tsungtwu/flask-example/wiki)
+
+## Producing Pure HTML,CSS,JS
+
++ Run the server
++ Create a directory which will contain the final HTML,CSS,JS project.
++ Run `wget -r --no-parent http://127.0.0.1:5000/`
++ Do the following find and replace operations
+
+  > find/replace: /static --> ../static
+  > in all project files except those in the static/ folder
+  >
+  >find/replace: href="/ --> href="../
+  > in all project files
+
+
++ Your Pure HTML,CSS,JS Project is ready
