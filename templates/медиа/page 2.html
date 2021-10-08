@@ -52,7 +52,7 @@
           </div>
         </a>
       </div>
-      <div class="col-lg-3 col-md-4 col-6">
+      <div class="col-lg-3 col-md-4 col-6 d-none filterContent">
         <a href="">
           <div class="img-gradient">
             <img class="card-img-top" src="/static/images/image-box.png" />
@@ -63,7 +63,7 @@
           </div>
         </a>
       </div>
-      <div class="col-lg-3 col-md-4 col-6">
+      <div class="col-lg-3 col-md-4 col-6 d-none filterContent">
         <a href="">
           <div class="img-gradient">
             <img class="card-img-top" src="/static/images/image-box.png" />
@@ -74,7 +74,7 @@
           </div>
         </a>
       </div>
-      <div class="col-lg-3 col-md-4 col-6">
+      <div class="col-lg-3 col-md-4 col-6 d-none filterContent">
         <a href="">
           <div class="img-gradient">
             <img class="card-img-top" src="/static/images/image-box.png" />
@@ -85,7 +85,7 @@
           </div>
         </a>
       </div>
-      <div class="col-lg-3 col-md-4 col-6">
+      <div class="col-lg-3 col-md-4 col-6 d-none filterContent">
         <a href="">
           <div class="img-gradient">
             <img class="card-img-top" src="/static/images/image-box.png" />
@@ -97,12 +97,15 @@
         </a>
       </div>
 
-      <button class="btn gallery-button d-flex justify-content-center">
+      <button
+        class="btn gallery-button d-flex justify-content-center"
+        id="filterBtn"
+      >
         <p>Показать все 62 альбома</p>
       </button>
     </div>
 
-    <div class="row mr-0 ml-0">
+    <div class="row mt-5 mx-0">
       <div class="col-sm-6">
         <p class="sub-title">Все видео</p>
       </div>
@@ -127,10 +130,16 @@
       </div>
     </div>
 
-    <div class="row mr-0 ml-0">
+    <div class="row mx-0">
       <div class="col-lg-6 col-md-6 col-12 album">
         <a href="">
-          <img class="card-img-top" src="/static/images/volley-girls.png	" />
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item embedded-video"
+              src="https://www.youtube.com/embed/XHLxp8ZnVy0"
+              allowfullscreen
+            ></iframe>
+          </div>
           <div class="card-img-overlay d-flex flex-column">
             <h5 class="media-card-overlay-title mt-auto"></h5>
             <i class="card-overlay-hashtag"></i>
@@ -195,5 +204,12 @@
     </div>
   </div>
 </div>
+
+<script>
+  $("#filterBtn").on("click", function (e) {
+    $(".filterContent").toggleClass("d-none");
+    e.preventDefault();
+  });
+</script>
 
 {% endblock %}

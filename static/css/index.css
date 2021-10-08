@@ -320,7 +320,7 @@ a, a:hover {
 @media (max-width: 576px) {
     .page-content .body-colour {
         padding-bottom: 0;
-        margin-top: 4rem
+        margin-top: 2rem
     }
 }
 
@@ -458,7 +458,12 @@ a, a:hover {
 
 .page-content .news-articles .article .card .card-text {
     font-size: 0.8rem;
-    color: #4c5cb0
+    color: #1d66c1;
+    font-weight: 500 !important
+}
+
+.page-content .news-articles .article .card .card-text.hashtag {
+    font-weight: normal !important
 }
 
 .page-content .news-articles .article .card .card-title {
@@ -528,16 +533,27 @@ a, a:hover {
 }
 
 .albums .outer-navigation a {
-    font-weight: bold !important
+    font-weight: 500 !important
 }
 
 .albums .inner-navigation {
-    display: none
+    display: none;
+    -webkit-box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.04), 0px 8px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.04), 0px 8px 8px rgba(0, 0, 0, 0.04)
 }
 
 .albums .inner-navigation a {
-    font-weight: bold !important;
-    color: #1d66c1 !important
+    font-weight: 500 !important;
+    color: #1d66c1 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .albums .inner-navigation a:hover, .albums .inner-navigation a.active {
@@ -575,7 +591,7 @@ a, a:hover {
 
 .albums .last-gallery-button:last-child {
     margin: 0 auto;
-    width: 32%
+    width: 31.5%
 }
 
 @media (max-width: 768px) {
@@ -601,6 +617,10 @@ a, a:hover {
     .socials .icons {
         padding-top: 0
     }
+}
+
+.card.card-shadow.card-no-height {
+    height: unset !important
 }
 
 .team-cards .search button {
@@ -866,6 +886,25 @@ a, a:hover {
 
 .date-margin .position-bottom * {
     color: #1d66c1 !important
+}
+
+.player-form .form-control {
+    border: none
+}
+
+.player-form label {
+    color: black;
+    font-size: 1rem
+}
+
+.player-form .h6 {
+    font-weight: normal
+}
+
+#question4 {
+    font-size: 0.9rem;
+    color: black;
+    height: 80px
 }
 
 .table .team-info h4 {
@@ -1235,13 +1274,7 @@ a, a:hover {
 
 @media (max-width: 576px) {
     .card.card-shadow.zoom-img.new-design, .card-shadow.new-design {
-        height: 440px !important
-    }
-}
-
-@media (max-width: 450px) {
-    .card.card-shadow.zoom-img.new-design, .card-shadow.new-design {
-        height: 365px !important
+        height: unset !important
     }
 }
 
@@ -1359,4 +1392,63 @@ a, a:hover {
 
 .text-muted, .breadcrumb-item.active {
     color: #a0a0a0 !important
+}
+
+.embedded-video {
+    border-radius: 5px
+}
+
+.hashtag {
+    font-weight: normal !important
+}
+
+.radius {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+
+.col-12.albums, .row.albums {
+    padding: 0
+}
+
+@media (min-width: 768px) {
+    .col-12.albums, .row.albums {
+        padding-right: 1rem
+    }
+}
+
+.col-12.albums .inner-navigation, .row.albums .inner-navigation {
+    -webkit-box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.04), 0px 8px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.04), 0px 8px 8px rgba(0, 0, 0, 0.04)
+}
+
+.h6.text-muted {
+    font-weight: normal !important
+}
+
+textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, label:focus, .btn:active, .btn.active {
+    outline: 1px solid red !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+button:focus, button:active, button:hover, .btn:active, .btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
+}
+
+.col-12.w-100 {
+    padding: 0
+}
+
+@media (max-width: 768px) {
+    .col-12.w-100 {
+        padding-top: 1.5rem
+    }
+}
+
+.col-12.pics {
+    margin-top: -0.5rem !important
 }
