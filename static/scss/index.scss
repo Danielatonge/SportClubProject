@@ -247,7 +247,7 @@
 
     @media (max-width: 576px) {
       padding-bottom: 0;
-      margin-top: 4rem;
+      margin-top: 3rem;
     }
   }
 
@@ -384,7 +384,11 @@
         }
         .card-text {
           font-size: 0.8rem;
-          color: $blue-variant;
+          color: $light-blue;
+          font-weight: 500 !important;
+          &.hashtag {
+            font-weight: normal !important;
+          }
         }
         .card-title {
           font-size: 1rem;
@@ -478,6 +482,10 @@
     a {
       font-weight: bold !important;
       color: $light-blue !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       &:hover,
       &.active {
         border-bottom: 4px solid transparent;
@@ -514,7 +522,7 @@
 
   .last-gallery-button:last-child {
     margin: 0 auto;
-    width: 32%;
+    width: 31.5%;
 
     @media (max-width: 768px) {
       width: 50%;
@@ -814,6 +822,27 @@
 /*_____________________________
  Styles for Мероприятия pages
 */
+.player-form {
+  .form-control {
+    border: none;
+  }
+
+  label {
+    color: black;
+    font-size: 1rem;
+  }
+
+  .h6 {
+    font-weight: normal;
+  }
+}
+
+#question4 {
+  font-size: 0.9rem;
+  color: black;
+  height: 80px;
+}
+
 .table .team-info {
   h4 {
     font-size: 1.2rem;
@@ -1301,4 +1330,52 @@
 .text-muted,
 .breadcrumb-item.active {
   color: $dark-gray !important;
+}
+
+.embedded-video {
+  border-radius: 5px;
+}
+
+.hashtag {
+  font-weight: normal !important;
+}
+
+.radius {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.col-12.albums {
+  padding: 0;
+  .inner-navigation {
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.04),
+      0px 8px 8px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.h6.text-muted {
+  font-weight: normal !important;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 1px solid red !important;
+  box-shadow: none !important;
+}
+
+button:focus,
+button:active,
+button:hover,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
 }
