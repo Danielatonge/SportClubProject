@@ -553,6 +553,9 @@
 /*_____________________________
  Styles for поиск игроков pages
 */
+.card.card-shadow.card-no-height {
+  height: unset !important;
+}
 
 .team-cards {
   .search {
@@ -1209,12 +1212,21 @@
     height: 320px !important;
   }
   @media (max-width: 576px) {
-    height: 440px !important;
+    height: unset !important;
   }
-  @media (max-width: 450px) {
-    height: 365px !important;
-  }
+  // @media (max-width: 450px) {
+  //   height: 365px !important;
+  // }
 }
+
+// .card-shadow.new-design:nth-of-type(3) {
+//   @media (max-width: 576px) {
+//     height: 440px !important;
+//   }
+//   @media (max-width: 450px) {
+//     height: 365px !important;
+//   }
+// }
 
 .profile-picture img {
   min-height: 250px;
