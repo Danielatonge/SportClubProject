@@ -1,12 +1,12 @@
-{% extends "layout.html" %} {% set active_page = "team" %} {% block content %}
-    <div class="tournir-header-background">
-        <div class="bg py-5">
-            <div class="container d-flex align-items-center">
-                <img class="img-fluid pr-3" src="/static/images/rocketLeague.png"/>
-                <h2>Rocket League</h2>
-            </div>
-        </div>
+{% extends "layout.html" %} {% block content %}
+<div class="tournir-header-background">
+  <div class="bg py-5">
+    <div class="container d-flex align-items-center">
+      <img class="img-fluid pr-3" src="/static/images/rocketLeague.png" />
+      <h2>Rocket League</h2>
     </div>
+  </div>
+</div>
 
 <div class="body-colour">
   <div class="container">
@@ -21,38 +21,37 @@
             d-flex
             justify-content-center
           "
-                    >
-                        <div class="align-self-center">Команда</div>
-                    </a>
-                    <a
-                            href="#"
-                            class="
+        >
+          <div class="align-self-center">Команда</div>
+        </a>
+        <a
+          href="#"
+          class="
             list-group-item list-group-item-action
             d-flex
             justify-content-center
           "
-                    >
-                        <div class="align-self-center">Медиа сборной</div>
-                    </a>
-                    <a
-                            href="#"
-                            class="
+        >
+          <div class="align-self-center">Медиа сборной</div>
+        </a>
+        <a
+          href="#"
+          class="
             list-group-item list-group-item-action
             d-flex
             justify-content-center
             active
           "
-                    >
-                        <div class="align-self-center">Турниры</div>
-                    </a>
-                    <a
-                            href="#"
-                            class="
+        >
+          <div class="align-self-center">Турниры</div>
+        </a>
+        <a
+          href="#"
+          class="
             list-group-item list-group-item-action
             d-flex
             justify-content-center
           "
-<<<<<<< HEAD
         >
           <div class="align-self-center">История турниров</div>
         </a>
@@ -123,14 +122,21 @@
                     <p class="league-name">Формат турнира</p>
                     <p class="match-name">5x5</p>
                   </div>
-=======
-                    >
-                        <div class="align-self-center">История турниров</div>
-                    </a>
->>>>>>> 68910acf27098701822bf0dd0e9cfd79255cefad
                 </div>
+                <div class="col-6 col-sm-3 d-flex align-items-start match-time">
+                  <div class="d-block">
+                    <p class="league-name">Кол-во участников</p>
+                    <p class="match-name">8 команд</p>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-3 d-flex align-items-start match-time">
+                  <div class="d-block">
+                    <p class="league-name">Организатор</p>
+                    <p class="match-name">Warface Esports League</p>
+                  </div>
+                </div>
+              </div>
             </div>
-<<<<<<< HEAD
           </div>
         </div>
         <div class="row match-details">
@@ -178,145 +184,20 @@
                     <p class="league-name">Кол-во участников</p>
                     <p class="match-name">8 команд</p>
                   </div>
-=======
-            <div class="row mx-0 pt-3">
-                <div class="col-12 col-md-3 pr-md-5 albums">
-                    <div class="outer-navigation list-group text-center text-blue">
-                        <a
-                                href="#"
-                                class="list-group-item list-group-item-action active"
-                                aria-current="true"
-                        >Турниры сборной</a
-                        >
-                        <a href="#" class="list-group-item list-group-item-action"
-                        >Студенческие турниры</a
-                        >
-                    </div>
-                    <div class="inner-navigation list-group text-center text-blue">
-                        <a
-                                href="#"
-                                class="list-group-item list-group-item-action active"
-                                aria-current="true"
-                        >Турниры сборной</a
-                        >
-                        <a href="#" class="list-group-item list-group-item-action"
-                        >Студенческие турниры</a
-                        >
-                    </div>
->>>>>>> 68910acf27098701822bf0dd0e9cfd79255cefad
                 </div>
-                <div class="col-12 col-md-9 px-0 new-match">
-                    <div class="row match-details">
-                        <div class="card w-100">
-                            <div class="card-body">
-                                <div class="row align-items-start">
-                                    <div class="col-sm-8 d-flex align-items-start match-time">
-                                        <img
-                                                src="/static/images/Rectangle336.png"
-                                                style="width: 50px; height: 50px; margin-right: 1.5rem"
-                                        />
-                                        <div class="d-block">
-                                            <p class="match-name blue">
-                                                PVP Weekly Clans Brawl: Bravo #27
-                                            </p>
-                                            <p class="league-name" style="font-size: 1rem">
-                                                Rocket League
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 d-flex align-items-start match-time">
-                                        <div class="d-block">
-                                            <p class="league-name">Призовой фонд</p>
-                                            <p class="match-name blue">50 000 РУБ</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row align-items-start">
-                                    <div class="col-6 col-sm-3 d-flex align-items-start match-time">
-                                        <div class="d-block">
-                                            <p class="league-name">Дата проведения</p>
-                                            <p class="match-name">22 ноября - 26 ноября 2020</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-3 d-flex align-items-start match-time">
-                                        <div class="d-block">
-                                            <p class="league-name">Формат турнира</p>
-                                            <p class="match-name">5x5</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-3 d-flex align-items-start match-time">
-                                        <div class="d-block">
-                                            <p class="league-name">Кол-во участников</p>
-                                            <p class="match-name">8 команд</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-3 d-flex align-items-start match-time">
-                                        <div class="d-block">
-                                            <p class="league-name">Организатор</p>
-                                            <p class="match-name">Warface Esports League</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row match-details">
-                        <div class="card w-100">
-                            <div class="card-body">
-                                <div class="row align-items-start">
-                                    <div class="col-sm-8 d-flex align-items-start match-time">
-                                        <img
-                                                src="/static/images/Rectangle336.png"
-                                                style="width: 50px; height: 50px; margin-right: 1.5rem"
-                                        />
-                                        <div class="d-block">
-                                            <p class="match-name blue">
-                                                PVP Weekly Clans Brawl: Bravo #27
-                                            </p>
-                                            <p class="league-name" style="font-size: 1rem">
-                                                Rocket League
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 d-flex align-items-start match-time">
-                                        <div class="d-block">
-                                            <p class="league-name">Призовой фонд</p>
-                                            <p class="match-name blue">50 000 РУБ</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row align-items-start">
-                                    <div class="col-6 col-sm-3 d-flex align-items-start match-time">
-                                        <div class="d-block">
-                                            <p class="league-name">Дата проведения</p>
-                                            <p class="match-name">22 ноября - 26 ноября 2020</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-3 d-flex align-items-start match-time">
-                                        <div class="d-block">
-                                            <p class="league-name">Формат турнира</p>
-                                            <p class="match-name">5x5</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-3 d-flex align-items-start match-time">
-                                        <div class="d-block">
-                                            <p class="league-name">Кол-во участников</p>
-                                            <p class="match-name">8 команд</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-sm-3 d-flex align-items-start match-time">
-                                        <div class="d-block">
-                                            <p class="league-name">Организатор</p>
-                                            <p class="match-name">Warface Esports League</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-6 col-sm-3 d-flex align-items-start match-time">
+                  <div class="d-block">
+                    <p class="league-name">Организатор</p>
+                    <p class="match-name">Warface Esports League</p>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+</div>
 
 {% endblock %}
