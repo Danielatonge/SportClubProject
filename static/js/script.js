@@ -169,4 +169,88 @@ $(document).ready(function () {
       },
     });
   });
+
+  $(".rs-images .rs-carousel").each(function () {
+    const owlCarousel = $(this),
+      loop = owlCarousel.data("loop"),
+      items = owlCarousel.data("items"),
+      margin = owlCarousel.data("margin"),
+      autoplay = owlCarousel.data("autoplay"),
+      autoplayTimeout = owlCarousel.data("autoplay-timeout"),
+      smartSpeed = owlCarousel.data("smart-speed"),
+      nav = owlCarousel.data("nav"),
+      navSpeed = owlCarousel.data("nav-speed"),
+      xsDevice = owlCarousel.data("mobile-device"),
+      xsDeviceNav = owlCarousel.data("mobile-device-nav"),
+      smDevice = owlCarousel.data("ipad-device"),
+      smDeviceNav = owlCarousel.data("ipad-device-nav"),
+      smDevice2 = owlCarousel.data("ipad-device2"),
+      smDeviceNav2 = owlCarousel.data("ipad-device-nav2"),
+      centerMode = owlCarousel.data("center-mode"),
+      mdDevice = owlCarousel.data("md-device"),
+      mdDeviceNav = owlCarousel.data("md-device-nav");
+    owlCarousel.owlCarousel({
+      loop: loop ? true : false,
+      items: items ? items : 4,
+      lazyLoad: true,
+      center: centerMode ? true : false,
+      margin: margin ? margin : 0,
+      autoplay: autoplay ? true : false,
+      autoplayTimeout: autoplayTimeout ? autoplayTimeout : 1000,
+      smartSpeed: smartSpeed ? smartSpeed : 250,
+      nav: nav ? true : false,
+      navText: [
+        "<i class='fa fa-arrow-left'></i>",
+        "<i class='fa fa-arrow-right'></i>",
+      ],
+      navSpeed: navSpeed ? true : false,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: xsDevice ? xsDevice : 1,
+          nav: xsDeviceNav ? true : false,
+        },
+
+        300: {
+          items: 2,
+          nav: false,
+          center: false,
+        },
+
+        400: {
+          items: 3,
+          nav: false,
+          center: false,
+        },
+
+        500: {
+          items: 4,
+          nav: false,
+          center: false,
+        },
+
+        576: {
+          items: 4,
+          nav: true,
+          center: false,
+        },
+
+        768: {
+          items: 5,
+          nav: true,
+          center: false,
+        },
+        992: {
+          items: 7,
+          nav: true,
+          center: false,
+        },
+        1200: {
+          items: 8,
+          nav: true,
+          center: false,
+        },
+      },
+    });
+  });
 });

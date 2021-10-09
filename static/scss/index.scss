@@ -1099,6 +1099,31 @@
 /*_____________________________
  Styles for Клубы pages
 */
+.mobile-padding {
+  @media (min-width: 320px) and (max-width: 768px) {
+    padding: 0 10% !important;
+  }
+}
+
+.gradient-text {
+  font-weight: bold !important;
+  background-image: linear-gradient(
+    to right,
+    $shiny-light-blue,
+    $shiny-dark-blue
+  ) !important;
+  background-clip: text !important;
+  fill: transparent !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  -moz-background-clip: text !important;
+  -moz-text-fill-color: transparent !important;
+}
+
+.section-title {
+  color: $light-blue;
+  font-weight: 500;
+}
 
 .name-card .card {
   border: none;
@@ -1113,6 +1138,9 @@
 }
 
 .new-match {
+  .second-row {
+    margin-bottom: -1.5rem;
+  }
   .match-details {
     p:nth-child(1) {
       font-weight: unset;
@@ -1132,8 +1160,8 @@
         color: $dark-gray;
       }
       .blue {
-        color: $blue-variant;
-        font-size: 1.2rem;
+        color: $light-blue;
+        font-size: 1.5rem;
       }
       @media (max-width: 576px) {
         justify-content: left;
@@ -1263,7 +1291,8 @@
 }
 
 .rs-video,
-.rs-image {
+.rs-image,
+.rs-images {
   position: relative;
   button {
     position: absolute;

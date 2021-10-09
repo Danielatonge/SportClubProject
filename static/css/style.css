@@ -1464,6 +1464,22 @@ img.eye-icon {
   color: #fff;
 }
 
+.tournir-header-background1 {
+  background-image: url("/static/images/Group522.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.tournir-header-background2 {
+  background-image: url("/static/images/Group523.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
 .kiberzone-header-background {
   background-image: url("/static/images/kiberzone.png");
   background-position: center;

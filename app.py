@@ -65,6 +65,51 @@ def club_page1():
     return render_template('Клубы/page 1.html', title="Клубы")
 
 
+@app.route('/Клубы/page1-2.html')
+def club_page12():
+    return render_template('Клубы/page 1-2.html', title="Клубы")
+
+
+@app.route('/Клубы/page1-3.html')
+def club_page13():
+    return render_template('Клубы/page 1-3.html', title="Клубы")
+
+
+@app.route('/Клубы/page1-4.html')
+def club_page14():
+    return render_template('Клубы/page 1-4.html', title="Клубы")
+
+
+@app.route('/Клубы/page1-5.html')
+def club_page15():
+    return render_template('Клубы/page 1-5.html', title="Клубы")
+
+
+@app.route('/Клубы/pagex.html')
+def club_pagex():
+    return render_template('Клубы/page x.html', title="Клубы")
+
+
+@app.route('/Клубы/pagex2.html')
+def club_pagex2():
+    return render_template('Клубы/page x2.html', title="Клубы")
+
+
+@app.route('/Клубы/pagex3.html')
+def club_pagex3():
+    return render_template('Клубы/page x3.html', title="Клубы")
+
+
+@app.route('/Клубы/pagex4.html')
+def club_pagex4():
+    return render_template('Клубы/page x4.html', title="Клубы")
+
+
+@app.route('/Клубы/pagex5.html')
+def club_pagex5():
+    return render_template('Клубы/page x5.html', title="Клубы")
+
+
 @app.route('/Клубы/page2.html')
 def club_page2():
     return render_template('Клубы/page 2.html', title="Клубы")

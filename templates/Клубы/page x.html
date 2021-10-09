@@ -1,9 +1,22 @@
 {% extends "layout.html" %} {% block content %}
-<div class="tournir-header-background">
-  <div class="bg py-5">
-    <div class="container d-flex align-items-center">
-      <img class="img-fluid pr-3" src="/static/images/rocketLeague.png" />
-      <h2>Rocket League</h2>
+<div class="tournir-header-background2">
+  <div class="container">
+    <div class="row text-center pt-5 pb-3">
+      <div class="col-12">
+        <img
+          class="img-fluid"
+          style="height: 80px"
+          src="/static/images/circle.png"
+        />
+      </div>
+      <div class="col-12 mb-4">
+        <div class="h3">Беговой клуб</div>
+      </div>
+      <div class="col-12 mb-4">
+        <button class="btn btn-transparent">
+          Зарегистрироваться на турнир
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -23,7 +36,7 @@
             active
           "
         >
-          <div class="align-self-center">Команда</div>
+          <div class="align-self-center">Информация</div>
         </a>
         <a
           href="#"
@@ -33,7 +46,7 @@
             justify-content-center
           "
         >
-          <div class="align-self-center">Медиа сборной</div>
+          <div class="align-self-center">Участники клуба</div>
         </a>
         <a
           href="#"
@@ -43,7 +56,7 @@
             justify-content-center
           "
         >
-          <div class="align-self-center">Турниры</div>
+          <div class="align-self-center">Расписание</div>
         </a>
         <a
           href="#"
@@ -53,69 +66,45 @@
             justify-content-center
           "
         >
-          <div class="align-self-center">История турниров</div>
+          <div class="align-self-center">Медиа</div>
+        </a>
+        <a
+          href="#"
+          class="
+            list-group-item list-group-item-action
+            d-flex
+            justify-content-center
+          "
+        >
+          <div class="align-self-center">Достижения</div>
         </a>
       </div>
     </div>
 
-    <p class="col-12 sub-title pt-5">Команда 1</p>
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-3 name-card">
-        <div class="card">
-          <p class="sbornyie-sostav mt-auto">Kristin Watson</p>
-          <p class="sbornyie-sostav-small">nickname</p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 name-card">
-        <div class="card">
-          <p class="sbornyie-sostav mt-auto">Kristin Watson</p>
-          <p class="sbornyie-sostav-small">nickname</p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 name-card">
-        <div class="card">
-          <p class="sbornyie-sostav mt-auto">Kristin Watson</p>
-          <p class="sbornyie-sostav-small">nickname</p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 name-card">
-        <div class="card">
-          <p class="sbornyie-sostav mt-auto">Kristin Watson</p>
-          <p class="sbornyie-sostav-small">nickname</p>
-        </div>
-      </div>
-    </div>
+    <p class="col-12 sub-title pt-5 section-title">О беговом клубе</p>
+    <p class="col-12 text-justify">
+      Nunc luctus tristique cras sed imperdiet in eget. Lorem amet, risus augue
+      mauris iaculis mi. Aliquet eget leo posuere semper nec at ac, etiam. Orci
+      tristique fusce aenean eget et id pellentesque in. Vivamus nisl bibendum
+      tristique tristique amet, in lectus felis. At eget aenean vitae enim. Et,
+      pellentesque neque commodo cursus Cursus maecenas placerat facilisis
+      quisque pretium ut euismod. Sit diam, nunc luctus at. Libero egestas urna
+      nisi pulvinar sit libero ut imperdiet. Nunc mi cum nunc, sit scelerisque
+      aliquam elementum, nunc. Morbi suscipit quam et facilisis interdum tellus
+      enim, neque. Faucibus nullam vitae fringilla cras phasellus tincidunt
+      bibendum ante. Fermentum nunc, blandit donec phasellus metus ultricies
+      arcu turpis. Elementum nulla viverra non porttitor nascetur. Mattis
+      habitant tempus, urna commodo facilisis fermentum. Urna nulla sit netus
+      ullamcorper lobortis. In accumsan fermentum fermentum ipsum blandit
+      egestas. Varius mattis vitae suspendisse in dignissim id arcu sed. Sociis
+      sit aliquet at nisl porttitor. Amet nascetur nunc, non nam. Sed adipiscing
+      mauris tortor, suspendisse nisi volutpat pellentesque nisi et. Laoreet
+      morbi nibh neque eu in sit. Semper quam viverra netus non ut pellentesque.
+      Convallis nunc neque, erat tincidunt metus, sit sed.
+    </p>
 
-    <p class="col-12 sub-title pt-5">Команда 2</p>
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-3 name-card">
-        <div class="card">
-          <p class="sbornyie-sostav mt-auto">Kristin Watson</p>
-          <p class="sbornyie-sostav-small">nickname</p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 name-card">
-        <div class="card">
-          <p class="sbornyie-sostav mt-auto">Kristin Watson</p>
-          <p class="sbornyie-sostav-small">nickname</p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 name-card">
-        <div class="card">
-          <p class="sbornyie-sostav mt-auto">Kristin Watson</p>
-          <p class="sbornyie-sostav-small">nickname</p>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 name-card">
-        <div class="card">
-          <p class="sbornyie-sostav mt-auto">Kristin Watson</p>
-          <p class="sbornyie-sostav-small">nickname</p>
-        </div>
-      </div>
-    </div>
-
-    <h5 class="col-12 pt-4">Контакты администрации</h5>
-    <div class="row pl-2 mt-3 mb-5 marketing-contacts">
+    <h5 class="col-12 pt-4 section-title">Контакты администрации</h5>
+    <div class="row pl-2 marketing-contacts">
       <div class="col-12 col-sm-6 d-flex">
         <img
           class="img-fluid trainer-img"
@@ -166,6 +155,6 @@
       </div>
     </div>
   </div>
-
-  {% endblock %}
 </div>
+
+{% endblock %}
