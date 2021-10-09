@@ -1,355 +1,359 @@
-{% extends "layout.html" %}
-{% set active_page = "main" %}
-{% block content %}
-    <main class="page-content">
-        <!-- BANNER SECTION -->
+{% extends "layout.html" %} {% set active_page = "main" %} {% block content %}
+<main class="page-content">
+  <!-- BANNER SECTION -->
 
-        <section class="banner">
-            <div class="main-header1-background">
-                <div
-                        id="carouselExampleIndicators"
-                        class="carousel slide"
-                        data-ride="carousel"
-                >
-                    <ol class="carousel-indicators pb-5">
-                        <div
-                                data-target="#carouselExampleIndicators"
-                                data-slide-to="0"
-                                class="active main-header-item"
-                        >
-                            Волонтёры РТУ МИРЭА приняли активное участие в «Кубке Первог...
-                            <div class="progress-bar"></div>
-                        </div>
-                        <div
-                                data-target="#carouselExampleIndicators"
-                                data-slide-to="1"
-                                class="main-header-item"
-                        >
-                            Девушки из сборной по волейболу совсем скоро начнут свои первые...
-                            <div class="progress-bar"></div>
-                        </div>
-                        <div
-                                data-target="#carouselExampleIndicators"
-                                data-slide-to="2"
-                                class="main-header-item"
-                        >
-                            ДИАЛОГ АЛЬЯНСА | вопрос-ответ
-                            <div class="progress-bar"></div>
-                        </div>
-                        <div
-                                data-target="#carouselExampleIndicators"
-                                data-slide-to="3"
-                                class="main-header-item"
-                        >
-                            Футбольный клуб МИРЭА на АССК.фест 2020!
-                            <div class="progress-bar"></div>
-                        </div>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img
-                                    class="d-block w-100"
-                                    src="/static/images/header1.png"
-                                    alt="First slide"
-                            />
-                            <div class="container">
-                                <p class="bg-text text-left">
-                                    Девушки из сборной по волейболу совсем скоро начнут свои первые
-                                    матчи в МССИ
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                    class="d-block w-100"
-                                    src="/static/images/header1.png"
-                                    alt="Second slide"
-                            />
-                            <div class="container">
-                                <p class="bg-text text-left">
-                                    Девушки из сборной по волейболу совсем скоро начнут свои первые
-                                    матчи в МССИ
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                    class="d-block w-100"
-                                    src="/static/images/header1.png"
-                                    alt="Third slide"
-                            />
-                            <div class="container">
-                                <p class="bg-text text-left">
-                                    Девушки из сборной по волейболу совсем скоро начнут свои первые
-                                    матчи в МССИ
-                                </p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img
-                                    class="d-block w-100"
-                                    src="/static/images/header1.png"
-                                    alt="Forth slide"
-                            />
-                            <div class="container">
-                                <p class="bg-text text-left">
-                                    Девушки из сборной по волейболу совсем скоро начнут свои первые
-                                    матчи в МССИ
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <a
-                            class="carousel-control-next"
-                            href="#carouselExampleIndicators"
-                            role="button"
-                            data-slide="next"
-                    >
-                        <div class="arrow">
-                            <span class="fas fa-arrow-right" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </div>
-                    </a>
-                </div>
+  <section class="banner">
+    <div class="main-header1-background">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators pb-5">
+          <div
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active main-header-item"
+          >
+            Волонтёры РТУ МИРЭА приняли активное участие в «Кубке Первог...
+            <div class="progress-bar"></div>
+          </div>
+          <div
+            data-target="#carouselExampleIndicators"
+            data-slide-to="1"
+            class="main-header-item"
+          >
+            Девушки из сборной по волейболу совсем скоро начнут свои первые...
+            <div class="progress-bar"></div>
+          </div>
+          <div
+            data-target="#carouselExampleIndicators"
+            data-slide-to="2"
+            class="main-header-item"
+          >
+            ДИАЛОГ АЛЬЯНСА | вопрос-ответ
+            <div class="progress-bar"></div>
+          </div>
+          <div
+            data-target="#carouselExampleIndicators"
+            data-slide-to="3"
+            class="main-header-item"
+          >
+            Футбольный клуб МИРЭА на АССК.фест 2020!
+            <div class="progress-bar"></div>
+          </div>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="/static/images/header1.png"
+              alt="First slide"
+            />
+            <div class="container">
+              <p class="bg-text text-left">
+                Девушки из сборной по волейболу совсем скоро начнут свои первые
+                матчи в МССИ
+              </p>
             </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="/static/images/header1.png"
+              alt="Second slide"
+            />
+            <div class="container">
+              <p class="bg-text text-left">
+                Девушки из сборной по волейболу совсем скоро начнут свои первые
+                матчи в МССИ
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="/static/images/header1.png"
+              alt="Third slide"
+            />
+            <div class="container">
+              <p class="bg-text text-left">
+                Девушки из сборной по волейболу совсем скоро начнут свои первые
+                матчи в МССИ
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="/static/images/header1.png"
+              alt="Forth slide"
+            />
+            <div class="container">
+              <p class="bg-text text-left">
+                Девушки из сборной по волейболу совсем скоро начнут свои первые
+                матчи в МССИ
+              </p>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <div class="arrow">
+            <span class="fas fa-arrow-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </div>
+        </a>
+      </div>
+    </div>
 
-            <div class="main-header2-background pt-5">
-                <div class="container">
-                    <div class="row d-flex justify-content-between align-items-top">
-                        <div class="first-text">
-                            <div class="h4">Ближайшие игры</div>
-                            <p class="text-muted">всех сборных</p>
-                        </div>
-                        <div class="second-text d-flex">
-                            <div>
-                                <div class="h6 mr-2">Ближайшая игра через:</div>
-                            </div>
-                            <div class="mb-3">
-                                <div class="timer d-flex align-items-center">
+    <div class="main-header2-background pt-5">
+      <div class="container">
+        <div class="row d-flex justify-content-between align-items-top">
+          <div class="first-text">
+            <div class="h4">Ближайшие игры</div>
+            <p class="text-muted">всех сборных</p>
+          </div>
+          <div class="second-text d-flex">
+            <div>
+              <div class="h6 mr-2">Ближайшая игра через:</div>
+            </div>
+            <div class="mb-3">
+              <div class="timer d-flex align-items-center">
                 <span class="start"
-                ><span>09:</span
-                ><span class="stop sub-note mt-1">дней</span></span
+                  ><span>09:</span
+                  ><span class="stop sub-note mt-1">дней</span></span
                 >
-                                    <span class="start"
-                                    ><span>23:</span
-                                    ><span class="stop sub-note mt-1">час</span></span
-                                    >
-                                    <span class="start"
-                                    ><span>59:</span
-                                    ><span class="stop sub-note mt-1">мин</span></span
-                                    >
-                                    <span class="start"
-                                    ><span>59</span
-                                    ><span class="stop sub-note mt-1">сек</span></span
-                                    >
-                                </div>
-                            </div>
-                        </div>
+                <span class="start"
+                  ><span>23:</span
+                  ><span class="stop sub-note mt-1">час</span></span
+                >
+                <span class="start"
+                  ><span>59:</span
+                  ><span class="stop sub-note mt-1">мин</span></span
+                >
+                <span class="start"
+                  ><span>59</span
+                  ><span class="stop sub-note mt-1">сек</span></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="my-slider">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="{{ url_for('play_page1') }}">
+              <div class="card banner-card">
+                <div class="card-header pb-0">
+                  <h5 class="card-title">
+                    <strong>22 ноября,</strong> вторник
+                  </h5>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-center">Футбол</h6>
+                  <p class="card-text text-center">Название турнира</p>
+                  <div class="team-data d-flex justify-content-between">
+                    <div class="text-left">
+                      <img
+                        src="/static/images/Rectangle 338.png"
+                        alt="РТУ МИРЭА"
+                      />
                     </div>
-
-                    <div class="my-slider">
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <a href="{{ url_for('play_page1') }}">
-                                <div class="card banner-card">
-                                    <div class="card-header pb-0">
-                                        <h5 class="card-title"><strong>22 ноября,</strong> вторник</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-subtitle mb-2 text-center">Футбол</h6>
-                                        <p class="card-text text-center">Название турнира</p>
-                                        <div class="team-data d-flex justify-content-between">
-                                            <div class="text-left">
-                                                <img
-                                                        src="/static/images/Rectangle 338.png"
-                                                        alt="РТУ МИРЭА"
-                                                />
-                                            </div>
-                                            <div class="play-time text-center align-self-center">
-                                                <h6>Начало</h6>
-                                                <span>18:30</span>
-                                            </div>
-                                            <div class="text-right">
-                                                <img src="/static/images/Rectangle 337.png" alt="МАИ"/>
-                                            </div>
-                                        </div>
-                                        <div class="team-names d-flex justify-content-between mt-3">
-                                            <h6 class="team1-name text-left">РТУ МИРЭА</h6>
-                                            <h6 class="team2-name text-right">МАИ</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <a href="{{ url_for('play_page1') }}">
-                                <div class="card banner-card">
-                                    <div class="card-header pb-0">
-                                        <h5 class="card-title"><strong>ноября,</strong> вторник</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-subtitle mb-2 text-center">Волейбол мужской</h6>
-                                        <p class="card-text text-center">Название турнира</p>
-                                        <div class="team-data d-flex justify-content-between">
-                                            <div class="text-left">
-                                                <img
-                                                        src="/static/images/Rectangle 338.png"
-                                                        alt="РТУ МИРЭА"
-                                                />
-                                            </div>
-                                            <div class="play-time text-center align-self-center">
-                                                <h6>Начало</h6>
-                                                <span>22:00</span>
-                                            </div>
-                                            <div class="text-right">
-                                                <img src="/static/images/Rectangle 337.png" alt="МАИ"/>
-                                            </div>
-                                        </div>
-                                        <div class="team-names d-flex justify-content-between mt-3">
-                                            <h6 class="team1-name text-left">РТУ МИРЭА</h6>
-                                            <h6 class="team2-name text-right">МАИ</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <a href="{{ url_for('play_page1') }}">
-                                <div class="card banner-card">
-                                    <div class="card-header pb-0">
-                                        <h5 class="card-title"><strong>ноября,</strong> среда</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-subtitle mb-2 text-center">Баскетбол</h6>
-                                        <p class="card-text text-center">Название турнира</p>
-                                        <div class="team-data d-flex justify-content-between">
-                                            <div class="text-left">
-                                                <img
-                                                        src="/static/images/Rectangle 338.png"
-                                                        alt="РТУ МИРЭА"
-                                                />
-                                            </div>
-                                            <div class="play-time text-center align-self-center">
-                                                <h6>Начало</h6>
-                                                <span>15:30</span>
-                                            </div>
-                                            <div class="text-right">
-                                                <img src="/static/images/Rectangle 337.png" alt="МАИ"/>
-                                            </div>
-                                        </div>
-                                        <div class="team-names d-flex justify-content-between mt-3">
-                                            <h6 class="team1-name text-left">РТУ МИРЭА</h6>
-                                            <h6 class="team2-name text-right">МАИ</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <a href="{{ url_for('play_page1') }}">
-                                <div class="card banner-card">
-                                    <div class="card-header pb-0">
-                                        <h5 class="card-title"><strong>ноября,</strong> вторник</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-subtitle mb-2 text-center">Футбол</h6>
-                                        <p class="card-text text-center">Название турнира</p>
-                                        <div class="team-data d-flex justify-content-between">
-                                            <div class="text-left">
-                                                <img
-                                                        src="/static/images/Rectangle 338.png"
-                                                        alt="РТУ МИРЭА"
-                                                />
-                                            </div>
-                                            <div class="play-time text-center align-self-center">
-                                                <h6>Начало</h6>
-                                                <span>18:30</span>
-                                            </div>
-                                            <div class="text-right">
-                                                <img src="/static/images/Rectangle 337.png" alt="МАИ"/>
-                                            </div>
-                                        </div>
-                                        <div class="team-names d-flex justify-content-between mt-3">
-                                            <h6 class="team1-name text-left">РТУ МИРЭА</h6>
-                                            <h6 class="team2-name text-right">МАИ</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <a href="{{ url_for('play_page1') }}">
-                                <div class="card banner-card">
-                                    <div class="card-header pb-0">
-                                        <h5 class="card-title"><strong>ноября,</strong> вторник</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-subtitle mb-2 text-center">Волейбол мужской</h6>
-                                        <p class="card-text text-center">Название турнира</p>
-                                        <div class="team-data d-flex justify-content-between">
-                                            <div class="text-left">
-                                                <img
-                                                        src="/static/images/Rectangle 338.png"
-                                                        alt="РТУ МИРЭА"
-                                                />
-                                            </div>
-                                            <div class="play-time text-center align-self-center">
-                                                <h6>Начало</h6>
-                                                <span>22:00</span>
-                                            </div>
-                                            <div class="text-right">
-                                                <img src="/static/images/Rectangle 337.png" alt="МАИ"/>
-                                            </div>
-                                        </div>
-                                        <div class="team-names d-flex justify-content-between mt-3">
-                                            <h6 class="team1-name text-left">РТУ МИРЭА</h6>
-                                            <h6 class="team2-name text-right">МАИ</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <a href="{{ url_for('play_page1') }}">
-                                <div class="card banner-card">
-                                    <div class="card-header pb-0">
-                                        <h5 class="card-title"><strong>ноября,</strong> среда</h5>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="card-subtitle mb-2 text-center">Баскетбол</h6>
-                                        <p class="card-text text-center">Название турнира</p>
-                                        <div class="team-data d-flex justify-content-between">
-                                            <div class="text-left">
-                                                <img
-                                                        src="/static/images/Rectangle 338.png"
-                                                        alt="РТУ МИРЭА"
-                                                />
-                                            </div>
-                                            <div class="play-time text-center align-self-center">
-                                                <h6>Начало</h6>
-                                                <span>15:30</span>
-                                            </div>
-                                            <div class="text-right">
-                                                <img src="/static/images/Rectangle 337.png" alt="МАИ"/>
-                                            </div>
-                                        </div>
-                                        <div class="team-names d-flex justify-content-between mt-3">
-                                            <h6 class="team1-name text-left">РТУ МИРЭА</h6>
-                                            <h6 class="team2-name text-right">МАИ</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="play-time text-center align-self-center">
+                      <h6>Начало</h6>
+                      <span>18:30</span>
                     </div>
-                    <div class="row margin-class">
-                        <div
-                                id="controls"
-                                class="
+                    <div class="text-right">
+                      <img src="/static/images/Rectangle 337.png" alt="МАИ" />
+                    </div>
+                  </div>
+                  <div class="team-names d-flex justify-content-between mt-3">
+                    <h6 class="team1-name text-left">РТУ МИРЭА</h6>
+                    <h6 class="team2-name text-right">МАИ</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="{{ url_for('play_page1') }}">
+              <div class="card banner-card">
+                <div class="card-header pb-0">
+                  <h5 class="card-title"><strong>ноября,</strong> вторник</h5>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-center">
+                    Волейбол мужской
+                  </h6>
+                  <p class="card-text text-center">Название турнира</p>
+                  <div class="team-data d-flex justify-content-between">
+                    <div class="text-left">
+                      <img
+                        src="/static/images/Rectangle 338.png"
+                        alt="РТУ МИРЭА"
+                      />
+                    </div>
+                    <div class="play-time text-center align-self-center">
+                      <h6>Начало</h6>
+                      <span>22:00</span>
+                    </div>
+                    <div class="text-right">
+                      <img src="/static/images/Rectangle 337.png" alt="МАИ" />
+                    </div>
+                  </div>
+                  <div class="team-names d-flex justify-content-between mt-3">
+                    <h6 class="team1-name text-left">РТУ МИРЭА</h6>
+                    <h6 class="team2-name text-right">МАИ</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="{{ url_for('play_page1') }}">
+              <div class="card banner-card">
+                <div class="card-header pb-0">
+                  <h5 class="card-title"><strong>ноября,</strong> среда</h5>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-center">Баскетбол</h6>
+                  <p class="card-text text-center">Название турнира</p>
+                  <div class="team-data d-flex justify-content-between">
+                    <div class="text-left">
+                      <img
+                        src="/static/images/Rectangle 338.png"
+                        alt="РТУ МИРЭА"
+                      />
+                    </div>
+                    <div class="play-time text-center align-self-center">
+                      <h6>Начало</h6>
+                      <span>15:30</span>
+                    </div>
+                    <div class="text-right">
+                      <img src="/static/images/Rectangle 337.png" alt="МАИ" />
+                    </div>
+                  </div>
+                  <div class="team-names d-flex justify-content-between mt-3">
+                    <h6 class="team1-name text-left">РТУ МИРЭА</h6>
+                    <h6 class="team2-name text-right">МАИ</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="{{ url_for('play_page1') }}">
+              <div class="card banner-card">
+                <div class="card-header pb-0">
+                  <h5 class="card-title"><strong>ноября,</strong> вторник</h5>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-center">Футбол</h6>
+                  <p class="card-text text-center">Название турнира</p>
+                  <div class="team-data d-flex justify-content-between">
+                    <div class="text-left">
+                      <img
+                        src="/static/images/Rectangle 338.png"
+                        alt="РТУ МИРЭА"
+                      />
+                    </div>
+                    <div class="play-time text-center align-self-center">
+                      <h6>Начало</h6>
+                      <span>18:30</span>
+                    </div>
+                    <div class="text-right">
+                      <img src="/static/images/Rectangle 337.png" alt="МАИ" />
+                    </div>
+                  </div>
+                  <div class="team-names d-flex justify-content-between mt-3">
+                    <h6 class="team1-name text-left">РТУ МИРЭА</h6>
+                    <h6 class="team2-name text-right">МАИ</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="{{ url_for('play_page1') }}">
+              <div class="card banner-card">
+                <div class="card-header pb-0">
+                  <h5 class="card-title"><strong>ноября,</strong> вторник</h5>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-center">
+                    Волейбол мужской
+                  </h6>
+                  <p class="card-text text-center">Название турнира</p>
+                  <div class="team-data d-flex justify-content-between">
+                    <div class="text-left">
+                      <img
+                        src="/static/images/Rectangle 338.png"
+                        alt="РТУ МИРЭА"
+                      />
+                    </div>
+                    <div class="play-time text-center align-self-center">
+                      <h6>Начало</h6>
+                      <span>22:00</span>
+                    </div>
+                    <div class="text-right">
+                      <img src="/static/images/Rectangle 337.png" alt="МАИ" />
+                    </div>
+                  </div>
+                  <div class="team-names d-flex justify-content-between mt-3">
+                    <h6 class="team1-name text-left">РТУ МИРЭА</h6>
+                    <h6 class="team2-name text-right">МАИ</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a href="{{ url_for('play_page1') }}">
+              <div class="card banner-card">
+                <div class="card-header pb-0">
+                  <h5 class="card-title"><strong>ноября,</strong> среда</h5>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-subtitle mb-2 text-center">Баскетбол</h6>
+                  <p class="card-text text-center">Название турнира</p>
+                  <div class="team-data d-flex justify-content-between">
+                    <div class="text-left">
+                      <img
+                        src="/static/images/Rectangle 338.png"
+                        alt="РТУ МИРЭА"
+                      />
+                    </div>
+                    <div class="play-time text-center align-self-center">
+                      <h6>Начало</h6>
+                      <span>15:30</span>
+                    </div>
+                    <div class="text-right">
+                      <img src="/static/images/Rectangle 337.png" alt="МАИ" />
+                    </div>
+                  </div>
+                  <div class="team-names d-flex justify-content-between mt-3">
+                    <h6 class="team1-name text-left">РТУ МИРЭА</h6>
+                    <h6 class="team2-name text-right">МАИ</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row margin-class">
+          <div
+            id="controls"
+            class="
               d-flex
               w-100
               justify-content-between
@@ -358,33 +362,33 @@
               mx-2
               carousel-controls
             "
-                        >
-                            <div class="carousel-btns d-flex">
-                                <a class="previous">
-                                    <i class="fas fa-arrow-left" aria-hidden="true"></i>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="next ml-2">
-                                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            </div>
-                            <div class="clickable-btn">
-                                <button class="btn">Посмотреть все игры</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          >
+            <div class="carousel-btns d-flex">
+              <a class="previous">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="next ml-2">
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-        </section>
+            <div class="clickable-btn">
+              <button class="btn">Посмотреть все игры</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- BODY COLOUR SECTION -->
+  <!-- BODY COLOUR SECTION -->
 
-        <section class="body-colour">
-            <div class="container">
-                <!-- Main News -->
-                <div
-                        class="
+  <section class="body-colour">
+    <div class="container">
+      <!-- Main News -->
+      <div
+        class="
           row
           controls
           py-4
@@ -392,518 +396,531 @@
           justify-content-between
           align-items-center
         "
-                >
-                    <h1>Последние новости</h1>
-                    <h6>Посмотреть все новости</h6>
+      >
+        <h1>Последние новости</h1>
+        <h6>Посмотреть все новости</h6>
+      </div>
+      <div class="row joined card-deck pb-3 margin-class">
+        <div class="col-sm-6 p-0 pb-3">
+          <a href="{{ url_for('news_page3') }}">
+            <div class="card first-card">
+              <div
+                class="
+                  card-group
+                  h-100
+                  joined-cards
+                  card-shadow
+                  zoom-img
+                  new-design
+                "
+              >
+                <div class="card ctop">
+                  <img
+                    class="card-img"
+                    src="/static/images/card 1.png"
+                    alt="img1"
+                  />
                 </div>
-                <div class="row joined card-deck pb-3 margin-class">
-                    <div class="col-sm-6 p-0 pb-3">
-                        <a href="{{ url_for('news_page3') }}">
-                            <div class="card first-card">
-                                <div
-                                        class="
-                card-group
-                h-100
-                joined-cards
-                card-shadow
-                zoom-img
-                new-design
-              "
-                                >
-                                    <div class="card ctop">
-                                        <img
-                                                class="card-img"
-                                                src="/static/images/card 1.png"
-                                                alt="img1"
-                                        />
-                                    </div>
-                                    <div class="card cbottom">
-                                        <div class="card-body d-flex flex-column">
-                                            <h5 class="card-title">
-                                                Волонтёры РТУ МИРЭА приняли активное участие в «Кубке
-                                                Первого Президента России»
-                                            </h5>
-                                            <i class="card-hashtag"
-                                            >#ssc_alliance #асск #студенческийспорт</i
-                                            >
-                                            <div
-                                                    class="
-                      row
-                      mt-auto
-                      d-flex
-                      justify-content-between
-                      align-items-center
-                    "
-                                            >
-                                                <div>
-                                                    <i class="card-date">15 окт</i>
-                                                </div>
-                                                <div>
-                                                    <img class="eye-icon" src="/static/images/eye.svg"/>
-                                                    <i class="card-date">999,999</i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+                <div class="card cbottom">
+                  <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">
+                      Волонтёры РТУ МИРЭА приняли активное участие в «Кубке
+                      Первого Президента России»
+                    </h5>
+                    <i class="card-hashtag"
+                      >#ssc_alliance #асск #студенческийспорт</i
+                    >
+                    <div
+                      class="
+                        row
+                        mt-auto
+                        d-flex
+                        justify-content-between
+                        align-items-center
+                      "
+                    >
+                      <div>
+                        <i class="card-date">15 окт</i>
+                      </div>
+                      <div>
+                        <img class="eye-icon" src="/static/images/eye.svg" />
+                        <i class="card-date">999,999</i>
+                      </div>
                     </div>
-                    <div class="col-sm-6 p-0">
-                        <a href="{{ url_for('news_page3') }}">
-                            <div class="card zoom-img card-shadow new-design">
-                                <div class="img-gradient">
-                                    <img
-                                            class="card-img"
-                                            src="/static/images/Rectangle 15.png"
-                                            alt=" img2"
-                                    />
-                                </div>
-                                <div class="card-img-overlay d-flex flex-column">
-                                    <h5 class="card-overlay-title mt-auto">
-                                        Девушки из сборной по волейболу совсем скоро начнут свои первые
-                                        матчи в МССИ
-                                    </h5>
-                                    <i class="card-overlay-hashtag"
-                                    >#ssc_alliance #асск #студенческийспорт</i
-                                    >
-                                    <div class="row">
-                                        <div class="col p-0">
-                                            <i class="card-overlay-date">15 окт</i>
-                                        </div>
-                                        <div class="col text-right p-0">
-                                            <img class="eye-icon" src="/static/images/eye.svg"/>
-                                            <i class="card-overlay-date">999,999</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                  </div>
                 </div>
-
-                <div class="row joined card-deck margin-class">
-                    <div class="col-sm-6 col-lg-3 p-0 mb-3">
-                        <a href="{{ url_for('news_page3') }}">
-                            <div class="card card-shadow zoom-img new-design">
-                                <div class="">
-                                    <img
-                                            class="card-img-top zoom-img"
-                                            src="/static/images/Rectangle 38.png"
-                                            alt="img3"
-                                    />
-                                </div>
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">
-                                        Мужская сборная по волейболу выиграла в любительской
-                                        волейбольной лиге
-                                    </h5>
-                                    <i class="card-hashtag">#ssc_alliance #асск #студенческийспорт</i>
-                                    <div class="row mt-auto">
-                                        <div class="col p-0">
-                                            <i class="card-date">15 окт</i>
-                                        </div>
-                                        <div class="col text-right p-0">
-                                            <img class="eye-icon" src="/static/images/eye.svg"/>
-                                            <i class="card-date">999,999</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-3 p-0 mb-3">
-                        <a href="{{ url_for('news_page3') }}">
-                            <div class="card zoom-img card-shadow new-design">
-                                <div class="img-gradient">
-                                    <img
-                                            class="card-img-top"
-                                            src="/static/images/Rectangle 17.png"
-                                            alt="img4"
-                                    />
-                                </div>
-                                <div class="card-img-overlay d-flex flex-column">
-                                    <h5 class="card-overlay-title mt-auto">
-                                        Футбольный клуб МИРЭА на АССК.фест 2020!
-                                    </h5>
-                                    <i class="card-overlay-hashtag"
-                                    >#ssc_alliance #асск #студенческийспорт</i
-                                    >
-                                    <div class="row">
-                                        <div class="col p-0">
-                                            <i class="card-overlay-date">15 окт</i>
-                                        </div>
-                                        <div class="col text-right p-0">
-                                            <img class="eye-icon" src="/static/images/eye.svg"/>
-                                            <i class="card-overlay-date">999,999</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-3 p-0 mb-3">
-                        <a href="{{ url_for('news_page3') }}">
-                            <div class="card card-shadow zoom-img new-design">
-                                <div class="">
-                                    <img
-                                            class="card-img-top"
-                                            src="/static/images/Rectangle 34.png"
-                                            alt="img5"
-                                    />
-                                </div>
-                                <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">ДИАЛОГ АЛЬЯНСА | вопрос-ответ 💭</h5>
-                                    <i class="card-hashtag">#ssc_alliance #асск #студенческийспорт</i>
-                                    <div class="row mt-auto">
-                                        <div class="col p-0">
-                                            <i class="card-date">15 окт</i>
-                                        </div>
-                                        <div class="col text-right p-0">
-                                            <img class="eye-icon" src="/static/images/eye.svg"/>
-                                            <i class="card-date">999,999</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-sm-6 col-lg-3 p-0 mb-3">
-                        <a href="{{ url_for('news_page3') }}">
-                            <div class="card zoom-img card-shadow new-design">
-                                <div class="img-gradient">
-                                    <img
-                                            class="card-img-top"
-                                            src="/static/images/Group488.png"
-                                            alt="img6"
-                                    />
-                                </div>
-                                <div class="card-img-overlay d-flex flex-column">
-                                    <h5 class="card-overlay-title mt-auto">
-                                        Наши девочки из сборной по черлидингу «Alliance teamcheer»
-                                    </h5>
-                                    <i class="card-overlay-hashtag"
-                                    >#ssc_alliance #асск #студенческийспорт</i
-                                    >
-                                    <div class="row">
-                                        <div class="col p-0">
-                                            <i class="card-overlay-date">15 окт</i>
-                                        </div>
-                                        <div class="col text-right p-0">
-                                            <img class="eye-icon" src="/static/images/eye.svg"/>
-                                            <i class="card-overlay-date">999,999</i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="row advert d-flex justify-content-between align-items-center">
-                    <img id="image1" src="../../static/images/22 1.png" alt="woman"/>
-                    <div class="text">
-                        <p>Ещё не с нами? Присоединяйся</p>
-                        <a href="{{ url_for('sport_club_page1') }}">
-                            <button class="btn">Вступить в спортклуб</button>
-                        </a>
-                    </div>
-                    <img id="image2" src="../../static/images/23 1.png" alt="man & woman"/>
-                </div>
+              </div>
             </div>
-        </section>
+          </a>
+        </div>
+        <div class="col-sm-6 p-0">
+          <a href="{{ url_for('news_page3') }}">
+            <div class="card zoom-img card-shadow new-design">
+              <div class="img-gradient">
+                <img
+                  class="card-img"
+                  src="/static/images/Rectangle 15.png"
+                  alt=" img2"
+                />
+              </div>
+              <div class="card-img-overlay d-flex flex-column">
+                <h5 class="card-overlay-title mt-auto">
+                  Девушки из сборной по волейболу совсем скоро начнут свои
+                  первые матчи в МССИ
+                </h5>
+                <i class="card-overlay-hashtag"
+                  >#ssc_alliance #асск #студенческийспорт</i
+                >
+                <div class="row">
+                  <div class="col p-0">
+                    <i class="card-overlay-date">15 окт</i>
+                  </div>
+                  <div class="col text-right p-0">
+                    <img class="eye-icon" src="/static/images/eye.svg" />
+                    <i class="card-overlay-date">999,999</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
 
-        <!-- VIDEO SECTION -->
+      <div class="row joined card-deck margin-class">
+        <div class="col-sm-6 col-lg-3 p-0 mb-3">
+          <a href="{{ url_for('news_page3') }}">
+            <div class="card card-shadow zoom-img new-design">
+              <div class="">
+                <img
+                  class="card-img-top zoom-img"
+                  src="/static/images/Rectangle 38.png"
+                  alt="img3"
+                />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Мужская сборная по волейболу выиграла в любительской
+                  волейбольной лиге
+                </h5>
+                <i class="card-hashtag"
+                  >#ssc_alliance #асск #студенческийспорт</i
+                >
+                <div class="row mt-auto">
+                  <div class="col p-0">
+                    <i class="card-date">15 окт</i>
+                  </div>
+                  <div class="col text-right p-0">
+                    <img class="eye-icon" src="/static/images/eye.svg" />
+                    <i class="card-date">999,999</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
 
-        <section class="videos">
-            <div class="container">
-                <div
-                        class="
+        <div class="col-sm-6 col-lg-3 p-0 mb-3">
+          <a href="{{ url_for('news_page3') }}">
+            <div class="card zoom-img card-shadow new-design">
+              <div class="img-gradient">
+                <img
+                  class="card-img-top"
+                  src="/static/images/Rectangle 17.png"
+                  alt="img4"
+                />
+              </div>
+              <div class="card-img-overlay d-flex flex-column">
+                <h5 class="card-overlay-title mt-auto">
+                  Футбольный клуб МИРЭА на АССК.фест 2020!
+                </h5>
+                <i class="card-overlay-hashtag"
+                  >#ssc_alliance #асск #студенческийспорт</i
+                >
+                <div class="row">
+                  <div class="col p-0">
+                    <i class="card-overlay-date">15 окт</i>
+                  </div>
+                  <div class="col text-right p-0">
+                    <img class="eye-icon" src="/static/images/eye.svg" />
+                    <i class="card-overlay-date">999,999</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 p-0 mb-3">
+          <a href="{{ url_for('news_page3') }}">
+            <div class="card card-shadow zoom-img new-design">
+              <div class="">
+                <img
+                  class="card-img-top"
+                  src="/static/images/Rectangle 34.png"
+                  alt="img5"
+                />
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">ДИАЛОГ АЛЬЯНСА | вопрос-ответ 💭</h5>
+                <div class="mt-auto">
+                  <i class="card-hashtag"
+                    >#ssc_alliance #асск #студенческийспорт</i
+                  >
+                  <div class="row mt-3">
+                    <div class="col p-0">
+                      <i class="card-date">15 окт</i>
+                    </div>
+                    <div class="col text-right p-0">
+                      <img class="eye-icon" src="/static/images/eye.svg" />
+                      <i class="card-date">999,999</i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-sm-6 col-lg-3 p-0 mb-3">
+          <a href="{{ url_for('news_page3') }}">
+            <div class="card zoom-img card-shadow new-design">
+              <div class="img-gradient">
+                <img
+                  class="card-img-top"
+                  src="/static/images/Group488.png"
+                  alt="img6"
+                />
+              </div>
+              <div class="card-img-overlay d-flex flex-column">
+                <h5 class="card-overlay-title mt-auto">
+                  Наши девочки из сборной по черлидингу «Alliance teamcheer»
+                </h5>
+                <i class="card-overlay-hashtag"
+                  >#ssc_alliance #асск #студенческийспорт</i
+                >
+                <div class="row">
+                  <div class="col p-0">
+                    <i class="card-overlay-date">15 окт</i>
+                  </div>
+                  <div class="col text-right p-0">
+                    <img class="eye-icon" src="/static/images/eye.svg" />
+                    <i class="card-overlay-date">999,999</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="row advert d-flex justify-content-between align-items-center">
+        <img id="image1" src="../../static/images/22 1.png" alt="woman" />
+        <div class="text">
+          <p>Ещё не с нами? Присоединяйся</p>
+          <a href="{{ url_for('sport_club_page1') }}">
+            <button class="btn">Вступить в спортклуб</button>
+          </a>
+        </div>
+        <img id="image2" src="../../static/images/23 1.png" alt="man & woman" />
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO SECTION -->
+
+  <section class="videos">
+    <div class="container">
+      <div
+        class="
           row
           video-controls
           justify-content-between
           align-items-baseline
           py-4
         "
-                >
-                    <h1 class="title">Медиа</h1>
-                    <h6 class="control">Посмотреть все</h6>
+      >
+        <h1 class="title">Медиа</h1>
+        <h6 class="control">Посмотреть все</h6>
+      </div>
+      <div class="row video-cards margin-class">
+        <div class="col-md-6">
+          <a href="{{ url_for('media_page1') }}">
+            <div class="card w-100">
+              <div class="card-body">
+                <div class="play-button">
+                  <span><i class="far fa-play-circle"></i></span>
                 </div>
-                <div class="row video-cards margin-class">
-                    <div class="col-md-6">
-                        <a href="{{ url_for('media_page1') }}">
-                            <div class="card w-100">
-                                <div class="card-body">
-                                    <div class="play-button">
-                                        <span><i class="far fa-play-circle"></i></span>
-                                    </div>
-                                    <div class="headline">
-                                        <h1>
-                                            Мужская сборная по волейболу на турнирах по пляжному волейболу
-                                        </h1>
-                                        <h6>16 ноября 2021</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="{{ url_for('media_page1') }}">
-                            <div class="card w-100">
-                                <div class="card-body">
-                                    <div class="play-button">
-                                        <span><i class="far fa-play-circle"></i></span>
-                                    </div>
-                                    <div class="headline">
-                                        <h1>
-                                            Мужская сборная по волейболу на турнирах по пляжному волейболу
-                                        </h1>
-                                        <h6>16 ноября 2021</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="headline">
+                  <h1>
+                    Мужская сборная по волейболу на турнирах по пляжному
+                    волейболу
+                  </h1>
+                  <h6>16 ноября 2021</h6>
                 </div>
-                <div class="row news-cards margin-class">
-                    <div class="col-sm-6 col-md-4">
-                        <a href="{{ url_for('media_page1') }}">
-                            <div class="card w-100">
-                                <div class="card-body">
-                                    <div class="headline">
-                                        <h1>Футбольный клуб МИРЭА на АССК.фест 2020!</h1>
-                                        <h6>16 ноября 2021</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <a href="{{ url_for('media_page1') }}">
-                            <div class="card w-100">
-                                <div class="card-body">
-                                    <div class="headline">
-                                        <h1>
-                                            Наши девочки из сборной по черлидингу «Alliance teamcheer»
-                                        </h1>
-                                        <h6>16 ноября 2021</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="card w-100">
-                            <div class="card-body">
-                                <div class="headline">
-                                    <h1>Волонтёры РТУ МИРЭА на «Кубке Первого Президента 2020</h1>
-                                    <h6>16 ноября 2021</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="{{ url_for('media_page1') }}">
+            <div class="card w-100">
+              <div class="card-body">
+                <div class="play-button">
+                  <span><i class="far fa-play-circle"></i></span>
+                </div>
+                <div class="headline">
+                  <h1>
+                    Мужская сборная по волейболу на турнирах по пляжному
+                    волейболу
+                  </h1>
+                  <h6>16 ноября 2021</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="row news-cards margin-class">
+        <div class="col-sm-6 col-md-4">
+          <a href="{{ url_for('media_page1') }}">
+            <div class="card w-100">
+              <div class="card-body">
+                <div class="headline">
+                  <h1>Футбольный клуб МИРЭА на АССК.фест 2020!</h1>
+                  <h6>16 ноября 2021</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <a href="{{ url_for('media_page1') }}">
+            <div class="card w-100">
+              <div class="card-body">
+                <div class="headline">
+                  <h1>
+                    Наши девочки из сборной по черлидингу «Alliance teamcheer»
+                  </h1>
+                  <h6>16 ноября 2021</h6>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card w-100">
+            <div class="card-body">
+              <div class="headline">
+                <h1>Волонтёры РТУ МИРЭА на «Кубке Первого Президента 2020</h1>
+                <h6>16 ноября 2021</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- NEWS ARTICLES SECTION -->
+  <!-- NEWS ARTICLES SECTION -->
 
-        <section class="news-articles">
-            <div class="container">
-                <div
-                        class="
+  <section class="news-articles">
+    <div class="container">
+      <div
+        class="
           row
           news-controls
           justify-content-between
           align-items-center
           py-4
         "
-                >
-                    <h1 class="title">Мероприятия</h1>
-                    <h6 class="control">Посмотреть все мероприятия</h6>
+      >
+        <h1 class="title">Мероприятия</h1>
+        <h6 class="control">Посмотреть все мероприятия</h6>
+      </div>
+      <div class="row articles">
+        <article class="article pb-4">
+          <a href="{{ url_for('event_page1') }}">
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-sm-4 picture">
+                  <img
+                    src="../../static/images/card 1.png"
+                    class="card-img-top h-100"
+                    alt="..."
+                  />
                 </div>
-                <div class="row articles">
-
-                    <article class="article pb-4">
-                        <a href="{{ url_for('event_page1') }}">
-                            <div class="card">
-                                <div class="row no-gutters">
-                                    <div class="col-sm-4 picture">
-                                        <img
-                                                src="../../static/images/card 1.png"
-                                                class="card-img-top h-100"
-                                                alt="..."
-                                        />
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div class="card-body">
-                                            <h5 class="card-text">15 октября</h5>
-                                            <p class="card-title">
-                                                Волонтёры РТУ МИРЭА приняли активное участие в «Кубке
-                                                Первого Президента
-                                            </p>
-                                            <p class="card-text hastags">
-                                                #ssc_alliance #волейбол #кубок_ректора
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="article pb-4">
-                        <a href="{{ url_for('event_page1') }}">
-                            <div class="card">
-                                <div class="row no-gutters">
-                                    <div class="col-sm-4 picture">
-                                        <img
-                                                src="../../static/images/card 2.png"
-                                                class="card-img-top h-100"
-                                                alt="..."
-                                        />
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div class="card-body">
-                                            <h5 class="card-text">18 октября</h5>
-                                            <p class="card-title">
-                                                В университете пройдет 28 турнир по шахматам, организованный
-                                                Всероссийским гроссмейстерским сообществом
-                                            </p>
-                                            <p class="card-text hastags">
-                                                #ssc_alliance #волейбол #кубок_ректора
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="article pb-4">
-                        <a href="{{ url_for('event_page1') }}">
-                            <div class="card">
-                                <div class="row no-gutters">
-                                    <div class="col-sm-4 picture">
-                                        <img
-                                                src="../../static/images/card 3.png"
-                                                class="card-img-top h-100"
-                                                alt="..."
-                                        />
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div class="card-body">
-                                            <h5 class="card-text">27 октября</h5>
-                                            <p class="card-title">
-                                                Девушки из сборной по волейболу совсем скоро начнут свои
-                                                первые матчи в МССИ
-                                            </p>
-                                            <p class="card-text hastags">
-                                                #ssc_alliance #волейбол #кубок_ректора
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
-                    <article class="article pb-4">
-                        <a href="{{ url_for('event_page1') }}">
-                            <div class="card">
-                                <div class="row no-gutters">
-                                    <div class="col-sm-4 picture">
-                                        <img
-                                                src="../../static/images/card 4.png"
-                                                class="card-img-top h-100"
-                                                alt="..."
-                                        />
-                                    </div>
-                                    <div class="col-sm-8">
-                                        <div class="card-body">
-                                            <h5 class="card-text">3 ноября</h5>
-                                            <p class="card-title">
-                                                Кубок ректора 2020 по футболу! Участие в турнире примут
-                                                более 15 вузовских команд
-                                            </p>
-                                            <p class="card-text hastags">
-                                                #ssc_alliance #волейбол #кубок_ректора
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </article>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                    <h5 class="card-text">15 октября</h5>
+                    <p class="card-title">
+                      Волонтёры РТУ МИРЭА приняли активное участие в «Кубке
+                      Первого Президента
+                    </p>
+                    <p class="card-text hastags">
+                      #ssc_alliance #волейбол #кубок_ректора
+                    </p>
+                  </div>
                 </div>
-                <div class="row btncards mt-2 mb-5 margin-class">
-                    <div class="col-sm-6 col-lg-3 btncard">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Миссия</h5>
-                                <p class="card-text">
-                                    Самое главное о спортклубе, его цели, задачи
-                                </p>
-                                <a href="{{ url_for('sport_club_page1') }}" class="btn">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 btncard">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">История</h5>
-                                <p class="card-text">История спортклуба, разделенная по годам</p>
-                                <a href="{{ url_for('sport_club_page3') }}" class="btn">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 btncard">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Семья</h5>
-                                <p class="card-text">
-                                    Руководители, активисты, легенды и менеджеры
-                                </p>
-                                <a href="{{ url_for('sport_club_page4') }}" class="btn">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 btncard">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Секции</h5>
-                                <p class="card-text">6 видов секций для общего посещения</p>
-                                <a href="{{ url_for('section_page4') }}" class="btn">Подробнее</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
-    </main>
+          </a>
+        </article>
+        <article class="article pb-4">
+          <a href="{{ url_for('event_page1') }}">
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-sm-4 picture">
+                  <img
+                    src="../../static/images/card 2.png"
+                    class="card-img-top h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                    <h5 class="card-text">18 октября</h5>
+                    <p class="card-title">
+                      В университете пройдет 28 турнир по шахматам,
+                      организованный Всероссийским гроссмейстерским сообществом
+                    </p>
+                    <p class="card-text hastags">
+                      #ssc_alliance #волейбол #кубок_ректора
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article pb-4">
+          <a href="{{ url_for('event_page1') }}">
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-sm-4 picture">
+                  <img
+                    src="../../static/images/card 3.png"
+                    class="card-img-top h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                    <h5 class="card-text">27 октября</h5>
+                    <p class="card-title">
+                      Девушки из сборной по волейболу совсем скоро начнут свои
+                      первые матчи в МССИ
+                    </p>
+                    <p class="card-text hastags">
+                      #ssc_alliance #волейбол #кубок_ректора
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+        <article class="article pb-4">
+          <a href="{{ url_for('event_page1') }}">
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-sm-4 picture">
+                  <img
+                    src="../../static/images/card 4.png"
+                    class="card-img-top h-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                    <h5 class="card-text">3 ноября</h5>
+                    <p class="card-title">
+                      Кубок ректора 2020 по футболу! Участие в турнире примут
+                      более 15 вузовских команд
+                    </p>
+                    <p class="card-text hastags">
+                      #ssc_alliance #волейбол #кубок_ректора
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+      <div class="row btncards mt-2 mb-5 margin-class">
+        <div class="col-sm-6 col-lg-3 btncard">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Миссия</h5>
+              <p class="card-text">
+                Самое главное о спортклубе, его цели, задачи
+              </p>
+              <a href="{{ url_for('sport_club_page1') }}" class="btn"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 btncard">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">История</h5>
+              <p class="card-text">История спортклуба, разделенная по годам</p>
+              <a href="{{ url_for('sport_club_page3') }}" class="btn"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 btncard">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Семья</h5>
+              <p class="card-text">
+                Руководители, активисты, легенды и менеджеры
+              </p>
+              <a href="{{ url_for('sport_club_page4') }}" class="btn"
+                >Подробнее</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3 btncard">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Секции</h5>
+              <p class="card-text">6 видов секций для общего посещения</p>
+              <a href="{{ url_for('section_page4') }}" class="btn">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
 
-    <script>
-        let slider = tns({
-            container: ".my-slider",
-            items: 1,
-            slideBy: "page",
-            autoplay: true,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                576: {
-                    items: 2,
-                },
-                768: {
-                    items: 3,
-                },
-            },
-            controlsContainer: "#controls",
-            prevButton: ".previous",
-            nextButton: ".next",
-            navPosition: "bottom",
-            mouseDrag: true,
-        });
-    </script>
+<script>
+  let slider = tns({
+    container: ".my-slider",
+    items: 1,
+    slideBy: "page",
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      576: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+    },
+    controlsContainer: "#controls",
+    prevButton: ".previous",
+    nextButton: ".next",
+    navPosition: "bottom",
+    mouseDrag: true,
+  });
+</script>
 {% endblock %}

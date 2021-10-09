@@ -109,8 +109,7 @@ header {
 
   border-radius: 5px;
   padding: 5px 10px 0 15px;
-  margin-top: 3.125rem;
-
+  margin-top: 3rem;
   background: #ffffff;
 }
 
@@ -568,16 +567,13 @@ a.header-icons {
 .row.first-row {
   padding-left: 1.25rem;
   background-color: #fff;
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
-  border-left: 1px solid rgba(0, 0, 0, 0.125);
-  border-right: 1px solid rgba(0, 0, 0, 0.125);
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
 }
 
 .sport-heading {
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 1.5rem;
   margin-bottom: 15px;
   color: #1d66c1;
@@ -672,8 +668,8 @@ a.header-icons {
   position: relative;
   width: 100%;
   min-height: auto;
-  padding-top: 1.2rem;
-
+  padding-top: 1rem;
+  padding-bottom: 0;
   top: 0.5rem;
 
   background: #ffffff;
@@ -1148,7 +1144,7 @@ nav.navbar.horizontal-bar-2 {
 }
 
 .card.mbottom {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   border: none;
 }
 
@@ -1532,7 +1528,7 @@ img.eye-icon {
     font-size: 0.8rem;
   }
   .start {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
   }
   .timer {
     line-height: 1.3rem;
@@ -1567,8 +1563,8 @@ img.eye-icon {
 .group-name {
   padding: 8px 0px 8px 12px;
   font-weight: 600;
-  border: 1px solid #f0f0f0;
   border-bottom: unset;
+  background-color: white;
 }
 
 table.table thead th {
@@ -1579,7 +1575,6 @@ table.table thead th {
 
 table.table {
   background-color: #ffffff;
-  border: 1px solid #f0f0f0;
 }
 
 .game-scores {
@@ -2015,7 +2010,7 @@ table.table {
   border: none;
   cursor: pointer;
   width: 100%;
-  border-radius: 0.313rem;
+  border-radius: 5px !important;
 }
 
 .search-btn {
@@ -2212,11 +2207,8 @@ table.table {
 }
 
 .custom-file-upload {
-  border: 1px solid #ccc;
-  display: inline-block;
-  padding: 6px 12px;
   width: 100%;
-  height: 100%;
+  height: 100px;
   cursor: pointer;
   background-image: url(/static/images/addMedia.png);
   background-position: center;
@@ -2288,7 +2280,7 @@ ol.breadcrumb li .svg-inline--fa {
 
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
+  font-weight: normal;
   font-size: 1rem;
   line-height: 1.5rem;
 

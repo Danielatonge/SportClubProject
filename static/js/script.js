@@ -33,6 +33,7 @@ $(document).ready(function () {
       loop: loop ? true : false,
       items: items ? items : 3,
       lazyLoad: true,
+      dots: false,
       center: centerMode ? true : false,
       margin: margin ? margin : 0,
       autoplay: autoplay ? true : false,
