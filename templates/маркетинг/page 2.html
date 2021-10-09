@@ -1,7 +1,7 @@
-{% extends "layout.html" %} {% block content %}
-<!-- Navigation 2-->
-<div
-  class="
+{% extends "layout.html" %} {% set active_page = "market" %} {% block content %}
+    <!-- Navigation 2-->
+    <div
+            class="
     page-navigation
     inner-navigation
     bordered
@@ -11,334 +11,345 @@
     mb-4
     p-0
   "
->
-  <a
-    href="#"
-    class="list-group-item list-group-item-action d-flex justify-content-center"
-  >
-    Магазин сувениров</a
-  >
-  <a
-    href="#"
-    class="
+    >
+        <a
+                href="{{ url_for('marketing_page1') }}"
+                class="
       list-group-item list-group-item-action
       d-flex
       justify-content-center
-      active
+
     "
-  >
-    Скидки
-  </a>
-  <a
-    href="#"
-    class="list-group-item list-group-item-action d-flex justify-content-center"
-  >
-    Партнеры
-  </a>
-  <a
-    href="#"
-    class="list-group-item list-group-item-action d-flex justify-content-center"
-  >
-    Сотрудничество
-  </a>
-</div>
-
-<div class="body-colour">
-  <div class="container pb-2">
-    <h3 class="py-2">Скидки</h3>
-    <div class="card-deck">
-      <div class="col-sm-6 p-0">
-        <div class="card mbottom zoom-img">
-          <div
-            class="card-group joined-cards card-shadow new-design card-height"
-          >
-            <div class="card">
-              <img
-                class="card-img"
-                src="/static/images/card 1.png"
-                alt="img1"
-              />
-            </div>
-            <div class="card">
-              <div class="card-body souvernir-card d-flex flex-column">
-                <div>
-                  <h5 class="col pb-2 pl-0 m-0">Gold’s Gym Dinamo Moscow</h5>
-                  <p class="skidka-card-title">
-                    -50% на все виды товаров по промокоду
-                    <strong>HAPPYBDAY</strong>
-                  </p>
-                </div>
-                <div class="mt-auto">
-                  <i class="card-hashtag">#preview #omg #test</i>
-                  <div
-                    class="
-                      row
-                      mt-1
-                      justify-content-between
-                      align-items-baseline
-                    "
-                  >
-                    <div class="col pl-0">
-                      <i class="card-date">15 окт</i>
-                    </div>
-                    <div class="col text-right pr-0">
-                      <img class="eye-icon" src="/static/images/eye.svg" />
-                      <i class="card-date">999,999</i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 p-0">
-        <div class="card mbottom zoom-img">
-          <div
-            class="card-group joined-cards card-shadow new-design card-height"
-          >
-            <div class="card">
-              <img
-                class="card-img"
-                src="/static/images/card 1.png"
-                alt="img1"
-              />
-            </div>
-            <div class="card">
-              <div class="card-body souvernir-card d-flex flex-column">
-                <div>
-                  <h5 class="col pb-2 pl-0 m-0">Gold’s Gym Dinamo Moscow</h5>
-                  <p class="skidka-card-title">
-                    -50% на все виды товаров по промокоду
-                    <strong>HAPPYBDAY</strong>
-                  </p>
-                </div>
-                <div class="mt-auto">
-                  <i class="card-hashtag">#preview #omg #test</i>
-                  <div
-                    class="
-                      row
-                      mt-1
-                      justify-content-between
-                      align-items-baseline
-                    "
-                  >
-                    <div class="col pl-0">
-                      <i class="card-date">15 окт</i>
-                    </div>
-                    <div class="col text-right pr-0">
-                      <img class="eye-icon" src="/static/images/eye.svg" />
-                      <i class="card-date">999,999</i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 p-0">
-        <div class="card mbottom zoom-img">
-          <div
-            class="card-group joined-cards card-shadow new-design card-height"
-          >
-            <div class="card">
-              <img
-                class="card-img"
-                src="/static/images/card 1.png"
-                alt="img1"
-              />
-            </div>
-            <div class="card">
-              <div class="card-body souvernir-card d-flex flex-column">
-                <div>
-                  <h5 class="col pb-2 pl-0 m-0">Gold’s Gym Dinamo Moscow</h5>
-                  <p class="skidka-card-title">
-                    -50% на все виды товаров по промокоду
-                    <strong>HAPPYBDAY</strong>
-                  </p>
-                </div>
-                <div class="mt-auto">
-                  <i class="card-hashtag">#preview #omg #test</i>
-                  <div
-                    class="
-                      row
-                      mt-1
-                      justify-content-between
-                      align-items-baseline
-                    "
-                  >
-                    <div class="col pl-0">
-                      <i class="card-date">15 окт</i>
-                    </div>
-                    <div class="col text-right pr-0">
-                      <img class="eye-icon" src="/static/images/eye.svg" />
-                      <i class="card-date">999,999</i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 p-0">
-        <div class="card mbottom zoom-img">
-          <div
-            class="card-group joined-cards card-shadow new-design card-height"
-          >
-            <div class="card">
-              <img
-                class="card-img"
-                src="/static/images/card 1.png"
-                alt="img1"
-              />
-            </div>
-            <div class="card">
-              <div class="card-body souvernir-card d-flex flex-column">
-                <div>
-                  <h5 class="col pb-2 pl-0 m-0">Gold’s Gym Dinamo Moscow</h5>
-                  <p class="skidka-card-title">
-                    -50% на все виды товаров по промокоду
-                    <strong>HAPPYBDAY</strong>
-                  </p>
-                </div>
-                <div class="mt-auto">
-                  <i class="card-hashtag">#preview #omg #test</i>
-                  <div
-                    class="
-                      row
-                      mt-1
-                      justify-content-between
-                      align-items-baseline
-                    "
-                  >
-                    <div class="col pl-0">
-                      <i class="card-date">15 окт</i>
-                    </div>
-                    <div class="col text-right pr-0">
-                      <img class="eye-icon" src="/static/images/eye.svg" />
-                      <i class="card-date">999,999</i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 p-0">
-        <div class="card mbottom zoom-img">
-          <div
-            class="card-group joined-cards card-shadow new-design card-height"
-          >
-            <div class="card">
-              <img
-                class="card-img"
-                src="/static/images/card 1.png"
-                alt="img1"
-              />
-            </div>
-            <div class="card">
-              <div class="card-body souvernir-card d-flex flex-column">
-                <div>
-                  <h5 class="col pb-2 pl-0 m-0">Gold’s Gym Dinamo Moscow</h5>
-                  <p class="skidka-card-title">
-                    -50% на все виды товаров по промокоду
-                    <strong>HAPPYBDAY</strong>
-                  </p>
-                </div>
-                <div class="mt-auto">
-                  <i class="card-hashtag">#preview #omg #test</i>
-                  <div
-                    class="
-                      row
-                      mt-1
-                      justify-content-between
-                      align-items-baseline
-                    "
-                  >
-                    <div class="col pl-0">
-                      <i class="card-date">15 окт</i>
-                    </div>
-                    <div class="col text-right pr-0">
-                      <img class="eye-icon" src="/static/images/eye.svg" />
-                      <i class="card-date">999,999</i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 p-0">
-        <div class="card mbottom zoom-img">
-          <div
-            class="card-group joined-cards card-shadow new-design card-height"
-          >
-            <div class="card">
-              <img
-                class="card-img"
-                src="/static/images/card 1.png"
-                alt="img1"
-              />
-            </div>
-            <div class="card">
-              <div class="card-body souvernir-card d-flex flex-column">
-                <div>
-                  <h5 class="col pb-2 pl-0 m-0">Gold’s Gym Dinamo Moscow</h5>
-                  <p class="skidka-card-title">
-                    -50% на все виды товаров по промокоду
-                    <strong>HAPPYBDAY</strong>
-                  </p>
-                </div>
-                <div class="mt-auto">
-                  <i class="card-hashtag">#preview #omg #test</i>
-                  <div
-                    class="
-                      row
-                      mt-1
-                      justify-content-between
-                      align-items-baseline
-                    "
-                  >
-                    <div class="col pl-0">
-                      <i class="card-date">15 окт</i>
-                    </div>
-                    <div class="col text-right pr-0">
-                      <img class="eye-icon" src="/static/images/eye.svg" />
-                      <i class="card-date">999,999</i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        >
+            Магазин сувениров</a
+        >
+        <a
+                href="{{ url_for('marketing_page2') }}"
+                class="list-group-item list-group-item-action d-flex justify-content-center active"
+        >
+            Скидки
+        </a>
+        <a
+                href="{{ url_for('marketing_page4') }}"
+                class="list-group-item list-group-item-action d-flex justify-content-center"
+        >
+            Партнеры
+        </a>
+        <a
+                href="{{ url_for('marketing_page5') }}"
+                class="list-group-item list-group-item-action d-flex justify-content-center"
+        >
+            Сотрудничество
+        </a>
     </div>
-  </div>
 
-  <!-- Pagination -->
-  <nav aria-label="News navigation">
-    <ul class="pagination justify-content-center">
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-          <span class="sr-only">Previous</span>
-        </a>
-      </li>
-      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item">
-        <a class="page-link" href="#" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-          <span class="sr-only">Next</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-</div>
+    <div class="body-colour">
+        <div class="container pb-2">
+            <h3 class="py-2">Скидки</h3>
+            <div class="card-deck">
+                <div class="col-sm-6 p-0">
+                    <a href="{{ url_for('marketing_page3') }}">
+                        <div class="card mbottom zoom-img">
+                            <div
+                                    class="card-group joined-cards card-shadow new-design card-height"
+                            >
+                                <div class="card">
+                                    <img
+                                            class="card-img"
+                                            src="/static/images/card 1.png"
+                                            alt="img1"
+                                    />
+                                </div>
+                                <div class="card">
+                                    <div class="card-body souvernir-card d-flex flex-column">
+                                        <div>
+                                            <h5 class="col pb-2 pl-0 m-0">Gold’s Gym Dinamo Moscow</h5>
+                                            <p class="skidka-card-title">
+                                                -50% на все виды товаров по промокоду
+                                                <strong>HAPPYBDAY</strong>
+                                            </p>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <i class="card-hashtag">#preview #omg #test</i>
+                                            <div
+                                                    class="
+                      row
+                      mt-1
+                      justify-content-between
+                      align-items-baseline
+                    "
+                                            >
+                                                <div class="col pl-0">
+                                                    <i class="card-date">15 окт</i>
+                                                </div>
+                                                <div class="col text-right pr-0">
+                                                    <img class="eye-icon" src="/static/images/eye.svg"/>
+                                                    <i class="card-date">999,999</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 p-0">
+                    <a href="{{ url_for('marketing_page3') }}">
+                        <div class="card mbottom zoom-img">
+                            <div
+                                    class="card-group joined-cards card-shadow new-design card-height"
+                            >
+                                <div class="card">
+                                    <img
+                                            class="card-img"
+                                            src="/static/images/card 1.png"
+                                            alt="img1"
+                                    />
+                                </div>
+                                <div class="card">
+                                    <div class="card-body souvernir-card d-flex flex-column">
+                                        <div>
+                                            <h5 class="col pb-2 pl-0 m-0">Gold’s Gym Dinamo Moscow</h5>
+                                            <p class="skidka-card-title">
+                                                -50% на все виды товаров по промокоду
+                                                <strong>HAPPYBDAY</strong>
+                                            </p>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <i class="card-hashtag">#preview #omg #test</i>
+                                            <div
+                                                    class="
+                      row
+                      mt-1
+                      justify-content-between
+                      align-items-baseline
+                    "
+                                            >
+                                                <div class="col pl-0">
+                                                    <i class="card-date">15 окт</i>
+                                                </div>
+                                                <div class="col text-right pr-0">
+                                                    <img class="eye-icon" src="/static/images/eye.svg"/>
+                                                    <i class="card-date">999,999</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 p-0">
+                    <a href="{{ url_for('marketing_page3') }}">
+                        <div class="card mbottom zoom-img">
+                            <div
+                                    class="card-group joined-cards card-shadow new-design card-height"
+                            >
+                                <div class="card">
+                                    <img
+                                            class="card-img"
+                                            src="/static/images/card 1.png"
+                                            alt="img1"
+                                    />
+                                </div>
+                                <div class="card">
+                                    <div class="card-body souvernir-card d-flex flex-column">
+                                        <div>
+                                            <h5 class="col pb-2 pl-0 m-0">Gold’s Gym Dinamo Moscow</h5>
+                                            <p class="skidka-card-title">
+                                                -50% на все виды товаров по промокоду
+                                                <strong>HAPPYBDAY</strong>
+                                            </p>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <i class="card-hashtag">#preview #omg #test</i>
+                                            <div
+                                                    class="
+                      row
+                      mt-1
+                      justify-content-between
+                      align-items-baseline
+                    "
+                                            >
+                                                <div class="col pl-0">
+                                                    <i class="card-date">15 окт</i>
+                                                </div>
+                                                <div class="col text-right pr-0">
+                                                    <img class="eye-icon" src="/static/images/eye.svg"/>
+                                                    <i class="card-date">999,999</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 p-0">
+                    <a href="{{ url_for('marketing_page3') }}">
+
+                        <div class="card mbottom zoom-img">
+                            <div
+                                    class="card-group joined-cards card-shadow new-design card-height"
+                            >
+                                <div class="card">
+                                    <img
+                                            class="card-img"
+                                            src="/static/images/card 1.png"
+                                            alt="img1"
+                                    />
+                                </div>
+                                <div class="card">
+                                    <div class="card-body souvernir-card d-flex flex-column">
+                                        <div>
+                                            <h5 class="col pb-2 pl-0 m-0">Gold’s Gym Dinamo Moscow</h5>
+                                            <p class="skidka-card-title">
+                                                -50% на все виды товаров по промокоду
+                                                <strong>HAPPYBDAY</strong>
+                                            </p>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <i class="card-hashtag">#preview #omg #test</i>
+                                            <div
+                                                    class="
+                      row
+                      mt-1
+                      justify-content-between
+                      align-items-baseline
+                    "
+                                            >
+                                                <div class="col pl-0">
+                                                    <i class="card-date">15 окт</i>
+                                                </div>
+                                                <div class="col text-right pr-0">
+                                                    <img class="eye-icon" src="/static/images/eye.svg"/>
+                                                    <i class="card-date">999,999</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 p-0">
+                    <a href="{{ url_for('marketing_page3') }}">
+                        <div class="card mbottom zoom-img">
+                            <div
+                                    class="card-group joined-cards card-shadow new-design card-height"
+                            >
+                                <div class="card">
+                                    <img
+                                            class="card-img"
+                                            src="/static/images/card 1.png"
+                                            alt="img1"
+                                    />
+                                </div>
+                                <div class="card">
+                                    <div class="card-body souvernir-card d-flex flex-column">
+                                        <div>
+                                            <h5 class="col pb-2 pl-0 m-0">Gold’s Gym Dinamo Moscow</h5>
+                                            <p class="skidka-card-title">
+                                                -50% на все виды товаров по промокоду
+                                                <strong>HAPPYBDAY</strong>
+                                            </p>
+                                        </div>
+                                        <div class="mt-auto">
+                                            <i class="card-hashtag">#preview #omg #test</i>
+                                            <div
+                                                    class="
+                      row
+                      mt-1
+                      justify-content-between
+                      align-items-baseline
+                    "
+                                            >
+                                                <div class="col pl-0">
+                                                    <i class="card-date">15 окт</i>
+                                                </div>
+                                                <div class="col text-right pr-0">
+                                                    <img class="eye-icon" src="/static/images/eye.svg"/>
+                                                    <i class="card-date">999,999</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 p-0">
+                    <div class="card mbottom zoom-img">
+                        <div
+                                class="card-group joined-cards card-shadow new-design card-height"
+                        >
+                            <div class="card">
+                                <img
+                                        class="card-img"
+                                        src="/static/images/card 1.png"
+                                        alt="img1"
+                                />
+                            </div>
+                            <div class="card">
+                                <div class="card-body souvernir-card d-flex flex-column">
+                                    <div>
+                                        <h5 class="col pb-2 pl-0 m-0">Gold’s Gym Dinamo Moscow</h5>
+                                        <p class="skidka-card-title">
+                                            -50% на все виды товаров по промокоду
+                                            <strong>HAPPYBDAY</strong>
+                                        </p>
+                                    </div>
+                                    <div class="mt-auto">
+                                        <i class="card-hashtag">#preview #omg #test</i>
+                                        <div
+                                                class="
+                      row
+                      mt-1
+                      justify-content-between
+                      align-items-baseline
+                    "
+                                        >
+                                            <div class="col pl-0">
+                                                <i class="card-date">15 окт</i>
+                                            </div>
+                                            <div class="col text-right pr-0">
+                                                <img class="eye-icon" src="/static/images/eye.svg"/>
+                                                <i class="card-date">999,999</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav aria-label="News navigation">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 {% endblock %}

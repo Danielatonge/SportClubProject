@@ -1,79 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>{{ title }}</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-      crossorigin="anonymous"
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css"
     />
     <link
-      rel="stylesheet"
-      type="text/css"
-      href="/static/css/owl.carousel.min.css"
+            rel="stylesheet"
+            type="text/css"
+            href="/static/css/owl.carousel.min.css"
     />
     <link
-      rel="stylesheet"
-      type="text/css"
-      href="/static/css/owl.theme.default.min.css"
+            rel="stylesheet"
+            type="text/css"
+            href="/static/css/owl.theme.default.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css"/>
     <link rel=stylesheet type=text/css href="/static/css/index.css">
-  </head>
+</head>
 
-  <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="/static/js/owl.carousel.min.js"></script>
-    <script src="/static/js/script.js"></script>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"
+></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="/static/js/owl.carousel.min.js"></script>
+<script src="/static/js/script.js"></script>
 
-    <!-- Navigation -->
-    <header class="header justify-xs">
-      <div class="container equalify">
+<!-- Navigation -->
+<header class="header justify-xs">
+    <div class="container equalify">
         <div class="row">
-          <div class="col-5 col-sm-5 col-md-5 col-lg-5 pl-0 center-xxs">
-            <div class="row pt-2">
-              <div class="col-12 col-sm-7 col-md-4 col-lg-3 pr-0 pl-0 pt-0">
-                <a
-                  class="navbar-brand padding-xs pl-0 pt-sm-0"
-                  href="{{ url_for('main') }}"
-                >
-                  <img
-                    src="/static/images/logo-icon.png"
-                    class="img-fluid img-fluid-xs"
-                /></a>
-              </div>
-              <div class="col-sm-5 col-md-8 col-lg-8 pl-0 block-icon">
-                <div class="bottom-nav">
-                  <img
-                    src="/static/images/logo-name.png"
-                    class="img-fluid mb-3"
-                  />
-                  <img
-                    src="/static/images/logo-description.png"
-                    class="img-fluid"
-                  />
+            <div class="col-5 col-sm-5 col-md-5 col-lg-5 pl-0 center-xxs">
+                <div class="row pt-2">
+                    <div class="col-12 col-sm-7 col-md-4 col-lg-3 pr-0 pl-0 pt-0">
+                        <a
+                                class="navbar-brand padding-xs pl-0 pt-sm-0"
+                                href="{{ url_for('main_page2') }}"
+                        >
+                            <img
+                                    src="/static/images/logo-icon.png"
+                                    class="img-fluid img-fluid-xs"
+                            /></a>
+                    </div>
+                    <div class="col-sm-5 col-md-8 col-lg-8 pl-0 block-icon">
+                        <div class="bottom-nav">
+                            <img
+                                    src="/static/images/logo-name.png"
+                                    class="img-fluid mb-3"
+                            />
+                            <img
+                                    src="/static/images/logo-description.png"
+                                    class="img-fluid"
+                            />
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
 
-          <div
-            class="
+            <div
+                    class="
               col-7 col-sm-7 col-md-7
               p-0
               no-margin-top-bottom
@@ -81,86 +81,88 @@
               text-right
               center-xxs
             "
-          >
-            <div class="dropdown bottom-right">
-              <div class="row">
-                <div
-                  class="
+            >
+                <div class="dropdown bottom-right">
+                    <div class="row">
+                        <div
+                                class="
                     col-12 col-md-12 col-sm-12 col-lg-12
                     pl-0
                     pr-0
                     xs-nav
                     remove-xs
                   "
-                >
-                  <p class="remove-margin">
-                    <small class="mr-2">Подпишись на социальные сети: </small>
-                    <a class="header-icons" href="#"
-                      ><i class="fab fa-vk"></i
-                    ></a>
-                    <a href="#" style="padding: 0.3rem 0.44rem"
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-                    <a class="" href="#"><i class="fab fa-youtube"></i></a>
-                  </p>
-                </div>
-                <div
-                  class="
+                        >
+                            <p class="remove-margin">
+                                <small class="mr-2">Подпишись на социальные сети: </small>
+                                <a class="header-icons" href="#"
+                                ><i class="fab fa-vk"></i
+                                ></a>
+                                <a href="#" style="padding: 0.3rem 0.44rem"
+                                ><i class="fab fa-instagram"></i
+                                ></a>
+                                <a class="" href="#"><i class="fab fa-youtube"></i></a>
+                            </p>
+                        </div>
+                        <div
+                                class="
                     col-12 col-md-12 col-sm-12 col-lg-12
                     mt-2
                     p-md-0
                     padding-right-xs
                   "
-                >
-                  <button
-                    class="btn-nav mr-2"
-                    style="width: 3rem"
-                    type="button"
-                  >
-                    <img src="/static/images/search.svg" />
-                  </button>
-                  <button
-                    class="btn-nav dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButtonTwo"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <img src="/static/images/flag.svg" /> РУС
-                  </button>
-                  <div
-                    class="dropdown-menu dropdown-width"
-                    aria-labelledby="dropdownMenuButtonTwo"
-                  >
-                    <a class="dropdown-item-top" href="#"
-                      ><img src="/static/images/flag.svg" /> ENG</a
-                    >
-                  </div>
+                        >
+                            <a href="{{ url_for('main_page1') }}">
+                                <button
+                                        class="btn-nav mr-2"
+                                        style="width: 3rem"
+                                        type="button"
+                                >
+                                    <img src="/static/images/search.svg"/>
+                                </button>
+                            </a>
+                            <button
+                                    class="btn-nav dropdown-toggle"
+                                    type="button"
+                                    id="dropdownMenuButtonTwo"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                            >
+                                <img src="/static/images/flag.svg"/> РУС
+                            </button>
+                            <div
+                                    class="dropdown-menu dropdown-width"
+                                    aria-labelledby="dropdownMenuButtonTwo"
+                            >
+                                <a class="dropdown-item-top" href="#"
+                                ><img src="/static/images/flag.svg"/> ENG</a
+                                >
+                            </div>
 
-                  <button
-                    class="navbar-toggler paint-blue button-xs ml-2"
-                    style="height: 3rem; width: 3rem"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#mobile-nav"
-                  >
-                    <span class="fa fa-bars" style="color: #fff"></span>
-                  </button>
+                            <button
+                                    class="navbar-toggler paint-blue button-xs ml-2"
+                                    style="height: 3rem; width: 3rem"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#mobile-nav"
+                            >
+                                <span class="fa fa-bars" style="color: #fff"></span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
 
-      <!-- Navigation -->
-      <nav class="navbar horizontal-bar navbar-expand-md navbar-dark">
+    <!-- Navigation -->
+    <nav class="navbar horizontal-bar navbar-expand-md navbar-dark">
         <div class="container" id="#nav-container">
-          <div class="collapse navbar-collapse" id="mobile-nav">
-            <!-- id="navbarResponsiveNew"-->
-            <ul
-              class="
+            <div class="collapse navbar-collapse" id="mobile-nav">
+                <!-- id="navbarResponsiveNew"-->
+                <ul
+                        class="
                 navbar-nav
                 nav-fill
                 paint-blue
@@ -168,224 +170,228 @@
                 d-flex
                 align-items-center
               "
-            >
-              <li class="nav-item menu-item">
-                <a class="nav-link active" href="{{ url_for('main_page2') }}"
-                  >Главная</a
                 >
-              </li>
-              <li class="nav-item menu-item">
-                <a class="nav-link" href="{{ url_for('news_page1') }}"
-                  >Новости</a
-                >
-              </li>
-              <li class="nav-item menu-item">
-                <div class="dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    type="button"
-                    id="myDropdown4"
-                    href="{{ url_for('sport_club_page5') }}"
-                    data-toggle="dropdown"
-                    aria-expanded="false"
-                    aria-haspopup="true"
-                    >Спортклуб</a
-                  >
+                    <li class="nav-item menu-item">
+                        <a class="nav-link {{ 'active' if active_page == 'main' else '' }}"
+                           href="{{ url_for('main_page2') }}"
+                        >Главная</a
+                        >
+                    </li>
+                    <li class="nav-item menu-item">
+                        <a class="nav-link {{ 'active' if active_page == 'news' else '' }}"
+                           href="{{ url_for('news_page1') }}"
+                        >Новости</a
+                        >
+                    </li>
+                    <li class="nav-item menu-item">
+                        <div class="dropdown">
+                            <a
+                                    class="nav-link dropdown-toggle {{ 'active' if active_page == 'sportclub' else '' }}"
+                                    type="button"
+                                    id="myDropdown4"
+                                    href="#"
+                                    data-toggle="dropdown"
+                                    aria-expanded="false"
+                                    aria-haspopup="true"
+                            >Спортклуб</a
+                            >
 
-                  <ul class="dropdown-menu" aria-labelledby="myDropdown4">
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="{{ url_for('sport_club_page1') }}"
-                        >Наша миссия</a
-                      >
+                            <ul class="dropdown-menu" aria-labelledby="myDropdown4">
+                                <li>
+                                    <a
+                                            class="dropdown-item"
+                                            href="{{ url_for('sport_club_page1') }}"
+                                    >Наша миссия</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                            class="dropdown-item"
+                                            href="{{ url_for('sport_club_page2') }}"
+                                    >Достижения</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                            class="dropdown-item"
+                                            href="{{ url_for('sport_club_page3') }}"
+                                    >История</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                            class="dropdown-item"
+                                            href="{{ url_for('sport_club_page4') }}"
+                                    >Семья</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="{{ url_for('sport_club_page2') }}"
-                        >Достижения</a
-                      >
+                    <li class="nav-item menu-item">
+                        <div class="dropdown">
+                            <a
+                                    class="nav-link {{ 'active' if active_page == 'sport' else '' }} dropdown-toggle"
+                                    type="button"
+                                    id="myDropdownOne"
+                                    href=""
+                                    data-toggle="dropdown"
+                                    aria-expanded="false"
+                            >Спорт</a
+                            >
+                            <ul
+                                    class="dropdown-menu col-xs-12"
+                                    aria-labelledby="myDropdownOne"
+                            >
+                                <li>
+                                    <a
+                                            class="dropdown-item"
+                                            href="{{ url_for('event_page1') }}"
+                                    >Мероприятия</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                            class="dropdown-item"
+                                            href="{{ url_for('section_page4') }}"
+                                    >Секции</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                            class="dropdown-item"
+                                            href="{{ url_for('search_player_page1') }}"
+                                    >Поиск игроков</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="{{ url_for('sport_club_page3') }}"
-                        >История</a
-                      >
+                    <li class="nav-item menu-item">
+                        <a class="nav-link {{ 'active' if active_page == 'team' else '' }}"
+                           href="{{ url_for('team_page1') }}"
+                        >Сборные</a
+                        >
                     </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="{{ url_for('sport_club_page4') }}"
-                        >Семья</a
-                      >
+                    <li class="nav-item menu-item">
+                        <div class="dropdown">
+                            <a
+                                    class="nav-link dropdown-toggle {{ 'active' if active_page == 'market' else '' }}"
+                                    role="button"
+                                    id="myDropdown3"
+                                    href="#"
+                                    data-toggle="dropdown"
+                                    aria-expanded="false"
+                            >Маркетинг</a
+                            >
+                            <ul class="dropdown-menu" aria-labelledby="myDropdown3">
+                                <li>
+                                    <a class="dropdown-item" href="{{ url_for('marketing_page1') }}">Магазин
+                                        сувениров</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{{ url_for('marketing_page2') }}">Скидки</a></li>
+                                <li><a class="dropdown-item" href="{{ url_for('marketing_page4') }}">Партнеры</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ url_for('marketing_page5') }}">Сотрудничество</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item menu-item">
-                <div class="dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    type="button"
-                    id="myDropdownOne"
-                    href="{{ url_for('play_page1') }}"
-                    data-toggle="dropdown"
-                    aria-expanded="false"
-                    >Спорт</a
-                  >
-                  <ul
-                    class="dropdown-menu col-xs-12"
-                    aria-labelledby="myDropdownOne"
-                  >
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="{{ url_for('event_page1') }}"
-                        >Мероприятия</a
-                      >
+                    <li class="nav-item menu-item">
+                        <div class="dropdown">
+                            <a
+                                    class="nav-link dropdown-toggle {{ 'active' if active_page == 'media' else '' }}"
+                                    role="button"
+                                    id="myDropdownOne"
+                                    href="#"
+                                    data-toggle="dropdown"
+                                    aria-expanded="false"
+                            >Медиа</a
+                            >
+                            <ul class="dropdown-menu" aria-labelledby="myDropdownOne">
+                                <li>
+                                    <a
+                                            class="dropdown-item"
+                                            href="{{ url_for('media_page1') }}"
+                                    >Фотографии</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                            class="dropdown-item"
+                                            href="{{ url_for('media_page2') }}"
+                                    >Видео</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="{{ url_for('section_page1') }}"
-                        >Секции</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="{{ url_for('search_player_page1') }}"
-                        >Поиск игроков</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item menu-item">
-                <a class="nav-link" href="{{ url_for('team_page1') }}"
-                  >Сборные</a
-                >
-              </li>
-              <li class="nav-item menu-item">
-                <div class="dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    role="button"
-                    id="myDropdown3"
-                    href="#"
-                    data-toggle="dropdown"
-                    aria-expanded="false"
-                    >Маркетинг</a
-                  >
-                  <ul class="dropdown-menu" aria-labelledby="myDropdown3">
-                    <li>
-                      <a class="dropdown-item" href="#">Магазин сувениров</a>
-                    </li>
-                    <li><a class="dropdown-item" href="#">Скидки</a></li>
-                    <li><a class="dropdown-item" href="#">Партнеры</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Сотрудничество</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item menu-item">
-                <div class="dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    role="button"
-                    id="myDropdownOne"
-                    href="{{ url_for('media_page1') }}"
-                    data-toggle="dropdown"
-                    aria-expanded="false"
-                    >Медиа</a
-                  >
-                  <ul class="dropdown-menu" aria-labelledby="myDropdownOne">
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="{{ url_for('media_page2') }}"
-                        >Фотографии</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="dropdown-item"
-                        href="{{ url_for('media_page3') }}"
-                        >Видео</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    {% block content %} {% endblock %}
-
-    <!--- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-5 col-md-6 col-12 center-xs">
-            <div class="row">
-              <div class="col-xl-3 col-lg-4">
-                <img src="/static/images/footer.png" class="img-fluid" />
-              </div>
-              <div class="col-xl-8 col-lg-8 block-search">
-                <ul class="list-unstyled footer-address bottom-nav">
-                  <li>Москва, Пр-т Вернадского, д. 78</li>
-                  <li>+7 (499) 215-65-65</li>
-                  <li>rector@mirea.ru</li>
                 </ul>
-              </div>
             </div>
-          </div>
+        </div>
+    </nav>
+</header>
 
-          <div class="col-xl-7 col-md-6 col-12">
-            <div class="row">
-              <div class="col-xl-6 col-lg-6 col-12">
-                <div class="row center-xs">
-                  <div class="col-6">
-                    <ul class="list-unstyled">
-                      <li class="footer-heading"><a href="#">Новости</a></li>
-                      <li class="footer-heading"><a href="#">Спортклуб</a></li>
-                      <li class="footer-heading"><a href="#">Спорт</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-6">
-                    <ul class="list-unstyled">
-                      <li class="footer-heading"><a href="#">Сборные</a></li>
-                      <li class="footer-heading"><a href="#">Маркетинг</a></li>
-                      <li class="footer-heading"><a href="#">Медиа</a></li>
-                    </ul>
-                  </div>
+{% block content %} {% endblock %}
+
+<!--- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5 col-md-6 col-12 center-xs">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4">
+                        <img src="/static/images/footer.png" class="img-fluid"/>
+                    </div>
+                    <div class="col-xl-8 col-lg-8 block-search">
+                        <ul class="list-unstyled footer-address bottom-nav">
+                            <li>Москва, Пр-т Вернадского, д. 78</li>
+                            <li>+7 (499) 215-65-65</li>
+                            <li>rector@mirea.ru</li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
-              <div
-                class="
+            </div>
+
+            <div class="col-xl-7 col-md-6 col-12">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-12">
+                        <div class="row center-xs">
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li class="footer-heading"><a href="#">Новости</a></li>
+                                    <li class="footer-heading"><a href="#">Спортклуб</a></li>
+                                    <li class="footer-heading"><a href="#">Спорт</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled">
+                                    <li class="footer-heading"><a href="#">Сборные</a></li>
+                                    <li class="footer-heading"><a href="#">Маркетинг</a></li>
+                                    <li class="footer-heading"><a href="#">Медиа</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                            class="
                   offset-xl-2 offset-lg-1
                   col-xl-4 col-lg-5
                   social-icons
                   center-xs
                 "
-              >
-                <p class="foot-subtitle col-12 pl-0">Cоциальные сети</p>
-                <a href="#"><i class="fab fa-vk"></i></a>
-                <a href="#" style="padding: 0.5rem 0.69rem"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-              </div>
+                    >
+                        <p class="foot-subtitle col-12 pl-0">Cоциальные сети</p>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#" style="padding: 0.5rem 0.69rem"
+                        ><i class="fab fa-instagram"></i
+                        ></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+</footer>
+</body>
 </html>
