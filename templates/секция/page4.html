@@ -1,50 +1,62 @@
-{% extends "layout.html" %} {% block content %}
-<div class="body-colour">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 pt-4">
-        <h3>Секции</h3>
-      </div>
-      <!-- Main Section -->
-      <div class="row section-main">
-        <div class="col-12 col-sm-6">
-          <div class="sport-data">
-            <img src="/static/images/football.png" alt="football" />
-            <h4>Футбол</h4>
-          </div>
+{% extends "layout.html" %} {% set active_page = "sport" %} {% block content %}
+    <div class="body-colour">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-4">
+                    <h3>Секции</h3>
+                </div>
+                <!-- Main Section -->
+                <div class="row section-main">
+                    <div class="col-12 col-sm-6">
+                        <a href="{{ url_for('section_page1') }}">
+                            <div class="sport-data">
+                                <img src="/static/images/football.png" alt="football"/>
+                                <h4>Футбол</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <a href="{{ url_for('section_page1') }}">
+                            <div class="sport-data">
+                                <img src="/static/images/volleyball.png" alt="volleyball"/>
+                                <h4>Волейбол</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <a href="{{ url_for('section_page1') }}">
+                            <div class="sport-data">
+                                <img src="/static/images/ping-pong.png" alt="ping-pong"/>
+                                <h4>Настольный теннис</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <a href="{{ url_for('section_page1') }}">
+                            <div class="sport-data">
+                                <img src="/static/images/basketball.png" alt="basketball"/>
+                                <h4>Баскетбол</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <a href="{{ url_for('section_page1') }}">
+                            <div class="sport-data">
+                                <img src="/static/images/badminton.png" alt="badminton"/>
+                                <h4>Бадминтон</h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <a href="{{ url_for('section_page1') }}">
+                            <div class="sport-data">
+                                <img src="/static/images/checkmate.png" alt="checkmate"/>
+                                <h4>Шахматы</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-sm-6">
-          <div class="sport-data">
-            <img src="/static/images/volleyball.png" alt="volleyball" />
-            <h4>Волейбол</h4>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="sport-data">
-            <img src="/static/images/ping-pong.png" alt="ping-pong" />
-            <h4>Настольный теннис</h4>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="sport-data">
-            <img src="/static/images/basketball.png" alt="basketball" />
-            <h4>Баскетбол</h4>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="sport-data">
-            <img src="/static/images/badminton.png" alt="badminton" />
-            <h4>Бадминтон</h4>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6">
-          <div class="sport-data">
-            <img src="/static/images/checkmate.png" alt="checkmate" />
-            <h4>Шахматы</h4>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
 {% endblock %}
