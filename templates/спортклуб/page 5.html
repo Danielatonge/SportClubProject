@@ -1,8 +1,9 @@
-{% extends "layout.html" %} {% set active_page = "sportclub" %} {% block content %}
+{% extends "layout.html" %} {% set active_page = "sportclub" %} {% block content
+%}
 
-    <main class="page-content">
-        <div
-                class="
+<main class="page-content">
+  <div
+    class="
       page-navigation
       inner-navigation
       bordered
@@ -11,263 +12,263 @@
       justify-content-sm-center
       p-0
     "
-        >
-            <a
-                    href="{{ url_for('sport_club_page1') }}"
-                    class="
+  >
+    <a
+      href="{{ url_for('sport_club_page1') }}"
+      class="
         list-group-item list-group-item-action
         d-flex
         justify-content-center
       "
-            >
-                Наша миссия
-            </a>
-            <a
-                    href="{{ url_for('sport_club_page2') }}"
-                    class="
+    >
+      Наша миссия
+    </a>
+    <a
+      href="{{ url_for('sport_club_page2') }}"
+      class="
         list-group-item list-group-item-action
         d-flex
         justify-content-center
       "
-            >
-                Достижения
-            </a>
-            <a
-                    href="{{ url_for('sport_club_page3') }}"
-                    class="
+    >
+      Достижения
+    </a>
+    <a
+      href="{{ url_for('sport_club_page3') }}"
+      class="
         list-group-item list-group-item-action
         d-flex
         justify-content-center
       "
-            >
-                История
-            </a>
-            <a
-                    href="{{ url_for('sport_club_page4') }}"
-                    class="
+    >
+      История
+    </a>
+    <a
+      href="{{ url_for('sport_club_page4') }}"
+      class="
         list-group-item list-group-item-action
         d-flex
         justify-content-center
         active
       "
+    >
+      Семья
+    </a>
+  </div>
+  <div class="bg bg2 py-5">
+    <div class="container">
+      <h2>Семья спортклуба</h2>
+      <h6>#preview #omg #test</h6>
+    </div>
+  </div>
+  <div class="body-colour py-4">
+    <div class="container">
+      <div class="row mr-0 ml-0">
+        <div class="col-12 col-md-3 mb-4 mb-md-0 albums">
+          <div class="outer-navigation list-group text-center text-blue">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+              >Руководители</a
             >
-                Семья
-            </a>
+            <a href="#" class="list-group-item list-group-item-action"
+              >Активисты</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >Легенды</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >Менеджеры</a
+            >
+          </div>
+          <div class="inner-navigation list-group text-center text-blue">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+              >Руководители</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >Активисты</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >Легенды</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >Менеджеры</a
+            >
+          </div>
         </div>
-        <div class="bg bg2 py-5">
-            <div class="container">
-                <h2>Семья спортклуба</h2>
-                <h6>#preview #omg #test</h6>
-            </div>
-        </div>
-        <div class="body-colour py-4">
-            <div class="container">
-                <div class="row mr-0 ml-0">
-                    <div class="col-12 col-md-3 mb-4 mb-md-0 albums">
-                        <div class="outer-navigation list-group text-center text-blue">
-                            <a
-                                    href="#"
-                                    class="list-group-item list-group-item-action active"
-                                    aria-current="true"
-                            >Руководители</a
-                            >
-                            <a href="#" class="list-group-item list-group-item-action"
-                            >Активисты</a
-                            >
-                            <a href="#" class="list-group-item list-group-item-action"
-                            >Легенды</a
-                            >
-                            <a href="#" class="list-group-item list-group-item-action"
-                            >Менеджеры</a
-                            >
-                        </div>
-                        <div class="inner-navigation list-group text-center text-blue">
-                            <a
-                                    href="#"
-                                    class="list-group-item list-group-item-action active"
-                                    aria-current="true"
-                            >Руководители</a
-                            >
-                            <a href="#" class="list-group-item list-group-item-action"
-                            >Активисты</a
-                            >
-                            <a href="#" class="list-group-item list-group-item-action"
-                            >Легенды</a
-                            >
-                            <a href="#" class="list-group-item list-group-item-action"
-                            >Менеджеры</a
-                            >
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-9 p-0 pics">
-                        <div class="row mr-0 ml-0">
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <a href="">
-                                    <div class="img-gradient w-100">
-                                        <img
-                                                class="card-img-top"
-                                                src="/static/images/Rectangle 455.png"
-                                        />
-                                    </div>
-                                    <div class="card-img-overlay d-flex flex-column">
-                                        <p class="sportsclub-family-activists mt-auto">
-                                            Меньшенин Алексей
-                                        </p>
-                                        <p class="sportsclub-family-activists-small">
-                                            Председатель ССК «АЛЬЯНС» Главный тренер сборной по футболу
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <a href="">
-                                    <div class="img-gradient w-100">
-                                        <img
-                                                class="card-img-top"
-                                                src="/static/images/Rectangle 457.png"
-                                        />
-                                    </div>
-                                    <div class="card-img-overlay d-flex flex-column">
-                                        <p class="sportsclub-family-activists mt-auto">
-                                            Кастко Виктор
-                                        </p>
-                                        <p class="sportsclub-family-activists-small">
-                                            Заместитель председателя ССК «АЛЬЯНС»
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <a href="">
-                                    <div class="img-gradient w-100">
-                                        <img
-                                                class="card-img-top"
-                                                src="/static/images/Rectangle 458.png"
-                                        />
-                                    </div>
-                                    <div class="card-img-overlay d-flex flex-column">
-                                        <p class="sportsclub-family-activists mt-auto">
-                                            Рузанова Алевтина
-                                        </p>
-                                        <p class="sportsclub-family-activists-small">
-                                            Заместитель председателя ССК «АЛЬЯНС»
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <a href="">
-                                    <div class="img-gradient w-100">
-                                        <img
-                                                class="card-img-top"
-                                                src="/static/images/Rectangle 456.png"
-                                        />
-                                    </div>
-                                    <div class="card-img-overlay d-flex flex-column">
-                                        <p class="sportsclub-family-activists mt-auto">
-                                            Зубакин Эдуард
-                                        </p>
-                                        <p class="sportsclub-family-activists-small">
-                                            Заместитель председателя ССК «АЛЬЯНС» по работе со сборными
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <a href="">
-                                    <div class="img-gradient w-100">
-                                        <img
-                                                class="card-img-top"
-                                                src="/static/images/Rectangle 452.png"
-                                        />
-                                    </div>
-                                    <div class="card-img-overlay d-flex flex-column">
-                                        <p class="sportsclub-family-activists mt-auto">
-                                            Логачев Денис
-                                        </p>
-                                        <p class="sportsclub-family-activists-small">
-                                            Заместитель председателя по спортивно-массовым мероприятиям
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <a href="">
-                                    <div class="img-gradient w-100">
-                                        <img
-                                                class="card-img-top"
-                                                src="/static/images/Rectangle 463-1.png"
-                                        />
-                                    </div>
-                                    <div class="card-img-overlay d-flex flex-column">
-                                        <p class="sportsclub-family-activists mt-auto">
-                                            Якубалиев Наиль
-                                        </p>
-                                        <p class="sportsclub-family-activists-small">
-                                            Заместитель председателя ССК «АЛЬЯНС» отдела единоборств
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <a href="">
-                                    <div class="img-gradient w-100">
-                                        <img
-                                                class="card-img-top"
-                                                src="/static/images/Rectangle 451.png"
-                                        />
-                                    </div>
-                                    <div class="card-img-overlay d-flex flex-column">
-                                        <p class="sportsclub-family-activists mt-auto">
-                                            Окопная Екатерина
-                                        </p>
-                                        <p class="sportsclub-family-activists-small">
-                                            Заместитель председателя ССК «АЛЬЯНС» по информационной
-                                            работе
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <a href="">
-                                    <div class="img-gradient w-100">
-                                        <img
-                                                class="card-img-top"
-                                                src="/static/images/Rectangle 449.png"
-                                        />
-                                    </div>
-                                    <div class="card-img-overlay d-flex flex-column">
-                                        <p class="sportsclub-family-activists mt-auto">
-                                            Ильницкий Владислав
-                                        </p>
-                                        <p class="sportsclub-family-activists-small">
-                                            Руководитель отдела киберспорта ССК «АЛЬЯНС»
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4">
-                                <a href="">
-                                    <div class="img-gradient w-100">
-                                        <img
-                                                class="card-img-top"
-                                                src="/static/images/Rectangle 279.png"
-                                        />
-                                    </div>
-                                    <div class="card-img-overlay d-flex flex-column">
-                                        <p class="sportsclub-family-activists mt-auto">
-                                            Самедов Александр
-                                        </p>
-                                        <p class="sportsclub-family-activists-small">
-                                            Руководитель бегового клуба
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col-12 col-md-9 p-0 pics">
+          <div class="row mr-0 ml-0">
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="">
+                <div class="img-gradient w-100">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/Rectangle 455.png"
+                  />
                 </div>
+                <div class="card-img-overlay d-flex flex-column">
+                  <p class="sportsclub-family-activists mt-auto">
+                    Меньшенин Алексей
+                  </p>
+                  <p class="sportsclub-family-activists-small">
+                    Председатель ССК «АЛЬЯНС» Главный тренер сборной по футболу
+                  </p>
+                </div>
+              </a>
             </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="">
+                <div class="img-gradient w-100">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/Rectangle 457.png"
+                  />
+                </div>
+                <div class="card-img-overlay d-flex flex-column">
+                  <p class="sportsclub-family-activists mt-auto">
+                    Кастко Виктор
+                  </p>
+                  <p class="sportsclub-family-activists-small">
+                    Заместитель председателя ССК «АЛЬЯНС»
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="">
+                <div class="img-gradient w-100">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/Rectangle 458.png"
+                  />
+                </div>
+                <div class="card-img-overlay d-flex flex-column">
+                  <p class="sportsclub-family-activists mt-auto">
+                    Рузанова Алевтина
+                  </p>
+                  <p class="sportsclub-family-activists-small">
+                    Заместитель председателя ССК «АЛЬЯНС»
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="">
+                <div class="img-gradient w-100">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/Rectangle 456.png"
+                  />
+                </div>
+                <div class="card-img-overlay d-flex flex-column">
+                  <p class="sportsclub-family-activists mt-auto">
+                    Зубакин Эдуард
+                  </p>
+                  <p class="sportsclub-family-activists-small">
+                    Заместитель председателя ССК «АЛЬЯНС» по работе со сборными
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="">
+                <div class="img-gradient w-100">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/Rectangle 452.png"
+                  />
+                </div>
+                <div class="card-img-overlay d-flex flex-column">
+                  <p class="sportsclub-family-activists mt-auto">
+                    Логачев Денис
+                  </p>
+                  <p class="sportsclub-family-activists-small">
+                    Заместитель председателя по спортивно-массовым мероприятиям
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="">
+                <div class="img-gradient w-100">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/Rectangle 463-1.png"
+                  />
+                </div>
+                <div class="card-img-overlay d-flex flex-column">
+                  <p class="sportsclub-family-activists mt-auto">
+                    Якубалиев Наиль
+                  </p>
+                  <p class="sportsclub-family-activists-small">
+                    Заместитель председателя ССК «АЛЬЯНС» отдела единоборств
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="">
+                <div class="img-gradient w-100">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/Rectangle 451.png"
+                  />
+                </div>
+                <div class="card-img-overlay d-flex flex-column">
+                  <p class="sportsclub-family-activists mt-auto">
+                    Окопная Екатерина
+                  </p>
+                  <p class="sportsclub-family-activists-small">
+                    Заместитель председателя ССК «АЛЬЯНС» по информационной
+                    работе
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="">
+                <div class="img-gradient w-100">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/Rectangle 449.png"
+                  />
+                </div>
+                <div class="card-img-overlay d-flex flex-column">
+                  <p class="sportsclub-family-activists mt-auto">
+                    Ильницкий Владислав
+                  </p>
+                  <p class="sportsclub-family-activists-small">
+                    Руководитель отдела киберспорта ССК «АЛЬЯНС»
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+              <a href="">
+                <div class="img-gradient w-100">
+                  <img
+                    class="card-img-top"
+                    src="/static/images/Rectangle 279.png"
+                  />
+                </div>
+                <div class="card-img-overlay d-flex flex-column">
+                  <p class="sportsclub-family-activists mt-auto">
+                    Самедов Александр
+                  </p>
+                  <p class="sportsclub-family-activists-small">
+                    Руководитель бегового клуба
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-    </main>
+      </div>
+    </div>
+  </div>
+</main>
 {% endblock %}
