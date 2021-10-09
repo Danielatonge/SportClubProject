@@ -50,7 +50,7 @@
                     <div class="col-12 col-sm-7 col-md-4 col-lg-3 pr-0 pl-0 pt-0">
                         <a
                                 class="navbar-brand padding-xs pl-0 pt-sm-0"
-                                href="{{ url_for('main_page1') }}"
+                                href="{{ url_for('main_page2') }}"
                         >
                             <img
                                     src="/static/images/logo-icon.png"
@@ -112,13 +112,15 @@
                     padding-right-xs
                   "
                         >
-                            <button
-                                    class="btn-nav mr-2"
-                                    style="width: 3rem"
-                                    type="button"
-                            >
-                                <img src="/static/images/search.svg"/>
-                            </button>
+                            <a href="{{ url_for('main_page1') }}">
+                                <button
+                                        class="btn-nav mr-2"
+                                        style="width: 3rem"
+                                        type="button"
+                                >
+                                    <img src="/static/images/search.svg"/>
+                                </button>
+                            </a>
                             <button
                                     class="btn-nav dropdown-toggle"
                                     type="button"
@@ -251,7 +253,7 @@
                                 <li>
                                     <a
                                             class="dropdown-item"
-                                            href="{{ url_for('section_page1') }}"
+                                            href="{{ url_for('section_page4') }}"
                                     >Секции</a
                                     >
                                 </li>

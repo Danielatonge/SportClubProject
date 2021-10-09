@@ -9,7 +9,7 @@ Scss(app, static_dir='static/css', asset_dir='static/scss')
 
 @app.route('/')
 def main():
-    return redirect(url_for('main_page1'))
+    return redirect(url_for('main_page2'))
 
 
 @app.route('/Главная/page1.html')

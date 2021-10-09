@@ -18,7 +18,12 @@
 
                     <div class="row date-margin">
                         <div class="col-12 col-sm-6">
-                            <button class="btn btn-primary pt-3 pb-3 w-100">Участвовать</button>
+
+                            <a href="{{ url_for('event_page8') }}">
+                                <button class="btn btn-primary pt-3 pb-3 w-100">
+                                    Участвовать
+                                </button>
+                            </a>
                         </div>
                         <div class="col-12 col-sm-6">
                             <div>
@@ -46,18 +51,18 @@
                 <div class="col-12 albums">
                     <div class="inner-navigation d-flex list-group text-center text-blue">
                         <a
-                                href="#"
-                                class="list-group-item list-group-item-action"
+                                href="{{ url_for('event_page2') }}"
+                                class="list-group-item list-group-item-action "
                                 aria-current="true"
                         ><span>Общая информация</span></a
                         >
-                        <a href="#" class="list-group-item list-group-item-action"
+                        <a href="{{ url_for('event_page3') }}" class="list-group-item list-group-item-action "
                         ><span>Организаторы</span></a
                         >
-                        <a href="#" class="list-group-item list-group-item-action"
+                        <a href="{{ url_for('event_page4') }}" class="list-group-item list-group-item-action"
                         ><span>Медиа</span></a
                         >
-                        <a href="#" class="list-group-item list-group-item-action active"
+                        <a href="{{ url_for('event_page5') }}" class="list-group-item list-group-item-action active"
                         ><span>Статистика</span></a
                         >
                     </div>
