@@ -18,8 +18,7 @@ a, a:hover {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 h6, .h6 {
-    font-weight: bold;
-    color: black
+    font-weight: bold
 }
 
 .margin-class {
@@ -1558,4 +1557,8 @@ button:focus, button:active, button:hover, .btn:active, .btn.active {
         margin-left: -2px !important;
         margin-right: -5px !important
     }
+}
+
+.gold-text {
+    color: black !important
 }
