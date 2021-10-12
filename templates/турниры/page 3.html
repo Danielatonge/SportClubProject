@@ -1,110 +1,110 @@
 {% extends "layout.html" %} {% set active_page = "team" %} {% block content %}
-<div class="tournir-header-background">
-  <div class="container">
-    <div class="row text-center pt-5 pb-3">
-      <div class="col-12">
-        <img class="img-fluid" src="/static/images/rocketLeague.png" />
-      </div>
-      <div class="col-12">
-        <div class="h5">Rocket League</div>
-      </div>
-      <div class="col-12">
-        <div class="h2">PVP Weekly Clans Brawl: Bravo #27</div>
-      </div>
+    <div class="tournir-header-background">
+        <div class="container">
+            <div class="row text-center pt-5 pb-3">
+                <div class="col-12">
+                    <img class="img-fluid" src="/static/images/rocketLeague.png"/>
+                </div>
+                <div class="col-12">
+                    <div class="h5">Rocket League</div>
+                </div>
+                <div class="col-12">
+                    <div class="h2">PVP Weekly Clans Brawl: Bravo #27</div>
+                </div>
+            </div>
+            <div class="row text-center pb-3">
+                <div class="col-12">
+                    <p class="font-weight-light">До конца регистрации</p>
+                    <h4>19 ч. 15 мин.</h4>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-transparent">
+                        Зарегистрироваться на турнир
+                    </button>
+                </div>
+            </div>
+            <div class="row pb-4 justify-content-center">
+                <div class="header-info d-flex text-center text-md-left">
+                    <div class="col-12 col-md-4">
+                        <p class="font-weight-light">Дата проведения</p>
+                        <h4>22 ноября - 26 ноября 2020</h4>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <p class="font-weight-light">Кол-во участников</p>
+                        <h4>8 команд</h4>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <p class="font-weight-light">Формат турнира</p>
+                        <h4>5х5</h4>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <p class="font-weight-light">Организатор</p>
+                        <h4>Warface Esports League</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row text-center pb-3">
-      <div class="col-12">
-        <p class="font-weight-light">До конца регистрации</p>
-        <h4>19 ч. 15 мин.</h4>
-      </div>
-      <div class="col-12">
-        <button class="btn btn-transparent">
-          Зарегистрироваться на турнир
-        </button>
-      </div>
-    </div>
-    <div class="row pb-4 justify-content-center">
-      <div class="header-info d-flex text-center text-md-left">
-        <div class="col-12 col-md-4">
-          <p class="font-weight-light">Дата проведения</p>
-          <h4>22 ноября - 26 ноября 2020</h4>
-        </div>
-        <div class="col-12 col-md-2">
-          <p class="font-weight-light">Кол-во участников</p>
-          <h4>8 команд</h4>
-        </div>
-        <div class="col-12 col-md-2">
-          <p class="font-weight-light">Формат турнира</p>
-          <h4>5х5</h4>
-        </div>
-        <div class="col-12 col-md-4">
-          <p class="font-weight-light">Организатор</p>
-          <h4>Warface Esports League</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="body-colour">
-  <div class="container albums">
-    <div
-      class="
+    <div class="body-colour">
+        <div class="container albums">
+            <div
+                    class="
         inner-navigation
         d-flex
         w-100
         list-group
         text-center text-blue
-        mb-4
+        mb-5
       "
-    >
-      <a
-        href="#"
-        class="
+            >
+                <a
+                        href="{{ url_for('tour_page1') }}"
+                        class="
+          list-group-item list-group-item-action
+          d-flex
+          justify-content-center
+
+        "
+                >
+                    <div class="align-self-center">Информация</div>
+                </a>
+                <a
+                        href="{{ url_for('tour_page2') }}"
+                        class="
           list-group-item list-group-item-action
           d-flex
           justify-content-center
         "
-      >
-        <div class="align-self-center">Информация</div>
-      </a>
-      <a
-        href="#"
-        class="
+                >
+                    <div class="align-self-center">Статистика</div>
+                </a>
+                <a
+                        href="{{ url_for('tour_page3') }}"
+                        class="
+          list-group-item list-group-item-action
+          d-flex
+          justify-content-center active
+        "
+                >
+                    <div class="align-self-center">Участники</div>
+                </a>
+                <a
+                        href="{{ url_for('tour_page4') }}"
+                        class="
           list-group-item list-group-item-action
           d-flex
           justify-content-center
         "
-      >
-        <div class="align-self-center">Статистика</div>
-      </a>
-      <a
-        href="#"
-        class="
-          list-group-item list-group-item-action
-          d-flex
-          justify-content-center
-          active
-        "
-      >
-        <div class="align-self-center">Участники</div>
-      </a>
-      <a
-        href="#"
-        class="
-          list-group-item list-group-item-action
-          d-flex
-          justify-content-center
-        "
-      >
-        <div class="align-self-center">Правила</div>
-      </a>
+                >
+                    <div class="align-self-center">Правила</div>
+                </a>
+            </div>
+
+            <p class="sportsclub-title">Таблица</p>
+
+            <img class="img-fluid" src="/static/images/Rectangle 544.png"/>
+        </div>
     </div>
-
-    <p class="sportsclub-title">Таблица</p>
-
-    <img class="img-fluid" src="/static/images/Rectangle 544.png" />
-  </div>
-</div>
 
 {% endblock %}
