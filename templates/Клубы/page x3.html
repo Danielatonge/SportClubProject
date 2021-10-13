@@ -1,237 +1,237 @@
 {% extends "layout.html" %} {% block content %}
-<div class="tournir-header-background2">
-  <div class="container">
-    <div class="row text-center pt-5 pb-3">
-      <div class="col-12">
-        <img
-          class="img-fluid"
-          style="height: 80px"
-          src="/static/images/circle.png"
-        />
-      </div>
-      <div class="col-12 mb-4">
-        <div class="h3">Беговой клуб</div>
-      </div>
-      <div class="col-12 mb-4">
-        <button class="btn btn-transparent">
-          Зарегистрироваться на турнир
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="body-colour">
-  <div class="container">
-    <div class="row albums pr-0">
-      <div
-        class="inner-navigation d-flex w-100 list-group text-center text-blue"
-      >
-        <a
-          href="#"
-          class="
-            list-group-item list-group-item-action
-            d-flex
-            justify-content-center
-          "
-        >
-          <div class="align-self-center">Информация</div>
-        </a>
-        <a
-          href="#"
-          class="
-            list-group-item list-group-item-action
-            d-flex
-            justify-content-center
-          "
-        >
-          <div class="align-self-center">Участники клуба</div>
-        </a>
-        <a
-          href="#"
-          class="
-            list-group-item list-group-item-action
-            d-flex
-            justify-content-center
-            active
-          "
-        >
-          <div class="align-self-center">Расписание</div>
-        </a>
-        <a
-          href="#"
-          class="
-            list-group-item list-group-item-action
-            d-flex
-            justify-content-center
-          "
-        >
-          <div class="align-self-center">Медиа</div>
-        </a>
-        <a
-          href="#"
-          class="
-            list-group-item list-group-item-action
-            d-flex
-            justify-content-center
-          "
-        >
-          <div class="align-self-center">Достижения</div>
-        </a>
-      </div>
+    <div class="tournir-header-background2">
+        <div class="container">
+            <div class="row text-center pt-5 pb-3">
+                <div class="col-12">
+                    <img
+                            class="img-fluid"
+                            style="height: 80px"
+                            src="/static/images/circle.png"
+                    />
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="h3">Беговой клуб</div>
+                </div>
+                <div class="col-12 mb-4">
+                    <button class="btn btn-transparent">
+                        Зарегистрироваться на турнир
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="col-12 mt-4 new-match p-0">
-      <div class="row match-details">
-        <div class="card w-100">
-          <div class="card-body">
-            <div class="row align-items-center second-row">
-              <div
-                class="col-sm-8 col-md-9 d-flex align-items-center match-time"
-              >
-                <div class="d-none d-sm-block pr-3 pr-md-4 pr-lg-5">
-                  <p class="gradient-text mb-0">ВТ, 22 НОЯБРЯ</p>
-                  <p
-                    class="match-name mb-0"
-                    style="font-size: 1.5rem; font-weight: normal"
-                  >
-                    18:00
-                  </p>
+    <div class="body-colour">
+        <div class="container">
+            <div class="row albums pr-0">
+                <div
+                        class="inner-navigation d-flex w-100 list-group text-center text-blue"
+                >
+                    <a
+                            href="{{ url_for('club_pagex') }}"
+                            class="
+            list-group-item list-group-item-action
+            d-flex
+            justify-content-center
+
+          "
+                    >
+                        <div class="align-self-center">Информация</div>
+                    </a>
+                    <a
+                            href="{{ url_for('club_pagex2') }}"
+                            class="
+            list-group-item list-group-item-action
+            d-flex
+            justify-content-center
+          "
+                    >
+                        <div class="align-self-center">Участники клуба</div>
+                    </a>
+                    <a
+                            href="{{ url_for('club_pagex3') }}"
+                            class="
+            list-group-item list-group-item-action
+            d-flex
+            justify-content-center active
+          "
+                    >
+                        <div class="align-self-center">Расписание</div>
+                    </a>
+                    <a
+                            href="{{ url_for('club_pagex4') }}"
+                            class="
+            list-group-item list-group-item-action
+            d-flex
+            justify-content-center
+          "
+                    >
+                        <div class="align-self-center">Медиа</div>
+                    </a>
+                    <a
+                            href="{{ url_for('club_pagex5') }}"
+                            class="
+            list-group-item list-group-item-action
+            d-flex
+            justify-content-center
+          "
+                    >
+                        <div class="align-self-center">Достижения</div>
+                    </a>
                 </div>
-                <div class="d-block">
-                  <p
-                    class="match-name mb-0"
-                    style="font-size: 1.5rem; font-weight: 500"
-                  >
-                    PVP Weekly Clans Brawl: Bravo #27
-                  </p>
-                  <p class="league-name" style="font-size: 1rem">
-                    Проспект Вернадского 78, ауд .210
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-4 col-md-3 pt-0 match-time">
-                <button class="w-100 btn btn-primary p-3 mb-3 mb-sm-0">
-                  Подробнее
-                </button>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row match-details">
-        <div class="card w-100">
-          <div class="card-body">
-            <div class="row align-items-center second-row">
-              <div
-                class="col-sm-8 col-md-9 d-flex align-items-center match-time"
-              >
-                <div class="d-none d-sm-block pr-3 pr-md-4 pr-lg-5">
-                  <p class="gradient-text mb-0">ВТ, 22 НОЯБРЯ</p>
-                  <p
-                    class="match-name mb-0"
-                    style="font-size: 1.5rem; font-weight: normal"
-                  >
-                    18:00
-                  </p>
+
+            <div class="col-12 mt-4 new-match p-0">
+                <div class="row match-details">
+                    <div class="card w-100">
+                        <div class="card-body">
+                            <div class="row align-items-center second-row">
+                                <div
+                                        class="col-sm-8 col-md-9 d-flex align-items-center match-time"
+                                >
+                                    <div class="d-none d-sm-block pr-3 pr-md-4 pr-lg-5">
+                                        <p class="gradient-text mb-0">ВТ, 22 НОЯБРЯ</p>
+                                        <p
+                                                class="match-name mb-0"
+                                                style="font-size: 1.5rem; font-weight: normal"
+                                        >
+                                            18:00
+                                        </p>
+                                    </div>
+                                    <div class="d-block">
+                                        <p
+                                                class="match-name mb-0"
+                                                style="font-size: 1.5rem; font-weight: 500"
+                                        >
+                                            PVP Weekly Clans Brawl: Bravo #27
+                                        </p>
+                                        <p class="league-name" style="font-size: 1rem">
+                                            Проспект Вернадского 78, ауд .210
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-md-3 pt-0 match-time">
+                                    <button class="w-100 btn btn-primary p-3 mb-3 mb-sm-0">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-block">
-                  <p
-                    class="match-name mb-0"
-                    style="font-size: 1.5rem; font-weight: 500"
-                  >
-                    PVP Weekly Clans Brawl: Bravo #27
-                  </p>
-                  <p class="league-name" style="font-size: 1rem">
-                    Проспект Вернадского 78, ауд .210
-                  </p>
+                <div class="row match-details">
+                    <div class="card w-100">
+                        <div class="card-body">
+                            <div class="row align-items-center second-row">
+                                <div
+                                        class="col-sm-8 col-md-9 d-flex align-items-center match-time"
+                                >
+                                    <div class="d-none d-sm-block pr-3 pr-md-4 pr-lg-5">
+                                        <p class="gradient-text mb-0">ВТ, 22 НОЯБРЯ</p>
+                                        <p
+                                                class="match-name mb-0"
+                                                style="font-size: 1.5rem; font-weight: normal"
+                                        >
+                                            18:00
+                                        </p>
+                                    </div>
+                                    <div class="d-block">
+                                        <p
+                                                class="match-name mb-0"
+                                                style="font-size: 1.5rem; font-weight: 500"
+                                        >
+                                            PVP Weekly Clans Brawl: Bravo #27
+                                        </p>
+                                        <p class="league-name" style="font-size: 1rem">
+                                            Проспект Вернадского 78, ауд .210
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-md-3 pt-0 match-time">
+                                    <button class="w-100 btn btn-primary p-3 mb-3 mb-sm-0">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-sm-4 col-md-3 pt-0 match-time">
-                <button class="w-100 btn btn-primary p-3 mb-3 mb-sm-0">
-                  Подробнее
-                </button>
-              </div>
+                <div class="row match-details">
+                    <div class="card w-100">
+                        <div class="card-body">
+                            <div class="row align-items-center second-row">
+                                <div
+                                        class="col-sm-8 col-md-9 d-flex align-items-center match-time"
+                                >
+                                    <div class="d-none d-sm-block pr-3 pr-md-4 pr-lg-5">
+                                        <p class="gradient-text mb-0">ВТ, 22 НОЯБРЯ</p>
+                                        <p
+                                                class="match-name mb-0"
+                                                style="font-size: 1.5rem; font-weight: normal"
+                                        >
+                                            18:00
+                                        </p>
+                                    </div>
+                                    <div class="d-block">
+                                        <p
+                                                class="match-name mb-0"
+                                                style="font-size: 1.5rem; font-weight: 500"
+                                        >
+                                            PVP Weekly Clans Brawl: Bravo #27
+                                        </p>
+                                        <p class="league-name" style="font-size: 1rem">
+                                            Проспект Вернадского 78, ауд .210
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-md-3 pt-0 match-time">
+                                    <button class="w-100 btn btn-primary p-3 mb-3 mb-sm-0">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row match-details">
+                    <div class="card w-100">
+                        <div class="card-body">
+                            <div class="row align-items-center second-row">
+                                <div
+                                        class="col-sm-8 col-md-9 d-flex align-items-center match-time"
+                                >
+                                    <div class="d-none d-sm-block pr-3 pr-md-4 pr-lg-5">
+                                        <p class="gradient-text mb-0">ВТ, 22 НОЯБРЯ</p>
+                                        <p
+                                                class="match-name mb-0"
+                                                style="font-size: 1.5rem; font-weight: normal"
+                                        >
+                                            18:00
+                                        </p>
+                                    </div>
+                                    <div class="d-block">
+                                        <p
+                                                class="match-name mb-0"
+                                                style="font-size: 1.5rem; font-weight: 500"
+                                        >
+                                            PVP Weekly Clans Brawl: Bravo #27
+                                        </p>
+                                        <p class="league-name" style="font-size: 1rem">
+                                            Проспект Вернадского 78, ауд .210
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-md-3 pt-0 match-time">
+                                    <button class="w-100 btn btn-primary p-3 mb-3 mb-sm-0">
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div class="row match-details">
-        <div class="card w-100">
-          <div class="card-body">
-            <div class="row align-items-center second-row">
-              <div
-                class="col-sm-8 col-md-9 d-flex align-items-center match-time"
-              >
-                <div class="d-none d-sm-block pr-3 pr-md-4 pr-lg-5">
-                  <p class="gradient-text mb-0">ВТ, 22 НОЯБРЯ</p>
-                  <p
-                    class="match-name mb-0"
-                    style="font-size: 1.5rem; font-weight: normal"
-                  >
-                    18:00
-                  </p>
-                </div>
-                <div class="d-block">
-                  <p
-                    class="match-name mb-0"
-                    style="font-size: 1.5rem; font-weight: 500"
-                  >
-                    PVP Weekly Clans Brawl: Bravo #27
-                  </p>
-                  <p class="league-name" style="font-size: 1rem">
-                    Проспект Вернадского 78, ауд .210
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-4 col-md-3 pt-0 match-time">
-                <button class="w-100 btn btn-primary p-3 mb-3 mb-sm-0">
-                  Подробнее
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row match-details">
-        <div class="card w-100">
-          <div class="card-body">
-            <div class="row align-items-center second-row">
-              <div
-                class="col-sm-8 col-md-9 d-flex align-items-center match-time"
-              >
-                <div class="d-none d-sm-block pr-3 pr-md-4 pr-lg-5">
-                  <p class="gradient-text mb-0">ВТ, 22 НОЯБРЯ</p>
-                  <p
-                    class="match-name mb-0"
-                    style="font-size: 1.5rem; font-weight: normal"
-                  >
-                    18:00
-                  </p>
-                </div>
-                <div class="d-block">
-                  <p
-                    class="match-name mb-0"
-                    style="font-size: 1.5rem; font-weight: 500"
-                  >
-                    PVP Weekly Clans Brawl: Bravo #27
-                  </p>
-                  <p class="league-name" style="font-size: 1rem">
-                    Проспект Вернадского 78, ауд .210
-                  </p>
-                </div>
-              </div>
-              <div class="col-sm-4 col-md-3 pt-0 match-time">
-                <button class="w-100 btn btn-primary p-3 mb-3 mb-sm-0">
-                  Подробнее
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
 
 {% endblock %}
