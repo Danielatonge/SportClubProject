@@ -206,7 +206,7 @@
       border-radius: 5px;
       position: relative;
       height: 8rem;
-      margin-top: 6rem;
+      margin-top: 14%;
 
       .text {
         margin-left: 18%;
@@ -1324,6 +1324,7 @@
 
 .profile-picture img {
   min-height: 250px;
+  max-height: 400px;
   object-fit: cover;
 }
 
@@ -1390,6 +1391,15 @@
     &.owl-prev {
       margin-left: -5.2rem !important;
     }
+
+    @media (min-width: 1200px) {
+      &.owl-next {
+        margin-right: -5.5rem !important;
+      }
+      &.owl-prev {
+        margin-left: -5.7rem !important;
+      }
+    }
   }
 }
 
@@ -1398,7 +1408,10 @@
 }
 
 .joined.card-deck {
+  padding-bottom: 0 !important;
   .col-sm-6 {
+    padding-bottom: 1rem !important;
+    margin-bottom: 0 !important;
     .card.first-card,
     .card.zoom-img {
       margin: auto 0.5rem !important;
@@ -1539,4 +1552,12 @@ button:hover,
 
 .gold-text {
   color: black !important;
+}
+
+.gold-texts {
+  .col-sm-6:nth-of-type(2n) {
+    .card.mbottom {
+      margin-left: 0 !important;
+    }
+  }
 }

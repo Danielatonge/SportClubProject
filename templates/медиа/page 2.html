@@ -207,6 +207,11 @@
 
 <script>
   $("#filterBtn").on("click", function (e) {
+    $("#filterBtn p").text(function (i, text) {
+      return text === "Показать все 62 альбома"
+        ? "Показывай меньше"
+        : "Показать все 62 альбома";
+    });
     $(".filterContent").toggleClass("d-none");
     e.preventDefault();
   });

@@ -316,10 +316,18 @@
 
 <script>
   $("#filterBtn").on("click", function (e) {
+    $("#filterBtn p").text(function (i, text) {
+      return text === "Показать все 62 альбома"
+        ? "Показывай меньше"
+        : "Показать все 62 альбома";
+    });
     $(".filterContent").toggleClass("d-none");
     e.preventDefault();
   });
   $("#filterVideo").on("click", function (e) {
+    $("#filterVideo p").text(function (i, text) {
+      return text === "Посмотреть ещё" ? "смотреть меньше" : "Посмотреть ещё";
+    });
     $(".videoContent").toggleClass("d-none");
     e.preventDefault();
   });
