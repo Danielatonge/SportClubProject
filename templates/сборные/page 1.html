@@ -1,232 +1,248 @@
 {% extends "layout.html" %} {% set active_page = "team" %} {% block content %}
-<div class="body-colour">
-  <div class="container pt-2">
-    <div class="row mt-3 top-calendar">
-      <div class="col-8 col-md-6 pt-3 pl-3">
-        <div class="h5">Календарь событий</div>
-        <h6>22 сентября 2020 - 26 сентября 202</h6>
-      </div>
-      <div class="col-4 col-md-6 text-right align-content-center">
-        <div class="relative-bottom">
-          <button class="btn control-button mr-2 mb-2">
-            <i class="fas fa-arrow-left"></i>
-          </button>
-          <button class="btn control-button mb-2">
-            <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="row calendar">
-      <div class="col-6 col-md-3 calendar-col">
-        <div class="calendar-heading">22 сентября, пн</div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-        <div class="calendar-item">
-          <button
-            class="btn btn-calendar w-100 dropdown-toggle"
-            type="button"
-            id="dropdownCalendar"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <i class="fas fa-chevron-down" style="font-weight: 300"></i>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownCalendar">
-            <div class="calendar-item dropdown-item">
-              <p>Футбол</p>
-              <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
+    <div class="body-colour">
+        <div class="container pt-2">
+            <div class="row mt-3 top-calendar">
+                <div class="col-8 col-md-6 pt-3 pl-3">
+                    <div class="h5">Календарь событий</div>
+                    <h6>22 сентября 2020 - 26 сентября 202</h6>
+                </div>
+                <div class="col-4 col-md-6 text-right align-content-center">
+                    <div class="relative-bottom">
+                        <button class="btn control-button mr-2 mb-2">
+                            <i class="fas fa-arrow-left"></i>
+                        </button>
+                        <button class="btn control-button mb-2">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="calendar-item dropdown-item">
-              <p>Футбол</p>
-              <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
+            <div class="row calendar">
+                <div class="col-6 col-md-3 calendar-col">
+                    <div class="calendar-heading">22 сентября, пн</div>
+                    <div class="calendar-item">
+                        <p>Футбол</p>
+                        <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
+                    </div>
+                    <div class="calendar-item">
+                        <p>Футбол</p>
+                        <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
+                    </div>
+                    <div class="calendar-item">
+                        <button
+                                class="btn btn-calendar w-100 dropdown-toggle"
+                                type="button"
+                                id="dropdownCalendar"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                        >
+                            <i class="fas fa-chevron-down" style="font-weight: 300"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownCalendar">
+                            <div class="calendar-item dropdown-item">
+                                <p>Футбол</p>
+                                <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
+                            </div>
+                            <div class="calendar-item dropdown-item">
+                                <p>Футбол</p>
+                                <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3 calendar-col">
+                    <div class="calendar-heading">22 сентября, пн</div>
+                    <div class="calendar-item">
+                        <p>Футбол</p>
+                        <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
+                    </div>
+                    <div class="calendar-item">
+                        <p>Футбол</p>
+                        <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 calendar-col">
+                    <div class="calendar-heading">22 сентября, пн</div>
+                    <div class="calendar-item">
+                        <p>Футбол</p>
+                        <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 calendar-col">
+                    <div class="calendar-heading">22 сентября, пн</div>
+                    <div class="calendar-item">
+                        <p>Футбол</p>
+                        <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
+                    </div>
+                    <div class="calendar-item">
+                        <p>Футбол</p>
+                        <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-6 col-md-3 calendar-col">
-        <div class="calendar-heading">22 сентября, пн</div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
+            <div class="row pt-4 px-0 margin-class">
+                <div class="col-sm-4">
+                    <a href="{{ url_for('club_page1') }}">
+                        <img class="img w-100" src="/static/images/club.png"/>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="{{ url_for('club_pagex') }}">
+                        <img class="img w-100" src="/static/images/run.png"/>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="{{ url_for('club_page11') }}">
+                        <img class="img w-100" src="/static/images/kiber.png"/>
+                    </a>
+                </div>
+            </div>
+            <p class="sbornyie-title pt-4">Сборные</p>
+            <div class="row fix-left-right">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="{{ url_for('team_page2') }}">
+                        <div class="row bg-white h-100">
+                            <div class="col-4 col-md-4 p-0">
+                                <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                            </div>
+                            <div class="col-8 col-md-8 p-2 my-auto">
+                                <div class="h5 bottom-right">Футбол мужской</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="{{ url_for('team_page2') }}">
+                        <div class="row bg-white h-100">
+                            <div class="col-4 col-md-4 p-0">
+                                <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                            </div>
+                            <div class="col-8 col-md-8 p-2 my-auto">
+                                <div class="h5 bottom-right">Футбол женский</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="{{ url_for('team_page2') }}">
+                        <div class="row bg-white h-100">
+                            <div class="col-4 col-md-4 p-0">
+                                <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                            </div>
+                            <div class="col-8 col-md-8 p-2 my-auto">
+                                <div class="h5 bottom-right">Волейбол</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="{{ url_for('team_page2') }}">
+                        <div class="row bg-white h-100">
+                            <div class="col-4 col-md-4 p-0">
+                                <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                            </div>
+                            <div class="col-8 col-md-8 p-2 my-auto">
+                                <div class="h5 bottom-right">Баскетбол</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <a href="{{ url_for('team_page2') }}">
+                        <div class="row bg-white h-100">
+                            <div class="col-4 col-md-4 p-0">
+                                <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                            </div>
+                            <div class="col-8 col-md-8 p-2 my-auto">
+                                <div class="h5 bottom-right">Черлидинг</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row bg-white h-100">
+                        <div class="col-4 col-md-4 p-0">
+                            <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                        </div>
+                        <div class="col-8 col-md-8 p-2 my-auto">
+                            <div class="h5 bottom-right">Плаванье</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row bg-white h-100">
+                        <div class="col-4 col-md-4 p-0">
+                            <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                        </div>
+                        <div class="col-8 col-md-8 p-2 my-auto">
+                            <div class="h5 bottom-right">Водное поло</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row bg-white h-100">
+                        <div class="col-4 col-md-4 p-0">
+                            <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                        </div>
+                        <div class="col-8 col-md-8 p-2 my-auto">
+                            <div class="h5 bottom-right">Пауэрлифтинг</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row bg-white h-100">
+                        <div class="col-4 col-md-4 p-0">
+                            <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                        </div>
+                        <div class="col-8 col-md-8 p-2 my-auto">
+                            <div class="h5 bottom-right">Шахматы</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row bg-white h-100">
+                        <div class="col-4 col-md-4 p-0">
+                            <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                        </div>
+                        <div class="col-8 col-md-8 p-2 my-auto">
+                            <div class="h5 bottom-right">Шашки</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row bg-white h-100">
+                        <div class="col-4 col-md-4 p-0">
+                            <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                        </div>
+                        <div class="col-8 col-md-8 p-2 my-auto">
+                            <div class="h5 bottom-right">Настольный теннис</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row bg-white h-100">
+                        <div class="col-4 col-md-4 p-0">
+                            <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                        </div>
+                        <div class="col-8 col-md-8 p-2 my-auto">
+                            <div class="h5 bottom-right">Гандбол</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="row bg-white h-100">
+                        <div class="col-4 col-md-4 p-0">
+                            <img class="img-fluid" src="/static/images/Rectangle 296.png"/>
+                        </div>
+                        <div class="col-8 col-md-8 p-2 my-auto">
+                            <div class="h5 bottom-right">Бадминтон</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 calendar-col">
-        <div class="calendar-heading">22 сентября, пн</div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 calendar-col">
-        <div class="calendar-heading">22 сентября, пн</div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-      </div>
     </div>
-
-    <div class="row pt-4 px-0 margin-class">
-      <div class="col-sm-4">
-        <img class="img w-100" src="/static/images/club.png" />
-      </div>
-      <div class="col-sm-4">
-        <img class="img w-100" src="/static/images/run.png" />
-      </div>
-      <div class="col-sm-4">
-        <img class="img w-100" src="/static/images/kiber.png" />
-      </div>
-    </div>
-    <p class="sbornyie-title pt-4">Сборные</p>
-    <div class="row fix-left-right">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Футбол мужской</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Футбол женский</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Волейбол</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Баскетбол</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Черлидинг</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Плаванье</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Водное поло</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Пауэрлифтинг</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Шахматы</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Шашки</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Настольный теннис</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Гандбол</div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="row bg-white h-100">
-          <div class="col-4 col-md-4 p-0">
-            <img class="img-fluid" src="/static/images/Rectangle 296.png" />
-          </div>
-          <div class="col-8 col-md-8 p-2 my-auto">
-            <div class="h5 bottom-right">Бадминтон</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 {% endblock %}

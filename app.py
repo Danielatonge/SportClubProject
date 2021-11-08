@@ -65,6 +65,11 @@ def club_page1():
     return render_template('Клубы/page 1.html', title="Клубы")
 
 
+@app.route('/Клубы/page1-1.html')
+def club_page11():
+    return render_template('Клубы/page 1-1.html', title="Клубы")
+
+
 @app.route('/Клубы/page1-2.html')
 def club_page12():
     return render_template('Клубы/page 1-2.html', title="Клубы")
