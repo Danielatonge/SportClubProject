@@ -958,6 +958,11 @@
  Styles for сборные pages
 */
 
+// Set Max Height for the Calendar
+.fc-view-harness {
+  max-height: 300px;
+}
+
 .control-button {
   padding: 0.5rem 0.69rem;
   color: white !important;
