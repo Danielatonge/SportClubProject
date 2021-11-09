@@ -178,7 +178,8 @@
         center: "title",
         right: "dayGridMonth,timeGridWeek,timeGridDay",
       },
-      titleFormat: "D MMMM, YYYY",
+      locale: "ru",
+      timeFormat: "H(:mm)",
       events: [
         {
           title: "событие на весь день",
@@ -206,8 +207,8 @@
         },
       ],
     });
-
     calendar.render();
+    calendar.setOption("locale", "ru");
   });
 </script>
 
