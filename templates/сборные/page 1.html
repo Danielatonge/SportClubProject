@@ -1,87 +1,7 @@
 {% extends "layout.html" %} {% set active_page = "team" %} {% block content %}
 <div class="body-colour">
   <div class="container pt-2">
-    <div class="row mt-3 top-calendar">
-      <div class="col-8 col-md-6 pt-3 pl-3">
-        <div class="h5">Календарь событий</div>
-        <h6>22 сентября 2020 - 26 сентября 202</h6>
-      </div>
-      <div class="col-4 col-md-6 text-right align-content-center">
-        <div class="relative-bottom">
-          <button class="btn control-button mr-2 mb-2">
-            <i class="fas fa-arrow-left"></i>
-          </button>
-          <button class="btn control-button mb-2">
-            <i class="fas fa-arrow-right"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="row calendar">
-      <div class="col-6 col-md-3 calendar-col">
-        <div class="calendar-heading">22 сентября, пн</div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-        <div class="calendar-item">
-          <button
-            class="btn btn-calendar w-100 dropdown-toggle"
-            type="button"
-            id="dropdownCalendar"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <i class="fas fa-chevron-down" style="font-weight: 300"></i>
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownCalendar">
-            <div class="calendar-item dropdown-item">
-              <p>Футбол</p>
-              <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-            </div>
-            <div class="calendar-item dropdown-item">
-              <p>Футбол</p>
-              <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 calendar-col">
-        <div class="calendar-heading">22 сентября, пн</div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 calendar-col">
-        <div class="calendar-heading">22 сентября, пн</div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-      </div>
-      <div class="col-6 col-md-3 calendar-col">
-        <div class="calendar-heading">22 сентября, пн</div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-        <div class="calendar-item">
-          <p>Футбол</p>
-          <h6>РТУ МИРЭА - МГТУ им. Н.Э Баумана</h6>
-        </div>
-      </div>
-    </div>
+    <div id="calendar" class="my-4"></div>
 
     <div class="row pt-4 px-0 margin-class">
       <div class="col-sm-4">
@@ -245,5 +165,71 @@
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var calendarEl = document.getElementById("calendar");
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: "dayGridMonth",
+      initialDate: "2021-11-07",
+      headerToolbar: {
+        left: "prev,next today",
+        center: "title",
+        right: "dayGridMonth,timeGridWeek,timeGridDay",
+      },
+      events: [
+        {
+          title: "All Day Event",
+          start: "2021-11-01",
+        },
+        {
+          title: "Long Event",
+          start: "2021-11-07",
+          end: "2021-11-10",
+        },
+        {
+          groupId: "999",
+          title: "Repeating Event",
+          start: "2021-11-09T16:00:00",
+        },
+        {
+          groupId: "999",
+          title: "Repeating Event",
+          start: "2021-11-16T16:00:00",
+        },
+        {
+          title: "Conference",
+          start: "2021-11-11",
+          end: "2021-11-13",
+        },
+        {
+          title: "Meeting",
+          start: "2021-11-12T10:30:00",
+          end: "2021-11-12T12:30:00",
+        },
+        {
+          title: "Lunch",
+          start: "2021-11-12T12:00:00",
+        },
+        {
+          title: "Meeting",
+          start: "2021-11-12T14:30:00",
+        },
+        {
+          title: "Birthday Party",
+          start: "2021-11-13T07:00:00",
+        },
+        {
+          title: "Click for Google",
+          url: "https://google.com/",
+          start: "2021-11-28",
+        },
+      ],
+    });
+
+    calendar.render();
+  });
+</script>
 
 {% endblock %}
