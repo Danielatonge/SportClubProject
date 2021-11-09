@@ -562,16 +562,6 @@
 */
 .card.card-shadow.card-no-height {
   height: unset !important;
-
-  // &:hover {
-  //   border-left: 4px solid transparent;
-  //   border-image: linear-gradient(
-  //     to bottom,
-  //     $shiny-light-blue,
-  //     $shiny-dark-blue
-  //   );
-  //   border-image-slice: 1;
-  // }
 }
 
 .team-cards {
@@ -588,7 +578,6 @@
     border-color: $light-blue;
   }
 
-  .card.card-shadow:first-child,
   .card.card-shadow:hover {
     border-left: 4px solid transparent;
     border-image: linear-gradient(
@@ -1559,5 +1548,20 @@ button:hover,
     .card.mbottom {
       margin-left: 0 !important;
     }
+  }
+}
+
+// Hover Effect for the Navbar
+
+@media all and (min-width: 768px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  // .navbar .nav-item:hover .nav-link{   }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
   }
 }
